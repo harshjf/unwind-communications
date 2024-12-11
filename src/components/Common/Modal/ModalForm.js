@@ -10,12 +10,12 @@ const ModalForm = (props) => {
   return (
     <>
       <Button className="default-btn" onClick={toggle}>
-        Contact Me
+        Contact Us
       </Button>
 
       <Modal
         isOpen={modal}
-        toggle={toggle} 
+        toggle={toggle}
         centered={true}
         backdrop="static"
         className="contactModal"

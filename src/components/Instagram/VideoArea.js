@@ -9,12 +9,11 @@ const VideoArea = () => {
 
   return (
     <>
-      {/* If you want to change the video need to update below videoID */}
       <ModalVideo
         channel="youtube"
         youtube={{ mute: 0, autoplay: 0 }}
         isOpen={isOpen}
-        videoId="bk7McNUjWgw"
+        videoId="8v_jldiqJ6E"
         onClose={() => setOpen(false)}
       />
 
@@ -23,11 +22,19 @@ const VideoArea = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-12">
               <div className="video-content">
-                <span className="sub-title">Showreel</span>
-                <h2>Want to stick out in a saturated market?</h2>
+                <h2 style={{ color: "#041d33" }}>
+                  Empowering PM Modi’s Vision For Bharat Aa a Leading Global
+                  Destination
+                </h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore dolore magna.
+                  Our Respected Prime Minister, Shri Narendra Modi Ji, envisions
+                  Bharat as a Leading Global Destination for Wedding and MICE
+                  Tourism, showcasing India’s Vibrancy, Grandeur, and Cultural
+                  Magnificence as the ultimate destination to explore.
+                </p>
+                <p>
+                  Shefali is deeply committed to bringing this vision to life,
+                  transforming PM Modi Ji’s dream into a remarkable reality !
                 </p>
 
                 <div onClick={() => setOpen(true)} className="video-btn">
@@ -39,10 +46,10 @@ const VideoArea = () => {
             <div className="col-lg-6 col-md-12">
               <div className="video-image">
                 <Image
-                  src="/images/instagram/video-img.jpg"
+                  src="/images/video/vision.png"
                   alt="image"
-                  width={1050}
-                  height={616}
+                  width={750}
+                  height={500}
                 />
               </div>
             </div>

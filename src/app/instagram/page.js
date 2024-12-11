@@ -3,7 +3,7 @@ import Navbar from "../../components/Layouts/Navbar";
 import Banner from "../../components/Instagram/Banner";
 import Followers from "../../components/Instagram/Followers";
 import About from "../../components/Instagram/About";
-import SocialStatistics from "../../components/Instagram/SocialStatistics";
+import SocialStatistics from "../../components/Instagram/Services";
 import InstagramAudience from "../../components/Instagram/InstagramAudience";
 import Partners from "../../components/Instagram/Partners";
 import VideoArea from "../../components/Instagram/VideoArea";

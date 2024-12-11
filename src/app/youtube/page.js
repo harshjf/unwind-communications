@@ -1,9 +1,9 @@
-import React from "react"; 
+import React from "react";
 import NavbarTwo from "../../components/Layouts/NavbarTwo";
 import Banner from "../../components/Youtube/Banner";
 import FeaturedVideos from "../../components/Youtube/FeaturedVideos";
 import About from "../../components/Youtube/About";
-import PopularVideos from "../../components/Youtube/PopularVideos";
+
 import Playlists from "../../components/Youtube/Playlists";
 import Partners from "../../components/Youtube/Partners";
 import TopStories from "../../components/Youtube/TopStories";
@@ -12,7 +12,7 @@ import BlogPost from "../../components/Youtube/BlogPost";
 import JoinWithMe from "../../components/Youtube/JoinWithMe";
 import Footer from "../../components/Layouts/Footer";
 
-const Youtube = () => { 
+const Youtube = () => {
   return (
     <>
       <NavbarTwo />
@@ -22,8 +22,6 @@ const Youtube = () => {
       <FeaturedVideos />
 
       <About />
-
-      <PopularVideos />
 
       <Playlists />
 

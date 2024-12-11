@@ -7,7 +7,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <section id="about" className="about-area pt-70">
+      <section id="whatwedo" className="about-area pt-70">
         <div className="container-fluid">
           <div className="row align-items-center">
             <div
@@ -19,27 +19,28 @@ const About = () => {
             >
               <div className="about-image">
                 <Image
-                  src="/images/instagram/insta-about1.png"
+                  src="/images/about/1.png"
                   className="main-image"
                   alt="image"
                   width={680}
                   height={558}
                 />
 
-                <div className="shape">
+                {/* <div className="shape">
                   <Image
-                    src="/images/instagram/insta-about-shape1.png"
+                    src="/images/about/folded-hands.png"
                     alt="image"
                     width={182}
                     height={211}
                   />
                   <Image
-                    src="/images/instagram/insta-about-shape2.png"
+                    src="/images/about/destination.png"
                     alt="image"
-                    width={264}
-                    height={153}
+                    width={268}
+                    height={200}
+                    style={{ height: "260px", width: "320px" }}
                   />
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -51,9 +52,9 @@ const About = () => {
               data-aos-once="true"
             >
               <div className="about-content">
-                <span className="sub-title">What we do?</span>
-                <h2>
-                  I&apos;m a Instagram influencer designer running my own design
+                {/* <span className="sub-title">What we do?</span> */}
+                <h2 style={{ color: "#041d33" }}>
+                  Bringing India&#39;s beauty to the world, one story at a time.
                 </h2>
 
                 <p>
@@ -64,11 +65,11 @@ const About = () => {
                 <p>
                   Our expertise extends beyond the initial presentation. We
                   amplify your story through:
-                  <ul>
+                  {/* <ul>
                     <li>Targeted media PR</li>
                     <li>Strategic Digital Marketing</li>
                     <li>360° Promotion Strategy</li>
-                  </ul>
+                  </ul> */}
                 </p>
                 <p>
                   within the MICE, Travel, and Wedding Industries. We don’t just
@@ -80,7 +81,7 @@ const About = () => {
                   <ModalForm />
 
                   <a href="mailto:hello@alikamaya.com" className="email">
-                    hello@alikamaya.com
+                    hello@unwindcommunication.com
                   </a>
                 </div>
               </div>

@@ -36,6 +36,7 @@ body {
   margin: 0;
   font-size: 17px;
   font-family: var(--font-work-sans);
+  overflow-x: hidden;
 }
 
 img {
@@ -168,8 +169,8 @@ p:last-child {
 .default-btn {
   border: none;
   z-index: 1;
-  color: #ffffff;
-  background-color: #ee0979;
+  color: #fefefe;
+  background-color: #041d33;
   position: relative;
   padding: 11px 30px;
   display: inline-block;
@@ -186,20 +187,13 @@ p:last-child {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(
-    to left bottom,
-    #ee0979,
-    #fc1c62,
-    #ff364a,
-    #ff512f,
-    #ff6a00
-  );
+  background-color: #041d33;
 }
 .default-btn:focus {
   box-shadow: none;
 }
 .default-btn:hover {
-  background-color: #ee0979;
+  background-color: #041d33;
   color: #ffffff;
 }
 .default-btn:hover::before {
@@ -298,21 +292,15 @@ Navbar Area CSS
   color: #ee0979;
 }
 .navbar-light .navbar-nav .nav-item .nav-link.active {
-  background: linear-gradient(
-    to left bottom,
-    #ee0979,
-    #fc1c62,
-    #ff364a,
-    #ff512f,
-    #ff6a00
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /*  background: #e0b6c5; */
+  color: #973d5d;
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 .navbar-light .navbar-nav .nav-item.active a {
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+    #973d5d,
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -485,7 +473,7 @@ Main Banner Area CSS
   width: 100%;
   padding-top: 60px;
   z-index: 1;
-  background-image: url(/images/instagram/dot-bg.png);
+  background-image: url(/images/home/bg1.png);
   background-position: top center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -854,7 +842,7 @@ Social Statistics Area CSS
   border-radius: 0;
 }
 .single-social-statistics-box:hover::before {
-  border-color: #ee0979;
+  border-color: #973d5d;
   border-radius: 0;
 }
 
@@ -1136,7 +1124,7 @@ Video Area CSS
   font-weight: 700;
 }
 .video-content p {
-  max-width: 410px;
+  max-width: 500px;
   margin-top: 15px;
 }
 .video-content .video-btn {
@@ -1164,7 +1152,7 @@ Video Area CSS
   padding-left: 4px;
   margin-right: 5px;
   transition: 0.5s;
-  background-color: #ee0979;
+  background-color: #041d33;
   position: absolute;
   left: 0;
   top: 0;
@@ -1176,14 +1164,7 @@ Video Area CSS
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to left bottom,
-    #ee0979,
-    #fc1c62,
-    #ff364a,
-    #ff512f,
-    #ff6a00
-  );
+  background-color: #041d33;
   z-index: -1;
   border-radius: 50%;
   transition: 0.5s;
@@ -2209,7 +2190,7 @@ Subscribe Area CSS
   display: block;
   width: 100%;
   color: #ffffff;
-  background-color: #ee0979;
+  background-color: #041d33;
   padding: 11px 25px;
   font-size: 15px;
   font-weight: 600;
@@ -2224,14 +2205,7 @@ Subscribe Area CSS
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(
-    to left bottom,
-    #ee0979,
-    #fc1c62,
-    #ff364a,
-    #ff512f,
-    #ff6a00
-  );
+  background-color: #973d5d;
 }
 .subscribe-form form button:hover {
   background-color: #ee0979;
@@ -2422,7 +2396,7 @@ Modal CSS
   z-index: 9999;
 }
 .go-top i {
-  background-color: #ee0979;
+  background-color: #973d5d;
   color: #ffffff;
   width: 30px;
   height: 35px;
@@ -2572,10 +2546,10 @@ Main Banner Area CSS
 }
 .navbar-two.navbar-light .navbar-nav .nav-item .nav-link:hover,
 .navbar-two.navbar-light .navbar-nav .nav-item .nav-link.active {
-  color: #cc0000;
+  color: #973d5d;
 }
 .navbar-two.navbar-light .navbar-nav .nav-item.active .nav-link {
-  color: #cc0000;
+  color: #973d5d;
 }
 .navbar-two.navbar-light .navbar-nav .nav-item:last-child {
   margin-right: 0;
@@ -3529,3 +3503,151 @@ Join Area CSS
 }
 
 /* End Home Two CSS */ /*# sourceMappingURL=style.css.map */
+
+.centered-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.content-wrapper {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.problem-area {
+  position: relative;
+  z-index: 1;
+}
+
+.problem-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/instagram/dot-bg.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* Solution styles */
+
+.solution-container {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.solution-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.solution-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.hero {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero-profile-img {
+  height: 70%;
+  width: 100%;
+}
+
+.hero-description-bk {
+  background-color: #fff;
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
+.hero-logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 30%;
+  left: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+}
+
+.hero-logo img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero-description {
+  position: absolute;
+  color: #fff;
+  font-weight: 900;
+  left: 150px;
+  bottom: 26%;
+}
+
+.hero-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  bottom: 10%;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+}
+
+.hero-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-date {
+  position: absolute;
+  color: #fff;
+  left: 30px;
+  bottom: 3%;
+}
+/* END Solution DESIGN */
+
+.solution-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between cards */
+}
+
+.hero {
+  flex: 1 1 calc(33.333% - 20px); /* Default: 3 cards per row */
+  max-width: calc(33.333% - 20px); /* Adjust width for laptop screens */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex: 1 1 100%; /* 1 card per row on mobile */
+    max-width: 100%;
+  }
+}

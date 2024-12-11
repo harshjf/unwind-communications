@@ -1,7 +1,7 @@
 "use client";
 
-import React from "react";  
-import ModalForm from '../Common/Modal/ModalForm';
+import React from "react";
+import ModalForm from "../Common/Modal/ModalForm";
 
 const ContactArea = () => {
   return (
@@ -12,17 +12,17 @@ const ContactArea = () => {
             <div className="col-lg-7 col-md-12">
               <div className="subscribe-content">
                 <h2>Join with me</h2>
-                <p>
+                {/*  <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore.
-                </p>
+                </p> */}
 
                 <div className="btn-box">
                   {/* ModalForm */}
                   <ModalForm />
 
                   <a href="mailto:hello@alikamaya.com" className="email">
-                    hello@alikamaya.com
+                    hello@unwindcommunication.com
                   </a>
                 </div>
               </div>

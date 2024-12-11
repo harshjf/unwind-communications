@@ -42,8 +42,8 @@ const Navbar = () => {
           const section = document.querySelector(link.hash);
 
           if (
-            section.offsetTop <= fromTop &&
-            section.offsetTop + section.offsetHeight > fromTop
+            section?.offsetTop <= fromTop &&
+            section?.offsetTop + section.offsetHeight > fromTop
           ) {
             link.classList.add("active");
           } else {
@@ -68,8 +68,34 @@ const Navbar = () => {
         className="navbar navbar-expand-lg navbar-light bg-light"
       >
         <div className="container">
-          <Link href="/instagram" className="navbar-brand">
-            <Image src="/images/logo.png" alt="logo" width={128} height={24} />
+          <Link
+            href="/instagram"
+            className="navbar-brand"
+            style={{ display: "flex", alignItems: "center", gap: "10px" }}
+          >
+            <Image
+              src="/images/logounwind.png"
+              alt="logo"
+              width={100}
+              height={30}
+              style={{ objectFit: "contain" }}
+            />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                lineHeight: "1.2",
+                fontSize: "16px",
+                fontWeight: "bold",
+              }}
+            >
+              <span style={{ fontSize: "20px", fontWeight: "600" }}>
+                Unwind
+              </span>
+              <span style={{ fontSize: "18px", fontWeight: "400" }}>
+                Communication
+              </span>
+            </div>
           </Link>
 
           <button
@@ -103,7 +129,7 @@ const Navbar = () => {
                   onClick={toggleNavbar}
                   offset={() => -1}
                   className="nav-link"
-                  href="#about"
+                  href="#whatwedo"
                 >
                   About
                 </AnchorLink>
@@ -114,9 +140,20 @@ const Navbar = () => {
                   onClick={toggleNavbar}
                   offset={() => -1}
                   className="nav-link"
-                  href="#socialStatistics"
+                  href="#services"
                 >
-                  Social Statistics
+                  Services
+                </AnchorLink>
+              </li>
+
+              {/* <li className="nav-item">
+                <AnchorLink
+                  onClick={toggleNavbar}
+                  offset={() => -1}
+                  className="nav-link"
+                  href="#problem"
+                >
+                  The Problem
                 </AnchorLink>
               </li>
 
@@ -125,9 +162,31 @@ const Navbar = () => {
                   onClick={toggleNavbar}
                   offset={() => -1}
                   className="nav-link"
-                  href="#instagramAudience"
+                  href="#solution"
                 >
-                  Instagram Audience
+                  The Solution
+                </AnchorLink>
+              </li> */}
+
+              <li className="nav-item">
+                <AnchorLink
+                  onClick={toggleNavbar}
+                  offset={() => -1}
+                  className="nav-link"
+                  href="#testimonials"
+                >
+                  Testimonials
+                </AnchorLink>
+              </li>
+
+              <li className="nav-item">
+                <AnchorLink
+                  onClick={toggleNavbar}
+                  offset={() => -1}
+                  className="nav-link"
+                  href="#highlights"
+                >
+                  Highlights
                 </AnchorLink>
               </li>
 

@@ -16,8 +16,8 @@ const BlogPost = () => {
             data-aos-duration="800"
             data-aos-once="true"
           >
-            <span className="sub-title">From The Blog</span>
-            <h2>Latest insights are on top all times</h2>
+            {/*  <span className="sub-title">From The Blog</span> */}
+            <h2 style={{ color: "#041d33" }}>Latest insights</h2>
           </div>
 
           <div className="row">
