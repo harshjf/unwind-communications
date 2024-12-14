@@ -162,11 +162,11 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link href="/#blog" onClick={toggleNavbar} className="nav-link">
                   Blog
                 </Link>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link
