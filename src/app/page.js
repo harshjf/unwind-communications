@@ -31,9 +31,9 @@ export default function Home() {
 
       <Problem />
 
-      <Solution />
-
       <Process />
+
+      <Solution />
 
       <Testimonials />
 
@@ -43,7 +43,7 @@ export default function Home() {
 
       {/*  <Podcast />
        */}
-      <BlogPost />
+      {/*  <BlogPost /> */}
 
       <ContactArea />
 

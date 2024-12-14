@@ -31,7 +31,12 @@ const Services = () => {
                 data-aos-once="true"
                 key={index}
               >
-                <div className="single-social-statistics-box">
+                <div
+                  className="single-social-statistics-box"
+                  style={{
+                    height: "600px",
+                  }}
+                >
                   <h4 style={{ color: "#973d5d" }}>{item.title}</h4>
 
                   <div className="line"></div>

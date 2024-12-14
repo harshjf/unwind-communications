@@ -22,7 +22,13 @@ const InstagramAudience = () => {
         onClose={() => setOpen(false)}
       />
 
-      <section id="highlights" className="audience-area pb-100 pt-70">
+      <section
+        id="highlights"
+        className="audience-area pb-100 pt-70"
+        style={{
+          backgroundColor: "#f6dee7",
+        }}
+      >
         <div className="container">
           <div className="row align-items-center">
             <div

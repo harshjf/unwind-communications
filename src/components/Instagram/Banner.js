@@ -1,58 +1,19 @@
 "use client";
 
-import React, { useState } from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import React, { useState, useEffect } from "react";
 import "../../../styles/bannerstyle.css";
 
-const splitText = (text) => text.split("");
-
-const AnimatedText = ({ text, delay = 0, className = "" }) => {
-  const letters = splitText(text);
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay,
-        staggerChildren: 0.05,
-      },
-    },
-  };
-
-  const letterVariants = {
-    hidden: { opacity: 0, x: -50 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { duration: 0.5 },
-    },
-  };
-
-  return (
-    <motion.div
-      className={`animated-text ${className}`}
-      variants={containerVariants}
-      initial="hidden"
-      animate="visible"
-      style={{ display: "inline-block" }}
-    >
-      {letters.map((char, index) => (
-        <motion.span
-          key={index}
-          variants={letterVariants}
-          style={{ display: "inline-block" }}
-        >
-          {char === " " ? "\u00A0" : char}
-        </motion.span>
-      ))}
-    </motion.div>
-  );
-};
-
 const Banner = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
 
   return (
     <>
@@ -60,43 +21,77 @@ const Banner = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5 col-md-12">
-              <div className="main-banner-content">
-                <h1 style={{ color: "#041d33" }}>
-                  <AnimatedText text="Hi, I'm" delay={0} />{" "}
-                </h1>
-                <h1 style={{ color: "#973d5d" }}>
-                  <AnimatedText text="Shefali Saxena" delay={0.5} />
-                </h1>
+              <div className="arrow-container">
+                <img
+                  src="/images/arrow.png"
+                  alt="Arrow"
+                  className="animated-arrow"
+                />
+              </div>
 
-                <p
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                  data-aos-duration="800"
-                  data-aos-once="true"
-                >
-                  Award-winning Artistpreneur and founder of Unwind
-                  Communications, redefining destination and venue promotion
-                  through musical storytelling and professionally crafted
-                  audio-visual content.
-                </p>
+              {/* Add mobile-specific image */}
+              {isMobile && (
+                <div className="mobile-image-container">
+                  <img
+                    src="/images/home/shefali1.jpg"
+                    alt="Shefali 1"
+                    className="shefali1-image"
+                  />
+                </div>
+              )}
+
+              {/* Main content, always visible */}
+              <div className="banner-border-wrapper">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <div className="main-banner-content">
+                  <div className="name-box">
+                    <h1 style={{ color: "#041d33" }}>Hi, I&apos;m</h1>
+                    <h1 style={{ color: "#973d5d" }}>Shefali Saxena</h1>
+                  </div>
+                  <p
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="800"
+                    data-aos-once="true"
+                  >
+                    Award-winning Artistpreneur and founder of Unwind
+                    Communications, redefining destination and venue promotion
+                    through musical storytelling and professionally crafted
+                    audio-visual content.
+                  </p>
+                </div>
               </div>
             </div>
-            <div
-              className="col-lg-7 col-md-12"
-              style={{
-                paddingTop: "350px",
-              }}
-            >
-              <a href="#">
-                <div class="card">
-                  <div class="wrapper">
-                    <img src="/images/home/shefali1.jpg" class="cover-image" />
-                  </div>
 
-                  <img src="/images/home/shefali.png" class="character" />
-                </div>
-              </a>
-            </div>
+            {!isMobile && (
+              <div
+                className="col-lg-7 col-md-12"
+                style={{
+                  paddingTop: "500px", // Adjust spacing for mobile
+                }}
+              >
+                <a href="#">
+                  <div className="card" style={{ border: "none" }}>
+                    <div className="wrapper">
+                      <img
+                        src="/images/home/shefali1.jpg"
+                        className="cover-image"
+                        alt="Shefali 1 Cover"
+                      />
+                    </div>
+
+                    <img
+                      src="/images/home/shefali.png"
+                      className="character"
+                      alt="Shefali Character"
+                    />
+                  </div>
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </div>

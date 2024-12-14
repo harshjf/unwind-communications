@@ -770,6 +770,7 @@ Social Statistics Area CSS
   transition: 0.5s;
   box-shadow: 3px 5px 25px 0 rgba(0, 0, 0, 0.1);
   padding: 60px 40px;
+  height: "200px";
 }
 .single-social-statistics-box .overlay {
   position: absolute;
@@ -2103,7 +2104,7 @@ Subscribe Area CSS
 .subscribe-area {
   position: relative;
   z-index: 1;
-  background-image: url(/images/instagram/subscribe-bg.jpg);
+  background-image: url(/images/instagram/final3.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3650,4 +3651,344 @@ Join Area CSS
     flex: 1 1 100%; /* 1 card per row on mobile */
     max-width: 100%;
   }
+}
+
+/* Common styles for TestimonialDetails component */
+
+.testimonial-container {
+  padding-top: 250px !important;
+}
+
+.testimonial-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.youtube-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.youtube-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.427);
+  z-index: 2;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  color: #333;
+}
+
+.testimonial-heading {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+.testimonial-text {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.circle-container {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 3;
+}
+
+.circle {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.circle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.circle-1 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.card-text {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #fff;
+  padding-left: "10px";
+  text-align: center;
+}
+
+.circle-wrapper {
+  position: relative;
+}
+.static-circle {
+  position: relative;
+  width: 260px;
+  height: 260px;
+}
+
+.static-circle {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-2 .rotating-border-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 260px;
+  z-index: 2;
+}
+
+.circle-2 .rotating-border {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    rgba(255, 255, 255, 0.5),
+    #ffffff
+  );
+  animation: spinBorder 4s linear infinite;
+}
+
+.circle-2 .circle-image-container {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.circle-2 .circle-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes spinBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .rotateme {
+  animation-name: rotateme;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotateme {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+ */
+
+/* Parent container for name */
+/* Wrapper div with border effect */
+.banner-border-wrapper {
+  position: relative; /* Required for absolute-positioned spans */
+  display: inline-block; /* Adjust based on your layout */
+  padding: 20px; /* Add internal spacing if needed */
+  border: 2px solid transparent; /* Default transparent to avoid layout jump */
+  overflow: hidden; /* Ensure border animations stay contained */
+}
+
+/* Animated spans for border */
+.banner-border-wrapper span {
+  position: absolute;
+  display: block;
+}
+
+/* Top border animation */
+.banner-border-wrapper span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px; /* Thickness of the border */
+  background: linear-gradient(90deg, transparent, #973d5d);
+  animation: border-anim1 1.5s linear infinite;
+}
+
+@keyframes border-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+/* Right border animation */
+.banner-border-wrapper span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%; /* Thickness */
+  background: linear-gradient(180deg, transparent, #973d5d);
+  animation: border-anim2 1.5s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes border-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+/* Bottom border animation */
+.banner-border-wrapper span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, transparent, #973d5d);
+  animation: border-anim3 1.5s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes border-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+/* Left border animation */
+.banner-border-wrapper span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #973d5d);
+  animation: border-anim4 1.5s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes border-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.arrow-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-bottom: 20px; /* Adjust spacing before the banner */
+}
+
+/* Arrow image animation */
+.animated-arrow {
+  width: 200px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  animation: arrowBounce 1.5s infinite ease-in-out; /* Smooth up-and-down motion */
+}
+
+/* Keyframes for bouncing effect */
+@keyframes arrowBounce {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translateY(-10px); /* Move up slightly */
+  }
+}
+.custom-link {
+  text-decoration: underline; /* Makes it look clickable */
+  color: inherit; /* Keeps the current text color */
+  cursor: pointer; /* Adds a pointer cursor */
+  font-size: 1.5rem;
+}
+
+.custom-link:hover {
+  color: rgb(151, 61, 93); /* Prevents color change on hover */
+  text-decoration: underline; /* Keeps underline on hover */
 }

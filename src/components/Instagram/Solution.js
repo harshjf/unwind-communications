@@ -3,7 +3,11 @@ import Image from "next/image";
 
 const Solution = () => {
   return (
-    <div id="solution" className="solution-container">
+    <div
+      id="solution"
+      className="solution-container"
+      style={{ marginTop: "40px" }}
+    >
       <div className="container">
         <div
           className="section-title"

@@ -1,8 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import Link from "next/link"; // Importing Link from next/link
 import Image from "next/image";
 
 const Navbar = () => {
@@ -114,102 +113,69 @@ const Navbar = () => {
           <div className={classOne} id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
-                <AnchorLink
+                <Link
+                  href="/#home"
                   onClick={toggleNavbar}
-                  offset={() => 100}
                   className="nav-link active"
-                  href="#home"
                 >
                   Home
-                </AnchorLink>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <AnchorLink
+                <Link
+                  href="/#whatwedo"
                   onClick={toggleNavbar}
-                  offset={() => -1}
                   className="nav-link"
-                  href="#whatwedo"
                 >
                   About
-                </AnchorLink>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <AnchorLink
+                <Link
+                  href="/#services"
                   onClick={toggleNavbar}
-                  offset={() => -1}
                   className="nav-link"
-                  href="#services"
                 >
                   Services
-                </AnchorLink>
-              </li>
-
-              {/* <li className="nav-item">
-                <AnchorLink
-                  onClick={toggleNavbar}
-                  offset={() => -1}
-                  className="nav-link"
-                  href="#problem"
-                >
-                  The Problem
-                </AnchorLink>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <AnchorLink
+                <Link
+                  href="/#testimonials"
                   onClick={toggleNavbar}
-                  offset={() => -1}
                   className="nav-link"
-                  href="#solution"
-                >
-                  The Solution
-                </AnchorLink>
-              </li> */}
-
-              <li className="nav-item">
-                <AnchorLink
-                  onClick={toggleNavbar}
-                  offset={() => -1}
-                  className="nav-link"
-                  href="#testimonials"
                 >
                   Testimonials
-                </AnchorLink>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <AnchorLink
+                <Link
+                  href="/#highlights"
                   onClick={toggleNavbar}
-                  offset={() => -1}
                   className="nav-link"
-                  href="#highlights"
                 >
                   Highlights
-                </AnchorLink>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <AnchorLink
-                  onClick={toggleNavbar}
-                  offset={() => -1}
-                  className="nav-link"
-                  href="#blog"
-                >
+                <Link href="/#blog" onClick={toggleNavbar} className="nav-link">
                   Blog
-                </AnchorLink>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <AnchorLink
+                <Link
+                  href="/#contact"
                   onClick={toggleNavbar}
-                  offset={() => -1}
                   className="nav-link"
-                  href="#contact"
                 >
                   Contact
-                </AnchorLink>
+                </Link>
               </li>
             </ul>
           </div>

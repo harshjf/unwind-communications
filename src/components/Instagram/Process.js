@@ -31,9 +31,10 @@ function Process() {
     <div
       className="process-container"
       style={{
-        marginLeft: "30px",
         marginTop: "40px",
-        padding: "0 15px",
+        paddingTop: "40px",
+        paddingBottom: "30px",
+        backgroundColor: "#cddcea",
       }}
     >
       <div className="container">

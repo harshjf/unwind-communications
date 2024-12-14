@@ -31,8 +31,16 @@ const Testimonials = () => {
         onClose={() => setOpen(false)}
       />
 
-      <section id="testimonials" className="featured-videos-area pt-100">
-        <div className="container">
+      <section
+        id="testimonials"
+        className="featured-videos-area pt-16"
+        style={{
+          marginTop: "20px",
+          backgroundColor: "#f4f3ef",
+          paddingBottom: "40px",
+        }}
+      >
+        <div className="container" style={{ paddingTop: "30px" }}>
           <motion.div
             className="section-title"
             data-aos="fade-up"
@@ -60,7 +68,6 @@ const Testimonials = () => {
             viewport={{ once: true }}
             variants={stagger}
           >
-            {/* First Video */}
             <motion.div
               className="col-lg-6 col-md-12"
               variants={fadeInUp}
@@ -97,7 +104,6 @@ const Testimonials = () => {
               </div>
             </motion.div>
 
-            {/* Second Video */}
             <motion.div
               className="col-lg-6 col-md-12"
               variants={fadeInUp}
@@ -115,6 +121,13 @@ const Testimonials = () => {
               </div>
             </motion.div>
           </motion.div>
+          <div className="row">
+            <div className="col-12 text-center mt-4">
+              <Link href="/testimonials" className="custom-link">
+                View More Testimonials
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>
