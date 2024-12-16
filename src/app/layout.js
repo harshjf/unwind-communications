@@ -32,8 +32,8 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "HearMe - React Nextjs Social Media Personal Portfolio Template",
-  description: "React Nextjs Social Media Personal Portfolio Template",
+  title: "Unwind Communication",
+  description: "",
 };
 
 export default function RootLayout({ children }) {

@@ -23,7 +23,7 @@ const VideoArea = () => {
             <div className="col-lg-6 col-md-12">
               <div className="video-content">
                 <h2 style={{ color: "#041d33" }}>
-                  Empowering PM Modi’s Vision For Bharat Aa a Leading Global
+                  Empowering PM Modi’s Vision For Bharat As A Leading Global
                   Destination
                 </h2>
                 <p>
