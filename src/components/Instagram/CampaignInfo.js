@@ -1,0 +1,45 @@
+import React from "react";
+
+const CampaignInfo = ({ testimonial }) => {
+  const { title, marketingContent } = testimonial;
+
+  return (
+    <div
+      style={{
+        marginTop: "80px",
+        display: "flex",
+        flexDirection: "column",
+        /*  alignItems: "center", */
+
+        marginBottom: "40px",
+        padding: "0 20px",
+      }}
+    >
+      <h1
+        style={{
+          fontSize: "30px",
+          color: "#041d33",
+          marginBottom: "30px",
+          textAlign: "left",
+          marginLeft: "30px",
+        }}
+      >
+        What we did?
+      </h1>
+      <p
+        style={{
+          fontSize: "18px",
+          lineHeight: "1.8",
+          color: "#666",
+          marginLeft: "30px",
+          marginRight: "30px",
+          textAlign: "left",
+        }}
+      >
+        {marketingContent}
+      </p>
+    </div>
+  );
+};
+
+export default CampaignInfo;

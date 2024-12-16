@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Modal from "react-modal";
 import ModalVideo from "react-modal-video";
 import Link from "next/link";
 import Image from "next/image";
@@ -9,6 +10,7 @@ import "aos/dist/aos.css";
 
 const Testimonials = () => {
   const [isOpen, setOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   // Framer-motion variants
   const fadeInUp = {
@@ -21,6 +23,14 @@ const Testimonials = () => {
     visible: { opacity: 1, transition: { staggerChildren: 0.3 } },
   };
 
+  const openImageModal = (src) => {
+    setSelectedImage(src);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <>
       <ModalVideo
@@ -30,6 +40,63 @@ const Testimonials = () => {
         videoId="mwEZkRvjRC8"
         onClose={() => setOpen(false)}
       />
+
+      <Modal
+        isOpen={!!selectedImage}
+        onRequestClose={closeImageModal}
+        style={{
+          overlay: {
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            zIndex: 1000,
+          },
+          content: {
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            padding: "0",
+            background: "transparent",
+            border: "none",
+            overflow: "hidden",
+            height: "90%",
+          },
+        }}
+      >
+        {selectedImage && (
+          <div
+            style={{
+              position: "relative",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Image
+              src={selectedImage}
+              alt="Selected"
+              width={800}
+              height={600}
+              style={{ objectFit: "contain" }}
+            />
+            <button
+              onClick={closeImageModal}
+              style={{
+                position: "absolute",
+                top: 10,
+                right: 10,
+                background: "rgba(0, 0, 0, 0.6)",
+                border: "none",
+                color: "#fff",
+                padding: "10px",
+                borderRadius: "50%",
+                cursor: "pointer",
+              }}
+            >
+              ✕
+            </button>
+          </div>
+        )}
+      </Modal>
 
       <section
         id="testimonials"
@@ -110,12 +177,13 @@ const Testimonials = () => {
               whileHover={{ scale: 1.05 }}
             >
               <div className="single-featured-videos-box">
-                <div className="videos-image">
+                <div className="videos-image" style={{ cursor: "pointer" }}>
                   <Image
                     src="/images/testimonials/2.png"
                     alt="image"
                     width={602}
                     height={514}
+                    onClick={() => openImageModal("/images/testimonials/2.png")}
                   />
                 </div>
               </div>

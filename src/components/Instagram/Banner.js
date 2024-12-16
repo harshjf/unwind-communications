@@ -8,7 +8,7 @@ const Banner = () => {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+      setIsMobile(window.innerWidth <= 768);
     };
     checkMobile();
     window.addEventListener("resize", checkMobile);
@@ -20,16 +20,7 @@ const Banner = () => {
       <div id="home" className="main-banner">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-5 col-md-12">
-              <div className="arrow-container">
-                <img
-                  src="/images/arrow.png"
-                  alt="Arrow"
-                  className="animated-arrow"
-                />
-              </div>
-
-              {/* Add mobile-specific image */}
+            <div className="col-lg-5 col-md-12" style={{ marginTop: "150px" }}>
               {isMobile && (
                 <div className="mobile-image-container">
                   <img
@@ -40,7 +31,6 @@ const Banner = () => {
                 </div>
               )}
 
-              {/* Main content, always visible */}
               <div className="banner-border-wrapper">
                 <span></span>
                 <span></span>
@@ -70,7 +60,11 @@ const Banner = () => {
               <div
                 className="col-lg-7 col-md-12"
                 style={{
-                  paddingTop: "500px", // Adjust spacing for mobile
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  paddingTop: "230px",
+                  height: "100%",
                 }}
               >
                 <a href="#">

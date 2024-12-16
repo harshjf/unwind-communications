@@ -1,6 +1,6 @@
 .card {
-  width: var(--card-width);
-  height: var(--card-height);
+  width: 550px;
+  height: 500px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -13,14 +13,16 @@
 }
 .cover-image {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: auto; /* Automatically adjust height based on aspect ratio */
+  object-fit: contain; /* Ensure the entire image is visible without cropping */
   border-radius: 5px;
 }
+
 .wrapper {
   transition: all 0.5s;
   position: absolute;
   width: 100%;
+  height: auto; /* Allow wrapper to adjust to the image height */
   z-index: -1;
   border-radius: 5px;
   overflow: visible;

@@ -65,24 +65,28 @@ function Process() {
         {[
           {
             src: "/images/process_steps/step1.png",
+            msrc: "/images/process_steps/step1.png",
             alt: "Step 1",
             text: "Create a catchy hit song blending the venue’s theme and objectives.",
             delay: 100,
           },
           {
             src: "/images/process_steps/step2.png",
+            msrc: "/images/process_steps/mstep2.png",
             alt: "Step 2",
             text: "Shoot a high-quality video, distributing across streaming platforms.",
             delay: 500,
           },
           {
             src: "/images/process_steps/step3.png",
+            msrc: "/images/process_steps/mstep3.png",
             alt: "Step 3",
             text: "Push content to targeted audience via Google Ads.",
             delay: 800,
           },
           {
             src: "/images/process_steps/step4.png",
+            msrc: "/images/process_steps/mstep4.png",
             alt: "Step 4",
             text: "Global visibility, generate inquiries, and expand audience engagement.",
             delay: 1100,
@@ -103,7 +107,7 @@ function Process() {
           >
             <div className="content-wrapper">
               <img
-                src={step.src}
+                src={isMobile ? step.msrc : step.src}
                 alt={step.alt}
                 style={{ maxWidth: "100%", height: "auto" }}
               />

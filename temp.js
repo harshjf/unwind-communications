@@ -203,3 +203,16 @@ export default Banner;
     </div>
   </a>
 </div>;
+
+{
+  /* {!isMobile && (
+                <div className="arrow-container">
+                  <img
+                    src="/images/arrow.png"
+                    alt="Arrow"
+                    className="animated-arrow"
+                  />
+                </div>
+              )}
+ */
+}

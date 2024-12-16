@@ -15,6 +15,7 @@ import Problem from "../components/Instagram/Problem";
 import Solution from "../components/Instagram/Solution";
 import Testimonials from "@/components/Instagram/Testimonials";
 import WhyWe from "@/components/Instagram/WhyWe";
+import ProblemProcessSolution from "@/components/Instagram/ProblemProcessSolution";
 
 export default function Home() {
   return (
@@ -29,11 +30,7 @@ export default function Home() {
 
       <Services />
 
-      <Problem />
-
-      <Process />
-
-      <Solution />
+      <ProblemProcessSolution />
 
       <Testimonials />
 

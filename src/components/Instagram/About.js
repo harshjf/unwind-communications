@@ -25,22 +25,6 @@ const About = () => {
                   width={680}
                   height={558}
                 />
-
-                {/* <div className="shape">
-                  <Image
-                    src="/images/about/folded-hands.png"
-                    alt="image"
-                    width={182}
-                    height={211}
-                  />
-                  <Image
-                    src="/images/about/destination.png"
-                    alt="image"
-                    width={268}
-                    height={200}
-                    style={{ height: "260px", width: "320px" }}
-                  />
-                </div> */}
               </div>
             </div>
 
@@ -52,7 +36,6 @@ const About = () => {
               data-aos-once="true"
             >
               <div className="about-content">
-                {/* <span className="sub-title">What we do?</span> */}
                 <h2 style={{ color: "#041d33" }}>
                   Bringing India&#39;s beauty to the world, one story at a time.
                 </h2>
@@ -65,16 +48,22 @@ const About = () => {
                 <p>
                   Our expertise extends beyond the initial presentation. We
                   amplify your story through:
-                  {/* <ul>
-                    <li>Targeted media PR</li>
-                    <li>Strategic Digital Marketing</li>
-                    <li>360° Promotion Strategy</li>
-                  </ul> */}
+                  <ul>
+                    <li>
+                      <b>Targeted media PR</b>
+                    </li>
+                    <li>
+                      <b>Strategic Digital Marketing</b>
+                    </li>
+                    <li>
+                      <b>360° Promotion Strategy</b>
+                    </li>
+                  </ul>
                 </p>
                 <p>
-                  within the MICE, Travel, and Wedding Industries. We don’t just
-                  enhance brand visibility; we forge powerful narratives that
-                  open up new realms of opportunity
+                  within the <b>MICE, Travel </b> and <b>Wedding Industries.</b>{" "}
+                  We don’t just enhance brand visibility; we forge powerful
+                  narratives that open up new realms of opportunity
                 </p>
 
                 <div className="btn-box">

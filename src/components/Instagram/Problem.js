@@ -21,7 +21,7 @@ function Problem() {
           </div>
           <div className="col-lg-6 col-md-12">
             <div className="video-content">
-              <h2 style={{ color: "#041d33" }}>The Problem We Solve</h2>
+              <h2 style={{ color: "#041d33" }}>The Challenge</h2>
               <p>
                 The tourism and event industry is evolving, yet culturally rich
                 destinations and venues remain underrepresented in the digital
