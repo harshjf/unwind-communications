@@ -9,8 +9,12 @@ const PlaceInfo = ({ testimonial }) => {
 
   return (
     <div className="place-info-container">
-      <h5 className="place-info-subtitle">About the place</h5>
-      <h1 className="place-info-title">{title}</h1>
+      <div className="place-info-header">
+        <div className="place-info-header-content">
+          <h5 className="place-info-subtitle"> About the place</h5>
+          <h1 className="place-info-title">{title}</h1>
+        </div>
+      </div>
 
       <div className="place-info-content">
         <div className="place-info-image-container">

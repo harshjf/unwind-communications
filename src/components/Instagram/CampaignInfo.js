@@ -1,7 +1,7 @@
 import React from "react";
 
 const CampaignInfo = ({ testimonial }) => {
-  const { title, marketingContent } = testimonial;
+  const { title, marketingContent, youTubeLink } = testimonial;
 
   return (
     <div
@@ -18,7 +18,7 @@ const CampaignInfo = ({ testimonial }) => {
       <h1
         style={{
           fontSize: "30px",
-          color: "#041d33",
+          color: "#973d5d",
           marginBottom: "30px",
           textAlign: "left",
           marginLeft: "30px",
@@ -37,6 +37,18 @@ const CampaignInfo = ({ testimonial }) => {
         }}
       >
         {marketingContent}
+        <br />
+        <br />
+        <div>
+          <a
+            href={youTubeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "underline" }}
+          >
+            Watch Video
+          </a>
+        </div>
       </p>
     </div>
   );

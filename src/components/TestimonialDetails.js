@@ -90,20 +90,35 @@ const TestimonialDetails = () => {
         </div> */}
 
         <div className="stats-box-container">
-          <h2 className="stats-heading">Campaign Impact</h2>
+          <h2
+            className="stats-heading"
+            style={{ paddingTop: "20px", marginBottom: "10px" }}
+          >
+            Campaign Impact
+          </h2>
           <div className="stats-row">
             <div className="stat-item">
-              <FaDollarSign className="stat-icon" /> Revenue Increased:{" "}
-              <b>25%</b>
+              <FaDollarSign
+                className="stat-icon"
+                style={{
+                  fontSize: "18px",
+                }}
+              />{" "}
+              Revenue Increased: <b>25%</b>
             </div>
             <div className="stat-item">
-              <FaChartLine className="stat-icon" /> Bookings Increased:{" "}
-              <b>82%</b>
+              <FaChartLine
+                className="stat-icon"
+                style={{
+                  fontSize: "18px",
+                }}
+              />{" "}
+              Bookings Increased: <b>82%</b>
             </div>
           </div>
 
-          <div className="youtube-stats">
-            <p>
+          <div className="youtube-stats" style={{ marginTop: "40px" }}>
+            <p style={{ fontSize: "19px" }}>
               <b>Performance Highlights</b>
             </p>
           </div>
@@ -198,96 +213,56 @@ const TestimonialDetails = () => {
         <h1
           style={{
             fontSize: "30px",
-            color: "#041d33",
-
+            color: "#973d5d",
             textAlign: "left",
             marginLeft: "30px",
           }}
         >
-          Testimonials
+          Testimonial
         </h1>
-        <div className="container">
+
+        <motion.div
+          className="section-title"
+          data-aos="fade-up"
+          data-aos-delay="100"
+          data-aos-duration="800"
+          data-aos-once="true"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        ></motion.div>
+
+        <motion.div
+          className="row"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={stagger}
+          style={{
+            display: "flex",
+            justifyContent: "left",
+            alignItems: "left",
+          }}
+        >
           <motion.div
-            className="section-title"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            data-aos-duration="800"
-            data-aos-once="true"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
+            className="col-lg-12 col-md-12"
             variants={fadeInUp}
+            whileHover={{ scale: 1.05 }}
           >
-            {/*  <p>
-              Testimonials by chomu palace on increase in sales after grand
-              visibility in ghoomar video across all media platforms,
-              promotions, lead generation campaigns by Shefali Saxena and her
-              team.
-            </p> */}
-          </motion.div>
-
-          <motion.div
-            className="row"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={stagger}
-          >
-            <motion.div
-              className="col-lg-6 col-md-12"
-              variants={fadeInUp}
-              whileHover={{ scale: 1.05 }}
-            >
-              <div className="single-featured-videos-box">
-                <div className="videos-image">
-                  <Image
-                    src="/images/testimonials/1.jpg"
-                    alt="image"
-                    width={602}
-                    height={514}
-                  />
-                  <span className="icon">
-                    <i className="bx bx-video-recording"></i>
-                  </span>
-
-                  <div onClick={() => setOpen(true)} className="link-btn"></div>
-                </div>
-
-                <div className="videos-content">
-                  <h3
-                    onClick={() => setOpen(true)}
-                    style={{ cursor: "pointer" }}
-                  >
-                    Ghoomar | Shefali Saxena | Suhel Rais Khan | Chomu Palace |
-                    Royal Folk | Unwind Communications
-                  </h3>
-
-                  <ul className="videos-meta">
-                    <li>106K views</li>
-                  </ul>
-                </div>
+            <div className="single-featured-videos-box">
+              <div className="videos-image" style={{ cursor: "pointer" }}>
+                <Image
+                  src="/images/testimonials/2.png"
+                  alt="image"
+                  width={602}
+                  height={514}
+                  onClick={() => openImageModal("/images/testimonials/2.png")}
+                />
               </div>
-            </motion.div>
-
-            <motion.div
-              className="col-lg-6 col-md-12"
-              variants={fadeInUp}
-              whileHover={{ scale: 1.05 }}
-            >
-              <div className="single-featured-videos-box">
-                <div className="videos-image" style={{ cursor: "pointer" }}>
-                  <Image
-                    src="/images/testimonials/2.png"
-                    alt="image"
-                    width={602}
-                    height={514}
-                    onClick={() => openImageModal("/images/testimonials/2.png")}
-                  />
-                </div>
-              </div>
-            </motion.div>
+            </div>
           </motion.div>
-        </div>
+        </motion.div>
       </section>
     </>
   );

@@ -8,7 +8,6 @@ import { testimonials } from "../../../../lib/data";
 const TestimonialPage = ({ params }) => {
   const { name } = params;
 
-  console.log("NAME", name);
   const testimonialDetails = testimonials.find((item) => item.name === name);
 
   if (!testimonialDetails) {
