@@ -16,11 +16,17 @@ import Solution from "../components/Instagram/Solution";
 import Testimonials from "@/components/Instagram/Testimonials";
 import WhyWe from "@/components/Instagram/WhyWe";
 import ProblemProcessSolution from "@/components/Instagram/ProblemProcessSolution";
-
+import Banner2 from "@/components/Instagram/Banner2";
+import Section3 from "@/components/Instagram/Section3";
+import Section4 from "@/components/Instagram/Section4";
+import VideoSection from "@/components/Instagram/VideoSection";
+import RadioInterviews from "@/components/Instagram/RadioInterviews";
 export default function Home() {
   return (
     <>
       <Navbar />
+
+      <Banner2 />
 
       <Banner />
 
@@ -28,13 +34,21 @@ export default function Home() {
 
       <VideoArea />
 
+      <Section3 />
+
+      <Section4 />
+
       <Services />
 
       <ProblemProcessSolution />
 
       <Testimonials />
 
-      <InstagramAudience />
+      <RadioInterviews />
+
+      <VideoSection />
+
+      {/* <InstagramAudience /> */}
 
       <WhyWe />
 

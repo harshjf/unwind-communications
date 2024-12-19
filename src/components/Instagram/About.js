@@ -7,7 +7,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <>
-      <section id="whatwedo" className="about-area pt-70">
+      <section id="about" className="about-area pt-70 pb-70">
         <div className="container-fluid">
           <div className="row align-items-center">
             <div
@@ -36,14 +36,12 @@ const About = () => {
               data-aos-once="true"
             >
               <div className="about-content">
-                <h2 style={{ color: "#041d33" }}>
-                  Bringing India&#39;s beauty to the world, one story at a time.
-                </h2>
+                <h2 style={{ color: "#041d33" }}>About Us</h2>
 
                 <p>
-                  At Unwind Communications, we bring India’s most stunning
-                  destinations and venues to life on streaming platforms,
-                  creating a visual experience that resonates worldwide.
+                  At Unwind Communications, we bring most stunning destinations
+                  and venues to life on streaming platforms, creating a visual
+                  experience that resonates worldwide.
                 </p>
                 <p>
                   Our expertise extends beyond the initial presentation. We

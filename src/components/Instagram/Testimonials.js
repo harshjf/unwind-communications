@@ -37,7 +37,7 @@ const Testimonials = () => {
         channel="youtube"
         youtube={{ mute: 0, autoplay: 0 }}
         isOpen={isOpen}
-        videoId="mwEZkRvjRC8"
+        videoId="sFfnxFmCLgA"
         onClose={() => setOpen(false)}
       />
 
@@ -99,7 +99,7 @@ const Testimonials = () => {
       </Modal>
 
       <section
-        id="testimonials"
+        id="casestudy"
         className="featured-videos-area pt-16"
         style={{
           marginTop: "20px",
@@ -119,12 +119,14 @@ const Testimonials = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2 style={{ color: "#041d33" }}>Testimonials</h2>
+            <h2 style={{ color: "#041d33" }}>Case Study</h2>
             <p>
-              Testimonials by chomu palace on increase in sales after grand
-              visibility in ghoomar video across all media platforms,
-              promotions, lead generation campaigns by Shefali Saxena and her
-              team.
+              Chomu Palace faced challenges in reaching its target audience
+              effectively. Through a comprehensive media strategy including the
+              Ghoomar video campaign, Shefali Saxena and her team increased
+              visibility across all platforms. This resulted in a significant
+              boost in sales, with targeted promotions and lead generation
+              campaigns driving customer engagement.
             </p>
           </motion.div>
 
@@ -143,10 +145,11 @@ const Testimonials = () => {
               <div className="single-featured-videos-box">
                 <div className="videos-image">
                   <Image
-                    src="/images/testimonials/1.jpg"
+                    src="/images/testimonials/1.png"
                     alt="image"
                     width={602}
                     height={514}
+                    style={{ height: "600px" }}
                   />
                   <span className="icon">
                     <i className="bx bx-video-recording"></i>
@@ -189,13 +192,13 @@ const Testimonials = () => {
               </div>
             </motion.div>
           </motion.div>
-          <div className="row">
+          {/* <div className="row">
             <div className="col-12 text-center mt-4">
               <Link href="/testimonials" className="custom-link">
                 View More Testimonials
               </Link>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

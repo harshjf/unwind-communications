@@ -43,7 +43,7 @@ const Solution = () => {
             </p>
           </div>
           <div className="hero-date">
-            <p style={{ fontSize: "15px" }}>
+            <p>
               High-quality musical videos and vlogs that capture the venue&39;s
               culture, ambiance, and story with bespoke music and visuals.
             </p>
@@ -55,6 +55,7 @@ const Solution = () => {
             src="/images/solution/2.png"
             className="hero-profile-img"
             alt="Profile 2"
+            style={{ objectFit: "contain" }}
             width={750}
             height={500}
           />
@@ -66,7 +67,7 @@ const Solution = () => {
             </p>
           </div>
           <div className="hero-date">
-            <p style={{ fontSize: "15px" }}>
+            <p>
               Amplifying reach through media platforms, influencers, and social
               channels, ensuring standout visibility in a crowded market.
             </p>
@@ -89,7 +90,7 @@ const Solution = () => {
             </p>
           </div>
           <div className="hero-date">
-            <p style={{ fontSize: "15px" }}>
+            <p>
               Creative blogs, social media content, and SEO strategies connect
               venues to global audiences, driving discovery and engagement.
             </p>

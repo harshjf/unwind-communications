@@ -15,7 +15,7 @@ const AnimatedText = ({ text, delay = 0, className = "" }) => {
       opacity: 1,
       transition: {
         delay,
-        staggerChildren: 0.05, // Delay between each letter
+        staggerChildren: 0.05,
       },
     },
   };

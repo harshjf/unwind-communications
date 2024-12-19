@@ -124,11 +124,20 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <Link
-                  href="/#whatwedo"
+                  href="/#about"
                   onClick={toggleNavbar}
                   className="nav-link"
                 >
                   About
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  href="/#recognition"
+                  onClick={toggleNavbar}
+                  className="nav-link"
+                >
+                  Recognition
                 </Link>
               </li>
 
@@ -144,15 +153,35 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <Link
-                  href="/#testimonials"
+                  href="/#challenge"
                   onClick={toggleNavbar}
                   className="nav-link"
                 >
-                  Testimonials
+                  Tacklling the Challenge
                 </Link>
               </li>
 
               <li className="nav-item">
+                <Link
+                  href="/#casestudy"
+                  onClick={toggleNavbar}
+                  className="nav-link"
+                >
+                  Case Study
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link
+                  href="/#interviews"
+                  onClick={toggleNavbar}
+                  className="nav-link"
+                >
+                  Interviews
+                </Link>
+              </li>
+
+              {/* <li className="nav-item">
                 <Link
                   href="/#highlights"
                   onClick={toggleNavbar}
@@ -161,7 +190,7 @@ const Navbar = () => {
                   Highlights
                 </Link>
               </li>
-
+ */}
               {/* <li className="nav-item">
                 <Link href="/#blog" onClick={toggleNavbar} className="nav-link">
                   Blog

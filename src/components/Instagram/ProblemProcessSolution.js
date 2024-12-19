@@ -16,6 +16,7 @@ const ProblemProcessSolution = () => {
           marginBottom: "20px",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         }}
+        id="challenge"
       >
         <h1
           style={{

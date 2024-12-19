@@ -11,6 +11,18 @@
   border-radius: 5px;
   overflow: visible;
 }
+[data-aos="pop-right"] {
+  transform: translateX(100%);
+}
+
+[data-aos="pop-right"].aos-animate {
+  transform: translateX(0);
+}
+
+[data-aos="pop-right"] {
+  transition: transform 0.8s ease-out;
+}
+
 .cover-image {
   width: 100%;
   height: auto; /* Automatically adjust height based on aspect ratio */
@@ -50,20 +62,32 @@
 }
 
 .main-banner {
-  padding-top: 80px;
   overflow: hidden;
   height: auto; /* Adjusted for flexibility */
 }
 
 .main-banner-content h1 {
   margin-bottom: 15px;
-  font-size: 60px;
   font-weight: 700;
 }
-.main-banner-content p {
-  margin-bottom: 25px;
+.main-banner .founder {
+  font-size: 30px;
+  color: #041d33;
+}
+.main-banner .shefali {
+  font-size: 50px;
+  color: #973d5d;
+  margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 767px) {
+  .main-banner {
+    padding-top: 0px;
+  }
+  .image-banner-container {
+    margin-top: 0px !important;
+  }
+}
 @media only screen and (max-width: 768px) {
   /* Ensure content stacks properly */
   .mobile-image-container {
@@ -84,5 +108,90 @@
 
   .col-lg-7 {
     padding-top: 20px; /* Reduced padding for mobile */
+  }
+}
+
+.custom-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 20px 0;
+}
+
+.custom-list li {
+  margin-bottom: 12px;
+}
+
+.custom-list li b {
+  color: #333;
+  font-weight: 700;
+}
+
+.custom-list li::before {
+  content: "•";
+  color: #011933;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.custom-list li {
+  display: flex;
+  flex-wrap: wrap;
+}
+.custom-list p {
+  text-align: justify;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1350px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .custom-list {
+    font-size: 18px;
+  }
+
+  .custom-list li {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .custom-list {
+    font-size: 16px;
+  }
+
+  .custom-list li {
+    margin-bottom: 8px;
+  }
+
+  .custom-list li b {
+    font-size: 14px;
+  }
+
+  .custom-list li::before {
+    margin-right: 8px;
+  }
+}
+
+.image-banner-container {
+  margin-top: 150px;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1350px;
   }
 }
