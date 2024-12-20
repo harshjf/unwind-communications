@@ -1,14 +1,23 @@
 "use client";
-import React from "react";
-import Image from "next/image";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Banner2 = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2500, // Animation duration
+      once: false, // Allow the animation to re-trigger
+      mirror: true, // Re-trigger animations when scrolling back up
+    });
+  }, []);
+
   return (
     <>
       <div className="banner-container">
         <div className="container-image">
           <div className="arrow-icon">
-            <Image
+            <img
               src="/images/down-arrow.png"
               alt="Down Arrow"
               width={50}
@@ -25,7 +34,7 @@ const Banner2 = () => {
               alt="Background"
             />
             <div className="rotating-image-container">
-              <Image
+              <img
                 src="/images/heading.png"
                 alt="Heading Image"
                 width={200}
@@ -52,8 +61,18 @@ const Banner2 = () => {
           </div>
         </div>
         <div className="banner-text-container">
-          <h1 className="banner-one__title-one">Unwind Communication</h1>
-          <p className="banner-description">
+          <h1
+            className="banner-one__title-one"
+            data-aos="fade-right"
+            data-aos-once="false"
+          >
+            Unwind Communication
+          </h1>
+          <p
+            className="banner-description"
+            data-aos="fade-up"
+            data-aos-once="false"
+          >
             We bring India's most captivating destinations and venues to life on
             digital platforms, creating a visual journey that resonates across
             the globe. At UNWIND COMMUNICATIONS, we redefine experiential

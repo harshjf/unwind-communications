@@ -4632,12 +4632,11 @@ Join Area CSS
   visibility: visible;
   animation: slideInRight 2.5s ease-out, scaleIn 1.2s ease-in-out forwards,
     colorChange 5s infinite alternate;
-
   transform: scale(0);
   opacity: 0;
 }
 
-@keyframes slideInRight {
+/* @keyframes slideInRight {
   0% {
     transform: translate3d(100%, 0, 0);
     visibility: visible;
@@ -4646,6 +4645,7 @@ Join Area CSS
     transform: translate3d(0, 0, 0);
   }
 }
+
 @keyframes scaleIn {
   0% {
     transform: scale(0);
@@ -4659,7 +4659,7 @@ Join Area CSS
     transform: scale(1);
     opacity: 1;
   }
-}
+}*/
 
 @keyframes colorChange {
   0% {
