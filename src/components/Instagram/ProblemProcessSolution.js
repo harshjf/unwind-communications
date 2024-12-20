@@ -7,7 +7,7 @@ const ProblemProcessSolution = () => {
   return (
     <>
       <div
-        style={{
+        /* style={{
           border: "1px solid rgba(0, 0, 0, 0.2)",
           marginLeft: "30px",
           marginRight: "30px",
@@ -15,7 +15,8 @@ const ProblemProcessSolution = () => {
           padding: "20px",
           marginBottom: "20px",
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-        }}
+        }} */
+        className="challenge"
         id="challenge"
       >
         <h1

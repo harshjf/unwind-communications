@@ -44,7 +44,7 @@ const VideoArea = () => {
                   <li>Driving Tourism Growth,</li>
                   <li>Empowering Local Economies,</li>
                   <li>
-                    Positioning India's heritage as a cornerstone of global
+                    Positioning India&apos;s heritage as a cornerstone of global
                     travel experiences.
                   </li>
                 </ul>
@@ -57,6 +57,7 @@ const VideoArea = () => {
               data-aos-delay="200"
               data-aos-duration="800"
               data-aos-once="true"
+              style={{ textAlign: "center" }}
             >
               <div className="video-image">
                 <Image

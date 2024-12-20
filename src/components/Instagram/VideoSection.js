@@ -41,16 +41,22 @@ const VideoSection = () => {
                       >
                         <div className="team-one__img-box">
                           <div className="team-one__img">
-                            <img
-                              loading="lazy"
-                              decoding="async"
-                              width="320"
-                              height="373"
-                              src={video.imageUrl}
-                              alt={video.title}
-                            />
+                            <a
+                              href={video.videoUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <img
+                                loading="lazy"
+                                decoding="async"
+                                width="320"
+                                height="373"
+                                src={video.imageUrl}
+                                alt={video.title}
+                              />
+                            </a>
                           </div>
-                          <div className="team-one__share-btn">
+                          {/* <div className="team-one__share-btn">
                             <a
                               href={video.videoUrl}
                               target="_blank"
@@ -60,15 +66,15 @@ const VideoSection = () => {
                                 <i className="bx bx-video-recording"></i>
                               </span>
                             </a>
-                          </div>
+                          </div> */}
                         </div>
                         <div className="team-one__content">
                           <h3 className="team-one__title te-title">
                             <a href={video.videoUrl}>{video.title}</a>
                           </h3>
-                          <p className="team-one__sub-title te-designation">
+                          {/* <p className="team-one__sub-title te-designation">
                             {video.subtitle}
-                          </p>
+                          </p> */}
                         </div>
                       </div>
                     </div>
@@ -80,7 +86,7 @@ const VideoSection = () => {
         </div>
       </section>
       <section>
-        <div className="video-section">
+        <div className="video-section" style={{ paddingTop: "10px" }}>
           <div className="e-con-inner">
             <div className="widget-container">
               <div className="vitors-title-section">
@@ -118,7 +124,7 @@ const VideoSection = () => {
                               alt={video.title}
                             />
                           </div>
-                          <div className="team-one__share-btn">
+                          {/* <div className="team-one__share-btn">
                             <a
                               href={video.videoUrl}
                               target="_blank"
@@ -128,15 +134,15 @@ const VideoSection = () => {
                                 <i className="bx bx-video-recording"></i>
                               </span>
                             </a>
-                          </div>
+                          </div> */}
                         </div>
                         <div className="team-one__content">
                           <h3 className="team-one__title te-title">
                             <a href={video.videoUrl}>{video.title}</a>
                           </h3>
-                          <p className="team-one__sub-title te-designation">
+                          {/* <p className="team-one__sub-title te-designation">
                             {video.subtitle}
-                          </p>
+                          </p> */}
                         </div>
                       </div>
                     </div>

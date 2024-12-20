@@ -21,6 +21,7 @@ import Section3 from "@/components/Instagram/Section3";
 import Section4 from "@/components/Instagram/Section4";
 import VideoSection from "@/components/Instagram/VideoSection";
 import RadioInterviews from "@/components/Instagram/RadioInterviews";
+import Marquee from "@/components/Marquee";
 export default function Home() {
   return (
     <>
@@ -35,6 +36,8 @@ export default function Home() {
       <VideoArea />
 
       <Section3 />
+
+      <Marquee />
 
       <Section4 />
 

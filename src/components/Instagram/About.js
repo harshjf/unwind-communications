@@ -1,15 +1,30 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ModalForm from "../Common/Modal/ModalForm";
 import Image from "next/image";
 
 const About = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   return (
     <>
       <section id="about" className="about-area pt-70 pb-70">
         <div className="container-fluid">
           <div className="row align-items-center">
+            {isMobile && (
+              <h2 style={{ color: "#041d33", textAlign: "center" }}>
+                About Us
+              </h2>
+            )}
             <div
               className="col-lg-5 col-md-12"
               data-aos="fade-up"
@@ -24,6 +39,7 @@ const About = () => {
                   alt="image"
                   width={680}
                   height={558}
+                  style={{ height: "350px", width: "600px" }}
                 />
               </div>
             </div>
@@ -36,7 +52,7 @@ const About = () => {
               data-aos-once="true"
             >
               <div className="about-content">
-                <h2 style={{ color: "#041d33" }}>About Us</h2>
+                {!isMobile && <h2 style={{ color: "#041d33" }}>About Us</h2>}
 
                 <p>
                   At Unwind Communications, we bring most stunning destinations

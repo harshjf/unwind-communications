@@ -1,7 +1,18 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
 const Solution = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
   return (
     <div
       id="solution"
@@ -35,14 +46,28 @@ const Solution = () => {
             width={750}
             height={500}
           />
-          <div className="hero-description-bk"></div>
+          {!isMobile && (
+            <>
+              <div className="hero-description-bk"></div>
 
-          <div className="hero-description">
-            <p style={{ color: "#973d5d" }}>
-              Authentic Audio & Video Production
-            </p>
-          </div>
+              <div className="hero-description">
+                <p style={{ color: "#973d5d" }}>
+                  Authentic Audio & Video Production
+                </p>
+              </div>
+            </>
+          )}
+
           <div className="hero-date">
+            {isMobile && (
+              <h5
+                style={{
+                  fontSize: "14px",
+                }}
+              >
+                Authentic Audio & Video Production
+              </h5>
+            )}
             <p>
               High-quality musical videos and vlogs that capture the venue&39;s
               culture, ambiance, and story with bespoke music and visuals.
@@ -59,14 +84,28 @@ const Solution = () => {
             width={750}
             height={500}
           />
-          <div className="hero-description-bk"></div>
+          {!isMobile && (
+            <>
+              <div className="hero-description-bk"></div>
 
-          <div className="hero-description">
-            <p style={{ color: "#973d5d" }}>
-              Strategic Media PR & Digital Distribution
-            </p>
-          </div>
+              <div className="hero-description">
+                <p style={{ color: "#973d5d" }}>
+                  Strategic Media PR & Digital Distribution
+                </p>
+              </div>
+            </>
+          )}
           <div className="hero-date">
+            {isMobile && (
+              <h5
+                style={{
+                  fontSize: "14px",
+                }}
+              >
+                Strategic Media PR & Digital Distribution
+              </h5>
+            )}
+
             <p>
               Amplifying reach through media platforms, influencers, and social
               channels, ensuring standout visibility in a crowded market.
@@ -82,14 +121,28 @@ const Solution = () => {
             width={750}
             height={500}
           />
-          <div className="hero-description-bk"></div>
+          {!isMobile && (
+            <>
+              <div className="hero-description-bk"></div>
 
-          <div className="hero-description">
-            <p style={{ color: "#973d5d" }}>
-              Engaging Storytelling & Digital Marketing
-            </p>
-          </div>
+              <div className="hero-description">
+                <p style={{ color: "#973d5d" }}>
+                  Engaging Storytelling & Digital Marketing
+                </p>
+              </div>
+            </>
+          )}
           <div className="hero-date">
+            {isMobile && (
+              <h5
+                style={{
+                  fontSize: "14px",
+                }}
+              >
+                {" "}
+                Engaging Storytelling & Digital Marketing
+              </h5>
+            )}
             <p>
               Creative blogs, social media content, and SEO strategies connect
               venues to global audiences, driving discovery and engagement.

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import ModalVideo from "react-modal-video";
 import Link from "next/link";
@@ -9,10 +9,18 @@ import { motion } from "framer-motion";
 import "aos/dist/aos.css";
 
 const Testimonials = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
   const [isOpen, setOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
 
-  // Framer-motion variants
   const fadeInUp = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
@@ -58,7 +66,7 @@ const Testimonials = () => {
             background: "transparent",
             border: "none",
             overflow: "hidden",
-            height: "90%",
+            height: isMobile ? "auto" : "90%",
           },
         }}
       >
@@ -143,20 +151,57 @@ const Testimonials = () => {
               whileHover={{ scale: 1.05 }}
             >
               <div className="single-featured-videos-box">
-                <div className="videos-image">
+                {isMobile ? (
+                  <div className="videos-image">
+                    <Image
+                      src="/images/testimonials/1m.png"
+                      alt="image"
+                      width={602}
+                      height={514}
+                      style={{ height: "600px", width: "auto" }}
+                    />
+                    <span className="icon">
+                      <i className="bx bx-video-recording"></i>
+                    </span>
+
+                    <div
+                      onClick={() => setOpen(true)}
+                      className="link-btn"
+                    ></div>
+                  </div>
+                ) : (
+                  <div className="videos-image">
+                    <Image
+                      src="/images/testimonials/1.png"
+                      alt="image"
+                      width={602}
+                      height={514}
+                      style={{ height: "600px", width: "auto" }}
+                    />
+                    <span className="icon">
+                      <i className="bx bx-video-recording"></i>
+                    </span>
+
+                    <div
+                      onClick={() => setOpen(true)}
+                      className="link-btn"
+                    ></div>
+                  </div>
+                )}
+                {/*  <div className="videos-image">
                   <Image
                     src="/images/testimonials/1.png"
                     alt="image"
                     width={602}
                     height={514}
-                    style={{ height: "600px" }}
+                    style={{ height: "600px", width: "auto" }}
                   />
                   <span className="icon">
                     <i className="bx bx-video-recording"></i>
                   </span>
 
                   <div onClick={() => setOpen(true)} className="link-btn"></div>
-                </div>
+                </div> */}
 
                 <div className="videos-content">
                   <h3

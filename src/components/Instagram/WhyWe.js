@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 
 const WhyWe = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [alternate, setAlternate] = useState(false);
 
   useEffect(() => {
     // Check screen width to determine if it's mobile
@@ -16,6 +17,15 @@ const WhyWe = () => {
     return () => {
       window.removeEventListener("resize", updateScreenSize);
     };
+  }, []);
+
+  useEffect(() => {
+    // Toggle alternate animation every 3 seconds
+    const interval = setInterval(() => {
+      setAlternate((prev) => !prev);
+    }, 3000); // Adjust timing as needed
+
+    return () => clearInterval(interval); // Cleanup on component unmount
   }, []);
 
   return (
@@ -68,6 +78,15 @@ const WhyWe = () => {
               textAlign: "center",
               boxSizing: "border-box",
               padding: "10px",
+              // Apply alternate animation
+              transform: alternate
+                ? index === 1
+                  ? "translateY(-30px)" // Move 2 up
+                  : "translateY(30px)" // Move 1 and 3 down
+                : index === 1
+                ? "translateY(30px)" // Move 2 down
+                : "translateY(-30px)", // Move 1 and 3 up
+              transition: "transform 1s ease", // Smooth animation
             }}
           >
             <div className="content-wrapper">

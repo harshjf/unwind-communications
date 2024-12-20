@@ -38,7 +38,7 @@ const Section4 = () => {
                   agreements and business connectivity.
                 </p>
                 <p>
-                  Trusted by the Ministry of External Affairs: With her
+                  Trusted by the Ministry of External Affairs: with her
                   expertise in orchestrating protocol and special events,
                   Shefali Saxena continues to solidify her role as a trusted
                   professional for high-profile national and international

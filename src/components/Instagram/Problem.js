@@ -16,6 +16,7 @@ function Problem() {
                 alt="image"
                 width={750}
                 height={500}
+                style={{ border: "none" }}
               />
             </div>
           </div>

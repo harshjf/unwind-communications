@@ -29,7 +29,7 @@ const Banner2 = () => {
           {/* Image Container */}
           <div className="image-container">
             <img
-              src="/images/backgroundbanner.jpg"
+              src="/images/backgroundbanner.png"
               className="curved-image"
               alt="Background"
             />
@@ -72,10 +72,11 @@ const Banner2 = () => {
             className="banner-description"
             data-aos="fade-up"
             data-aos-once="false"
+            style={{ textAlign: "left" }}
           >
-            We bring India's most captivating destinations and venues to life on
-            digital platforms, creating a visual journey that resonates across
-            the globe. At UNWIND COMMUNICATIONS, we redefine experiential
+            We bring India&apos;s most captivating destinations and venues to
+            life on digital platforms, creating a visual journey that resonates
+            across the globe. At UNWIND COMMUNICATIONS, we redefine experiential
             marketing, led by the extraordinary AwardWinning ARTISTPRENEUR,
             Shefali Saxena, whose work has set new benchmarks in the industry.
           </p>

@@ -17,23 +17,35 @@ const Footer = () => {
             <div className="col-lg-6 col-md-6">
               <ul>
                 <li>
-                  <a href="https://instagram.com/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/shefalisaxenaofficial/#"
+                    target="_blank"
+                  >
                     <i className="bx bxl-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://facebook.com/" target="_blank">
-                    <i className="bx bxl-facebook"></i>
+                  <a
+                    href="https://www.youtube.com/shefalisaxena"
+                    target="_blank"
+                  >
+                    <i className="bx bxl-youtube"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/" target="_blank">
-                    <i className="bx bxl-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://linkedin.com/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/shefalisaxenaofficial/"
+                    target="_blank"
+                  >
                     <i className="bx bxl-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/shefalisaxenaofficial"
+                    target="_blank"
+                  >
+                    <i className="bx bxl-facebook"></i>
                   </a>
                 </li>
               </ul>
