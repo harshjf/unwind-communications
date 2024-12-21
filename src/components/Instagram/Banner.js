@@ -78,7 +78,8 @@ const Banner = () => {
                       <li>
                         <b>Recognized Talent:</b>
                         <p>
-                          Honored as Artist of the Week by BIG FM and MX Player
+                          TOI Headliner, Honored as Artist of the Week by RED
+                          FM, BIG FM, MX Player and leading media publications
                           for groundbreaking contributions to the creative arts.
                         </p>
                       </li>
@@ -87,7 +88,7 @@ const Banner = () => {
                         <p>
                           Produced 14 music videos, delivered over 1,200 live
                           performances, and collaborated with ministries and
-                          leading corporate entities.
+                          corporate entities.
                         </p>
                       </li>
                     </ul>
