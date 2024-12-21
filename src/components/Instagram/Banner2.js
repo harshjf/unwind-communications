@@ -35,7 +35,7 @@ const Banner2 = () => {
             />
             <div className="rotating-image-container">
               <img
-                src="/images/heading.png"
+                src="/images/Heading.png"
                 alt="Heading Image"
                 width={200}
                 height={200}
