@@ -37,7 +37,10 @@ const RadioInterviews = () => {
 
   return (
     <section id="interviews" className="radio-interviews-container">
-      <h1 className="radio-interviews-title">INTERVIEWS</h1>
+      <h1 className="radio-interviews-title">
+        <span style={{ color: "#B22222" }}>Radio</span> Interviews
+      </h1>
+
       <div className="interviews-grid">
         {interviews.map((item) => (
           <div

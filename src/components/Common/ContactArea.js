@@ -11,7 +11,7 @@ const ContactArea = () => {
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-12">
               <div className="subscribe-content">
-                <h2>Join with me</h2>
+                <h2>Let us collaborate</h2>
                 {/*  <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore.
@@ -21,8 +21,11 @@ const ContactArea = () => {
                   {/* ModalForm */}
                   <ModalForm />
 
-                  <a href="mailto:hello@alikamaya.com" className="email">
-                    hello@unwindcommunication.com
+                  <a
+                    href="mailto:info@unwindcommunications.com"
+                    className="email"
+                  >
+                    info@unwindcommunications.com
                   </a>
                 </div>
               </div>
@@ -55,7 +58,7 @@ const ContactArea = () => {
                     />
                   </div>
 
-                  <button type="submit">Join with me now</button>
+                  <button type="submit">Collaborate now</button>
                 </form>
               </div>
             </div>

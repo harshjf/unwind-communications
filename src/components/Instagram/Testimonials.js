@@ -208,13 +208,12 @@ const Testimonials = () => {
                     onClick={() => setOpen(true)}
                     style={{ cursor: "pointer" }}
                   >
-                    Ghoomar | Shefali Saxena | Suhel Rais Khan | Chomu Palace |
-                    Royal Folk | Unwind Communications
+                    Testimonial By C.P. Rathore, GM, Chomu Palace
                   </h3>
 
-                  <ul className="videos-meta">
+                  {/* <ul className="videos-meta">
                     <li>106K views</li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>
             </motion.div>

@@ -69,8 +69,9 @@ const Solution = () => {
               </h5>
             )}
             <p>
-              High-quality musical videos and vlogs that capture the venue&39;s
-              culture, ambiance, and story with bespoke music and visuals.
+              High-quality musical videos and vlogs that capture the
+              venue&apos;s culture, ambiance, and story with bespoke music and
+              visuals.
             </p>
           </div>
         </div>

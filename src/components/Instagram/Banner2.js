@@ -29,7 +29,7 @@ const Banner2 = () => {
           {/* Image Container */}
           <div className="image-container">
             <img
-              src="/images/backgroundbanner.png"
+              src="/images/backgroundbanner.jpg"
               className="curved-image"
               alt="Background"
             />
@@ -77,7 +77,7 @@ const Banner2 = () => {
             We bring India&apos;s most captivating destinations and venues to
             life on digital platforms, creating a visual journey that resonates
             across the globe. At UNWIND COMMUNICATIONS, we redefine experiential
-            marketing, led by the extraordinary AwardWinning ARTISTPRENEUR,
+            marketing, led by the extraordinary Award Winning ARTISTPRENEUR,
             Shefali Saxena, whose work has set new benchmarks in the industry.
           </p>
         </div>

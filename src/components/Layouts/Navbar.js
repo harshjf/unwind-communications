@@ -157,7 +157,7 @@ const Navbar = () => {
                   onClick={toggleNavbar}
                   className="nav-link"
                 >
-                  Tacklling the Challenge
+                  Tackling the Challenge
                 </Link>
               </li>
 
@@ -177,7 +177,7 @@ const Navbar = () => {
                   onClick={toggleNavbar}
                   className="nav-link"
                 >
-                  Interviews
+                  Radio Interviews
                 </Link>
               </li>
 

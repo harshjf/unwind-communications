@@ -9,7 +9,7 @@ const JoinWithMe = () => {
       <section id="contact" className="join-area">
         <div className="container">
           <div className="join-content">
-            <h2>Join With Me</h2>
+            <h2>Let us collaborate</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore.

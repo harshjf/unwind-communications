@@ -80,13 +80,13 @@ const About = () => {
                   narratives that open up new realms of opportunity
                 </p>
 
-                <div className="btn-box">
-                  <ModalForm />
+                {/* <div className="btn-box"> */}
+                {/* <ModalForm /> */}
 
-                  <a href="mailto:hello@alikamaya.com" className="email">
-                    hello@unwindcommunication.com
-                  </a>
-                </div>
+                {/* <a href="mailto:hello@alikamaya.com" className="email"> */}
+                {/* hello@unwindcommunication.com */}
+                {/* </a> */}
+                {/* </div> */}
               </div>
             </div>
           </div>
