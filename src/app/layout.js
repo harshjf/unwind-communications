@@ -32,7 +32,7 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "Unwind Communication",
+  title: "Unwind Communications",
   description: "",
 };
 

@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-md-6">
-              <p>Copyright &copy;{currentYear} Unwind Communication.</p>
+              <p>Copyright &copy;{currentYear} Unwind Communications.</p>
             </div>
 
             <div className="col-lg-6 col-md-6">
