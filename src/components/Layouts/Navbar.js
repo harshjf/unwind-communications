@@ -92,7 +92,7 @@ const Navbar = () => {
                 Unwind
               </span>
               <span style={{ fontSize: "18px", fontWeight: "400" }}>
-                Communication
+                Communications
               </span>
             </div>
           </Link>
