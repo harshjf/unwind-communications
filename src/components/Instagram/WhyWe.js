@@ -44,7 +44,8 @@ const WhyWe = () => {
           <h2 style={{ color: "#041d33" }}>Why Us?</h2>
           <p>
             Unwind Communications operates in a highly niche market, focusing on
-            destination and venue promotion through musical videos and vlogs.
+            destination and venue promotion through bespoke musical videos and
+            story telling vlogs showcasing its cultural aesthetics.
           </p>
           <p>
             While there are no direct competitors offering the same combination

@@ -24,12 +24,12 @@ const ProblemProcessSolution = () => {
             textAlign: "center",
             marginTop: "30px",
             marginBottom: "20px",
-            color: "rgb(151, 61, 93)",
-            fontSize: "30px",
+            color: "#973d5d",
+            fontSize: "36px",
+            fontWeight: "700",
           }}
         >
-          {" "}
-          How We Tackle the Challenge{" "}
+          How We Tackle the Challenge
         </h1>
 
         <Problem />

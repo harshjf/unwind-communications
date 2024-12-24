@@ -22,17 +22,21 @@ function Problem() {
           </div>
           <div className="col-lg-6 col-md-12">
             <div className="video-content">
-              <h2 style={{ color: "#041d33" }}>The Challenge</h2>
+              <h2 style={{ color: "#041d33" }}>The Problem We Solve</h2>
               <p>
-                The tourism and event industry is evolving, yet culturally rich
-                destinations and venues remain underrepresented in the digital
-                landscape.
+                The tourism, wedding, MICE and event industry is evolving, yet{" "}
+                <b>culturally rich destinations</b> and{" "}
+                <b>venues remain underrepresented</b> in the digital landscape
               </p>
               <p>
-                Without engaging, high-quality audio-visual content, they fail
-                to connect with global audiences and stand out in a saturated
-                tourism market dominated by social media and experiential
-                storytelling.
+                Without{" "}
+                <b>
+                  engaging, high-quality audio-visual content and targeted
+                  promotions
+                </b>
+                , they fail to connect with global audiences and stand out in a
+                saturated tourism market dominated by{" "}
+                <b>social media and experiential storytelling</b>.
               </p>
             </div>
           </div>

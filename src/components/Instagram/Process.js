@@ -47,8 +47,9 @@ function Process() {
         >
           <h2 style={{ color: "#041d33" }}>Execution Plan</h2>
           <p>
-            The execution plan calls for 35 to 40 posts each quarter, alongside
-            the creation of 20 to 25 videos for platforms like YouTube and Reels
+            The execution plan calls for <b>35 to 40 posts each quarter</b>,
+            alongside the creation of <b>20 to 25 videos</b> for platforms like
+            YouTube and other Digital Channels apart from Reels for Social Media
             within the same period.
           </p>
         </div>

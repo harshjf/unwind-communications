@@ -27,10 +27,10 @@ const Solution = () => {
           data-aos-duration="800"
           data-aos-once="true"
         >
-          <h2 style={{ color: "#041d33" }}>The Solution</h2>
+          <h2 style={{ color: "#041d33" }}>Solution To The Problem</h2>
           <p>
             Unwind Communications transforms underrepresented destinations into
-            sought-after experiences by combining creativity, cultural
+            sought-after experiences by combining unique creativity, cultural
             authenticity, and strategic marketing, ensuring maximum visibility
             and engagement.
           </p>
@@ -108,8 +108,9 @@ const Solution = () => {
             )}
 
             <p>
-              Amplifying reach through media platforms, influencers, and social
-              channels, ensuring standout visibility in a crowded market.
+              Amplifying reach through media & electronic publications &
+              distributing on streaming platforms for the organic reach &
+              visibility.
             </p>
           </div>
         </div>
@@ -145,8 +146,9 @@ const Solution = () => {
               </h5>
             )}
             <p>
-              Creative blogs, social media content, and SEO strategies connect
-              venues to global audiences, driving discovery and engagement.
+              Creative blogs, social media content, influencer programs & SEO
+              strategies connect venues to global audiences, driving discoved
+              engagement.
             </p>
           </div>
         </div>

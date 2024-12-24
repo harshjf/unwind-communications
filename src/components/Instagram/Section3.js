@@ -43,16 +43,18 @@ const Section3 = () => {
           data-aos-duration="800"
         >
           <h3 className="section3-subtitle">
-            Empowering PM Modi&apos;s Vision For भारत As a Leading Global
-            Destination
+            Empowering{" "}
+            <span style={{ color: "#973d5d" }}>PM Modi&apos;s Vision</span> For{" "}
+            <span style={{ color: "#973d5d" }}>भारत</span> As a{" "}
+            <span style={{ color: "#973d5d" }}>Leading Global Destination</span>
           </h3>
           <p>
-            Our Respected Prime Minister, Shri Narendra Modi Ji, envisions
-            Bharat as a Leading Global Destination for Wedding and MICE Tourism,
-            showcasing India’s Vibrancy, Grandeur, and Cultural Magnificence as
-            the ultimate destination to explore. Shefali is deeply committed to
-            bringing this vision to life, transforming PM Modi Ji’s dream into a
-            remarkable reality!
+            Our Respected Prime Minister, Shri Narendra Modi Ji, envisions{" "}
+            <b>Bharat</b> as a <b>Leading Global Destination</b> for Wedding and
+            MICE Tourism, showcasing India’s Vibrancy, Grandeur, and Cultural
+            Magnificence as the ultimate destination to explore. Shefali is
+            deeply committed to bringing this vision to life, transforming{" "}
+            <b>PM Modi Ji’s dream into a remarkable reality!</b>
           </p>
         </div>
         {isMobile && (
@@ -78,13 +80,18 @@ const Section3 = () => {
           data-aos="fade-right"
           data-aos-duration="800"
         >
-          <h3 className="section3-subtitle">Award for Excellence</h3>
+          <h3 className="section3-subtitle">
+            Shefali&apos;s <span style={{ color: "#973d5d" }}>Recognition</span>{" "}
+            And <span style={{ color: "#973d5d" }}>Achievements</span>
+          </h3>
           <p>
-            Shefali is awarded as a POWER WOMAN by renowned lyricist and
-            screenwriter, Javed Akhtar Sahab with a dedicated poetry in his
-            handwriting for her Incredible work in Ghoomar - A Royal Folk as a
-            Singer, Performer, Director and Producer! This award is powered by
-            IPRS, Dolby and Hungama.
+            Shefali Saxena is awarded as a <b>POWER WOMAN</b> by renowned
+            lyricist & screenwriter, <b>Javed Akhtar Sahab</b> with a dedicated
+            poetry in his handwriting for her Incredible works in{" "}
+            <b>Ghoomar - A Royal Folk</b> as a Featured Artist, Singer, Director
+            & Producer, supporting folk musicians!
+            <br />
+            <b>This award is powered by IPRS, Dolby & Hungama.</b>
           </p>
         </div>
         <div

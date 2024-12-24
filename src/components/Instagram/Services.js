@@ -21,6 +21,7 @@ const Services = () => {
                 fontSize: "36px",
                 fontWeight: "700",
                 textAlign: "center",
+                // color: "#973d5d",
               }}
             >
               Services we offer

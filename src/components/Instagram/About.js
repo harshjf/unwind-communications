@@ -21,7 +21,12 @@ const About = () => {
         <div className="container-fluid">
           <div className="row align-items-center">
             {isMobile && (
-              <h2 style={{ color: "#041d33", textAlign: "center" }}>
+              <h2
+                style={{
+                  color: "#973d5d",
+                  textAlign: "center",
+                }}
+              >
                 About Us
               </h2>
             )}
@@ -52,15 +57,18 @@ const About = () => {
               data-aos-once="true"
             >
               <div className="about-content">
-                {!isMobile && <h2 style={{ color: "#041d33" }}>About Us</h2>}
+                {!isMobile && <h2 style={{ color: "#973d5d" }}>About Us</h2>}
 
                 <p>
-                  At Unwind Communications, we bring most stunning destinations
-                  and venues to life on streaming platforms, creating a visual
-                  experience that resonates worldwide.
+                  At <b>Unwind Communications</b>, we bring{" "}
+                  <b>
+                    most stunning destinations and venues to life on streaming
+                    platforms
+                  </b>
+                  , creating a visual experience that resonates worldwide.
                 </p>
                 <p>
-                  Our expertise extends beyond the initial presentation. We
+                  Our expertise extends beyond the initial global reach. We
                   amplify your story through:
                   <ul>
                     <li>
@@ -75,9 +83,11 @@ const About = () => {
                   </ul>
                 </p>
                 <p>
-                  within the <b>MICE, Travel </b> and <b>Wedding Industries.</b>{" "}
-                  We don’t just enhance brand visibility; we forge powerful
-                  narratives that open up new realms of opportunity
+                  within the <b>MICE, Travel, Event </b> and{" "}
+                  <b>Wedding Industries.</b> We don’t just enhance brand
+                  visibility; we forge powerful narratives through Vlogs that
+                  open up new realms of opportunity{" "}
+                  <b>for B2B opportunities & conversions</b>.
                 </p>
 
                 {/* <div className="btn-box"> */}
