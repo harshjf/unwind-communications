@@ -6,7 +6,7 @@ import "../../node_modules/react-modal-video/css/modal-video.min.css";
 import "../../styles/style.css";
 import "../../styles/responsive.css";
 
-import { Work_Sans, Poppins, Roboto } from "next/font/google";
+import { Work_Sans, Poppins, Roboto, Open_Sans } from "next/font/google";
 import AosAnimation from "@/components/Layouts/AosAnimation";
 import GoTop from "@/components/Layouts/GoTop";
 
@@ -31,6 +31,13 @@ const roboto = Roboto({
   display: "swap",
 });
 
+const open_sans = Open_Sans({
+  weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-open-sans",
+  display: "swap",
+});
+
 export const metadata = {
   title: "Unwind Communications",
   description: "",
@@ -40,7 +47,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${work_sans.variable} ${poppins.variable} ${roboto.variable}`}
+        className={`${work_sans.variable} ${poppins.variable} ${roboto.variable} ${open_sans.variable}`}
       >
         {children}
 

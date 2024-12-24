@@ -35,7 +35,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 17px;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   overflow-x: hidden;
 }
 
@@ -71,7 +71,7 @@ h4,
 h5,
 h6 {
   color: #000000;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
 }
 
 p {
@@ -149,7 +149,7 @@ p:last-child {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   font-size: 17px;
   font-weight: 400;
 }
@@ -176,7 +176,7 @@ p:last-child {
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
 }
 .default-btn::before {
   content: "";
@@ -214,7 +214,7 @@ p:last-child {
   padding-left: 15px;
   padding-right: 0;
   font-size: 15px;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
 }
 .form-control::-moz-placeholder {
   color: #666666;
@@ -274,7 +274,7 @@ Navbar Area CSS
 }
 .navbar-light .navbar-nav {
   margin-left: auto;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
 }
 .navbar-light .navbar-nav .nav-item {
   padding-left: 15px;
@@ -404,7 +404,7 @@ Main Banner Area CSS
   border: none;
   padding-left: 15px;
   border-radius: 0 30px 0 0;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   font-size: 15px;
   font-weight: 400;
 }
@@ -436,7 +436,7 @@ Main Banner Area CSS
   border-radius: 0 30px 0 0;
   font-size: 15px;
   font-weight: 600;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
 }
 .main-banner-content form button::before {
   content: "";
@@ -678,7 +678,7 @@ About Area CSS
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   font-size: 17px;
   font-weight: 400;
 }
@@ -695,7 +695,7 @@ About Area CSS
   margin-left: 20px;
   position: relative;
   font-size: 16px;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   font-weight: 400;
 }
 .about-content .btn-box .email::before {
@@ -927,7 +927,7 @@ Audience Area CSS
   display: block;
   text-transform: uppercase;
   margin-bottom: 8px;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   font-size: 17px;
   font-weight: 400;
 }
@@ -1117,7 +1117,7 @@ Video Area CSS
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 8px;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   font-size: 17px;
   font-weight: 400;
 }
@@ -1142,7 +1142,7 @@ Video Area CSS
   cursor: pointer;
   font-size: 17px;
   font-weight: 600;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
 }
 .video-content .video-btn i {
   display: inline-block;
@@ -1411,7 +1411,7 @@ Blog Details Area CSS
   padding-left: 0;
   margin-bottom: 0;
   list-style-type: none;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
 }
 .blog-details-header .entry-meta ul li {
   margin-right: 20px;
@@ -1490,7 +1490,7 @@ Blog Details Area CSS
   padding-left: 17px;
   color: #666666;
   font-size: 15.5px;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
 }
 .blog-details-desc .article-content .features-list li::before {
   content: "";
@@ -1513,7 +1513,7 @@ Blog Details Area CSS
   flex-wrap: wrap;
   border-top: 1px solid #eeeeee;
   padding-top: 30px;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   margin-top: 30px;
 }
 .blog-details-desc .article-footer .article-tags {
@@ -1643,7 +1643,7 @@ blockquote p,
   margin-bottom: 0;
   font-style: italic;
   font-weight: 600;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   font-size: 20px !important;
 }
 blockquote cite,
@@ -1677,7 +1677,7 @@ blockquote::after,
 }
 
 .kreton-post-navigation {
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -1910,7 +1910,7 @@ blockquote::after,
   margin-bottom: 0.3em;
   position: relative;
   z-index: 2;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   font-size: 16px;
 }
 .comments-area .comment-author .avatar {
@@ -2179,7 +2179,7 @@ Subscribe Area CSS
   position: relative;
   color: #ffffff;
   font-size: 16px;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
   font-weight: 400;
 }
 .subscribe-content .btn-box .email::before {
@@ -2229,7 +2229,7 @@ Subscribe Area CSS
   padding: 11px 25px;
   font-size: 15px;
   font-weight: 600;
-  font-family: var(--font-poppins);
+  font-family: var(--font-open-sans);
 }
 .subscribe-form form button::before {
   content: "";
