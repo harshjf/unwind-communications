@@ -5537,3 +5537,104 @@ Join Area CSS
     margin: 0 10px;
   }
 }
+
+/* Define variables for common usage */
+:root {
+  --space: 1.75rem; /* Reduced space between images */
+  --font-family: "Corben", system-ui, sans-serif;
+  --font-size: 1.2rem;
+  --line-height: 1.5;
+  --duration: 10s; /* Duration of the animation */
+}
+
+/* Marquee component styles */
+.marquee {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--space);
+  background: linear-gradient(90deg, #973d5d, #e98da6);
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--space); /* Reduced gap between items */
+  min-width: 100%;
+  animation: scroll var(--duration) linear infinite;
+}
+
+/* Stop scrolling when hovered */
+.marquee:hover .marquee__group {
+  animation-play-state: paused;
+}
+
+.marquee__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem; /* Reduced gap between image and title */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.marquee__item img {
+  width: 525px;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.marquee__item p {
+  font-family: var(--font-open-sans);
+  font-size: 32px;
+  font-weight: 800;
+  color: #041d33;
+  margin-top: 0; /* Remove extra space from title */
+}
+
+/* Marquee with borders */
+.marquee--borders {
+  border-block: 3px solid dodgerblue;
+  padding-block: 0.75rem;
+}
+
+/* Marquee reverse animation */
+.marquee--reverse .marquee__group {
+  animation-delay: calc(var(--duration) / -2);
+}
+
+/* Keyframe for marquee scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Optional for reduced motion users */
+@media (prefers-reduced-motion: reduce) {
+  .marquee__group {
+    animation-play-state: paused;
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee__item img {
+    width: 225px;
+    height: 200px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee__item img {
+    width: 225px;
+    height: 200px;
+    object-fit: contain;
+  }
+}
