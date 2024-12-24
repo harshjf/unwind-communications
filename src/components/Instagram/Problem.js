@@ -10,7 +10,7 @@ function Problem() {
       <div className="container-fluid">
         <div className="row align-items-center">
           <div className="col-lg-6 col-md-12">
-            <div className="video-image">
+            <div className="video-image1" style={{ textAlign: "right" }}>
               <Image
                 src="/images/problem/problem1.gif"
                 alt="image"
@@ -21,7 +21,7 @@ function Problem() {
             </div>
           </div>
           <div className="col-lg-6 col-md-12">
-            <div className="video-content">
+            <div className="video-content" style={{ marginLeft: "16px" }}>
               <h2 style={{ color: "#041d33" }}>The Problem We Solve</h2>
               <p>
                 The tourism, wedding, MICE and event industry is evolving, yet{" "}

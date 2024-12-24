@@ -1190,7 +1190,27 @@ Video Area CSS
   margin-bottom: 10px;
   color: #333;
 }
-
+.video-image1 {
+  position: relative;
+  z-index: 1;
+  text-align: right;
+}
+.video-image1 img {
+  border: 2px solid #041d33;
+  width: 570px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.video-image1 .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
 .video-image {
   position: relative;
   z-index: 1;
@@ -1211,7 +1231,16 @@ Video Area CSS
   height: 100%;
   z-index: 1;
 }
-
+@media only screen and (max-width: 767px) {
+  .video-image1 {
+    /*  margin-top: 30px; */
+    text-align: center;
+  }
+  .video-image1 img {
+    width: 250px;
+    height: auto;
+  }
+}
 @media only screen and (max-width: 767px) {
   .video-image {
     margin-top: 30px;
@@ -5393,65 +5422,119 @@ Join Area CSS
 
 .marquee-section {
   position: relative;
-  padding: 42px 0;
-  border: 1px solid #973d5d;
+  padding: 15px 0;
+  background: linear-gradient(90deg, #973d5d, #e98da6);
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .marquee {
-  position: relative;
-  --duration: 30s;
-  --gap: 0px;
   display: flex;
   overflow: hidden;
-  -webkit-user-select: none;
-  -moz-user-select: none;
+  align-items: center;
   user-select: none;
-  gap: var(--gap);
+  position: relative;
+  --duration: 20s; /* Animation duration */
 }
+
 .marquee .marquee-group {
-  flex-shrink: 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  gap: var(--gap);
-  min-width: 100%;
+  justify-content: flex-start;
+  gap: 30px;
+  flex-shrink: 0; /* Prevents resizing of group */
   animation: scroll var(--duration) linear infinite;
+  white-space: nowrap;
 }
-.marquee .text {
-  position: relative;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 36px;
-  font-family: var(--title-font);
-  color: transparent;
-  padding: 0 80px;
-  text-transform: uppercase;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #973d5d;
+
+.marquee .marquee-group:nth-child(2) {
+  animation-delay: calc(var(--duration) / 2); /* Ensures staggered start */
 }
-.marquee .text:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -4px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: var(--theme-color1);
-  transform: translateY(-50%);
-}
-.marquee .dot {
-  width: 8px;
-  height: 8px;
-  background-color: #041d33;
-  border-radius: 50%;
-  display: inline-block;
-  margin: 0 20px; /* Adjust spacing around the dot */
-}
+
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
+  from {
+    transform: translateX(100%);
   }
-  100% {
-    transform: translateX(calc(-100% - var(--gap)));
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-section {
+  position: relative;
+  padding: 15px 0;
+  background: linear-gradient(90deg, #973d5d, #e98da6);
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  user-select: none;
+  position: relative;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  animation: scroll 10s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%); /* Only scroll half of the content width */
+  }
+}
+
+.marquee .text {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #f9e7e7, #ffd6da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.marquee .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 2px solid #973d5d;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .marquee .text {
+    font-size: 20px;
+  }
+  .marquee .dot {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-section {
+    padding: 10px 0;
+  }
+  .marquee .text {
+    font-size: 16px;
+  }
+  .marquee .dot {
+    margin: 0 10px;
   }
 }

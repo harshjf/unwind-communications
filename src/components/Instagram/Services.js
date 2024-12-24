@@ -1,13 +1,22 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { servicesData } from "../../../lib/data.js";
 
 const Services = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     AOS.init({ duration: 1000 });
+
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   return (
@@ -21,7 +30,6 @@ const Services = () => {
                 fontSize: "36px",
                 fontWeight: "700",
                 textAlign: "center",
-                // color: "#973d5d",
               }}
             >
               Services we offer
@@ -35,9 +43,12 @@ const Services = () => {
               {servicesData.map((service, index) => {
                 const rowIndex = Math.floor(index / 2);
                 const delay = rowIndex * 1000;
+                const isSpecial = [1, 2, 5].includes(index);
 
-                // Conditionally apply the 'special' class to the 1st, 4th, and 5th items
-                const isSpecial = [1, 2, 5].includes(index); // 0th, 3rd, 4th (1st, 4th, 5th items)
+                // Apply different colors for odd and even services in mobile view
+                const serviceColor =
+                  isMobile && index % 2 === 0 ? "#041d33" : "#973d5d"; // Odd services in mobile view get #973d5d
+
                 return (
                   <div
                     key={service.id}
@@ -51,6 +62,18 @@ const Services = () => {
                         className={`service-title custom-border ${
                           isSpecial ? "special" : ""
                         }`}
+                        style={{
+                          backgroundColor: isMobile
+                            ? index % 2 === 0
+                              ? "#041d33"
+                              : "#973d5d"
+                            : "",
+                          borderColor: isMobile
+                            ? index % 2 === 0
+                              ? "#041d33"
+                              : "#973d5d"
+                            : "",
+                        }}
                       >
                         {service.title}
                       </h3>

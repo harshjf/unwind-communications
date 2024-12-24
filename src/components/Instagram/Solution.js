@@ -63,6 +63,8 @@ const Solution = () => {
               <h5
                 style={{
                   fontSize: "14px",
+                  color: "#973d5d",
+                  lineHeight: "1.7",
                 }}
               >
                 Authentic Audio & Video Production
@@ -101,6 +103,8 @@ const Solution = () => {
               <h5
                 style={{
                   fontSize: "14px",
+                  color: "#973d5d",
+                  lineHeight: "1.7",
                 }}
               >
                 Strategic Media PR & Digital Distribution
@@ -139,6 +143,8 @@ const Solution = () => {
               <h5
                 style={{
                   fontSize: "14px",
+                  color: "#973d5d",
+                  lineHeight: "1.7",
                 }}
               >
                 {" "}

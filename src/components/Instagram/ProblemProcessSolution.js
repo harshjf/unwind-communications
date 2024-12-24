@@ -23,7 +23,7 @@ const ProblemProcessSolution = () => {
           style={{
             textAlign: "center",
             marginTop: "30px",
-            marginBottom: "20px",
+            /* marginBottom: "20px", */
             color: "#973d5d",
             fontSize: "36px",
             fontWeight: "700",
