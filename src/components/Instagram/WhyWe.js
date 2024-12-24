@@ -57,7 +57,7 @@ const WhyWe = () => {
           <br />
           <br />
           <h3>
-            <b>Here&apos;s how Unwind Communications positions itself</b>
+            <b>Here&apos;s how Unwind Communications positions itself:</b>
           </h3>
         </div>
       </div>
