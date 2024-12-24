@@ -88,11 +88,23 @@ const Navbar = () => {
                 fontWeight: "bold",
               }}
             >
-              <span style={{ fontSize: "20px", fontWeight: "600" }}>
-                Unwind
+              <span
+                style={{
+                  fontSize: "20px",
+                  fontWeight: "600",
+                  color: "#973d5d",
+                }}
+              >
+                UNWIND
               </span>
-              <span style={{ fontSize: "18px", fontWeight: "400" }}>
-                Communications
+              <span
+                style={{
+                  fontSize: "18px",
+                  fontWeight: "400",
+                  color: "#041D33",
+                }}
+              >
+                COMMUNICATIONS
               </span>
             </div>
           </Link>
@@ -151,7 +163,7 @@ const Navbar = () => {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   href="/#challenge"
                   onClick={toggleNavbar}
@@ -159,7 +171,7 @@ const Navbar = () => {
                 >
                   Tackling the Challenge
                 </Link>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link

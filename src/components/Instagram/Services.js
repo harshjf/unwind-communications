@@ -24,16 +24,17 @@ const Services = () => {
       <div className="services-inner">
         <div className="services-title">
           <div className="title-section">
-            <h2
+            <h1
               className="title"
               style={{
                 fontSize: "36px",
                 fontWeight: "700",
                 textAlign: "center",
+                color: "#973d5d",
               }}
             >
-              Services we offer
-            </h2>
+              <b>SERVICES OFFERED</b>
+            </h1>
           </div>
         </div>
 
@@ -75,7 +76,7 @@ const Services = () => {
                             : "",
                         }}
                       >
-                        {service.title}
+                        <b>{service.title}</b>
                       </h3>
                     </div>
                   </div>

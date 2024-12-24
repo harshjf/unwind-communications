@@ -28,19 +28,23 @@ const VideoArea = () => {
               data-aos-once="true"
             >
               <div className="video-content">
-                <h2 style={{ color: "#041d33" }}>
-                  Official Recognition From The{" "}
-                  <span style={{ color: "#973d5d" }}>
-                    Ministry Of Tourism & Culture
-                  </span>
-                  , Government Of India
-                </h2>
+                <h1 style={{ color: "#973d5d" }}>
+                  <b>
+                    OFFICIAL RECOGNITION FROM THE MINISTRY OF TOURISM & CULTURE,
+                    GOVERNMENT OF INDIA
+                  </b>
+                </h1>
                 <p>
-                  Proudly endorsed by Shri. Gajendra Singh Shekhawat ji, the{" "}
-                  <b>Minister of Tourism & Culture, Government of India,</b>{" "}
-                  Unwind Communications is recognized for its pivotal role in{" "}
-                  <b>promoting India’s cultural heritage</b>. This recognition
-                  strengthens our mission to convert cultural storytelling into:
+                  Proudly endorsed by{" "}
+                  <span style={{ color: "#b80a06" }}>
+                    Shri. Gajendra Singh Shekhawat ji, the{" "}
+                    <b>Minister of Tourism & Culture, Government of India</b>
+                  </span>
+                  , Unwind Communications is recognized for its pivotal role in{" "}
+                  <b>promoting India’s cultural heritage</b>. <br />
+                  <br />
+                  This recognition strengthens our mission to convert cultural
+                  storytelling into:
                 </p>
                 <ul>
                   <li>Thriving Business Opportunities</li>

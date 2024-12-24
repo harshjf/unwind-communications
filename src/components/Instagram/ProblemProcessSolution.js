@@ -23,13 +23,11 @@ const ProblemProcessSolution = () => {
           style={{
             textAlign: "center",
             marginTop: "30px",
-            /* marginBottom: "20px", */
-            color: "#973d5d",
-            fontSize: "36px",
+            color: "#041d33",
             fontWeight: "700",
           }}
         >
-          How We Tackle the Challenge
+          <b>HOW WE TACKLE THE CHALLENGE</b>
         </h1>
 
         <Problem />

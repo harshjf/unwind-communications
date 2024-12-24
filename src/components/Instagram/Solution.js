@@ -27,7 +27,9 @@ const Solution = () => {
           data-aos-duration="800"
           data-aos-once="true"
         >
-          <h2 style={{ color: "#041d33" }}>Solution To The Problem</h2>
+          <h2 style={{ color: "#973d5d" }}>
+            <b>SOLUTION TO THE PROBLEM</b>
+          </h2>
           <p>
             Unwind Communications transforms underrepresented destinations into
             sought-after experiences by combining unique creativity, cultural

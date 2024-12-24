@@ -16,9 +16,16 @@ const Section3 = () => {
 
   return (
     <div className="section3-container">
-      <h2 className="section3-title" data-aos="fade-up" data-aos-duration="800">
-        Accolades
-      </h2>
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="800"
+        style={{
+          color: "#973d5d",
+          marginBottom: "40px",
+        }}
+      >
+        <b>ACCOLADES</b>
+      </h1>
 
       {/* Part 1 */}
       <div className="section3-part">
@@ -43,18 +50,29 @@ const Section3 = () => {
           data-aos-duration="800"
         >
           <h3 className="section3-subtitle">
-            Empowering{" "}
-            <span style={{ color: "#973d5d" }}>PM Modi&apos;s Vision</span> For{" "}
-            <span style={{ color: "#973d5d" }}>भारत</span> As a{" "}
-            <span style={{ color: "#973d5d" }}>Leading Global Destination</span>
+            <b>
+              <span style={{ color: "#041d33" }}>EMPOWERING</span>{" "}
+              <span style={{ color: "#973d5d" }}>PM MODI&apos;S VISION</span>{" "}
+              <span style={{ color: "#041d33" }}>FOR</span>{" "}
+              <span style={{ color: "#973d5d" }}>भारत</span>{" "}
+              <span style={{ color: "#041d33" }}>AS A </span>
+              <span style={{ color: "#973d5d" }}>
+                LEADING GLOBAL DESTINATION
+              </span>
+            </b>
           </h3>
           <p>
-            Our Respected Prime Minister, Shri Narendra Modi Ji, envisions{" "}
-            <b>Bharat</b> as a <b>Leading Global Destination</b> for Wedding and
-            MICE Tourism, showcasing India’s Vibrancy, Grandeur, and Cultural
-            Magnificence as the ultimate destination to explore. Shefali is
-            deeply committed to bringing this vision to life, transforming{" "}
-            <b>PM Modi Ji’s dream into a remarkable reality!</b>
+            Our Respected{" "}
+            <span style={{ color: "#b80a06" }}>
+              Prime Minister, Shri Narendra Modi Ji
+            </span>
+            , envisions <b>Bharat</b> as a <b>Leading Global Destination</b> for
+            Wedding and MICE Tourism, showcasing India’s Vibrancy, Grandeur, and
+            Cultural Magnificence as the ultimate destination to explore.
+            <br />
+            <br />
+            Shefali is deeply committed to bringing this vision to life,
+            transforming <b>PM Modi Ji’s dream into a remarkable reality!</b>
           </p>
         </div>
         {isMobile && (
@@ -81,8 +99,12 @@ const Section3 = () => {
           data-aos-duration="800"
         >
           <h3 className="section3-subtitle">
-            Shefali&apos;s <span style={{ color: "#973d5d" }}>Recognition</span>{" "}
-            And <span style={{ color: "#973d5d" }}>Achievements</span>
+            <b>
+              <span style={{ color: "#041d33" }}>SHEFALI&apos;S</span>{" "}
+              <span style={{ color: "#973d5d" }}>RECOGNITION</span>{" "}
+              <span style={{ color: "#041d33" }}>AND</span>{" "}
+              <span style={{ color: "#973d5d" }}>ACHIEVEMENTS</span>
+            </b>
           </h3>
           <p>
             Shefali Saxena is awarded as a <b>POWER WOMAN</b> by renowned
@@ -90,6 +112,7 @@ const Section3 = () => {
             poetry in his handwriting for her Incredible works in{" "}
             <b>Ghoomar - A Royal Folk</b> as a Featured Artist, Singer, Director
             & Producer, supporting folk musicians!
+            <br />
             <br />
             <b>This award is powered by IPRS, Dolby & Hungama.</b>
           </p>

@@ -28,30 +28,41 @@ const Section4 = () => {
               data-aos-once="true"
             >
               <div className="video-content">
-                <h2 style={{ color: "#041d33" }}>
-                  INDIA-RUSSIA{" "}
-                  <span style={{ color: "#973d5d" }}>
-                    BUSINESS FORUM, by FICCI India
-                  </span>
-                </h2>
+                <h1>
+                  <b>
+                    INDIA-RUSSIA{" "}
+                    <span style={{ color: "#973d5d" }}>BUSINESS FORUM</span>
+                  </b>
+                </h1>
                 <p>
-                  A Prestigious Event Hosted by{" "}
-                  <span style={{ color: "#973d5d" }}>Shefali Saxena</span>
+                  <b>
+                    A Prestigious Event Hosted by{" "}
+                    <span style={{ color: "#973d5d" }}>Shefali Saxena</span>
+                  </b>
                 </p>
-                <p>
-                  <b>Empowering Global Collaboration</b>: Hosted the
-                  distinguished India-Russia Business Forum, featuring a keynote
-                  address by Hon&apos;ble External Affairs Minister Dr. S.
-                  Jaishankar on bilateral agreements and business connectivity
-                  between 2 countries.
-                </p>
-                <p>
-                  <b>Trusted by the Ministry of External Affairs</b>: With her
-                  expertise in orchestrating protocol and special events,
-                  Shefali Saxena continues to solidify her role as a trusted
-                  professional for high-profile national and international
-                  events.
-                </p>
+                <ul>
+                  <li>
+                    <p>
+                      <b>Empowering Global Collaboration</b>: Hosted the
+                      distinguished India-Russia Business Forum, featuring a
+                      keynote address by{" "}
+                      <span style={{ color: "#b80a06" }}>
+                        Hon&apos;ble External Affairs Minister Dr. S. Jaishankar
+                      </span>{" "}
+                      on bilateral agreements and business connectivity between
+                      2 countries.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <b>Trusted by the Ministry of External Affairs</b>: With
+                      her expertise in orchestrating protocol and special
+                      events, Shefali Saxena continues to solidify her role as a
+                      trusted professional for high-profile national and
+                      international events.
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
 

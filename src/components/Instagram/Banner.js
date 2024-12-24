@@ -49,8 +49,12 @@ const Banner = () => {
                 <span></span>
                 <div className="main-banner-content">
                   <div>
-                    <h1 className="founder">ABOUT THE FOUNDER-</h1>
-                    <h1 className="shefali">SHEFALI SAXENA</h1>
+                    <h1 style={{ color: "#041d33" }}>
+                      <b>ABOUT THE FOUNDER-</b>
+                    </h1>
+                    <h1 style={{ color: "#973d5d" }}>
+                      <b>SHEFALI SAXENA</b>
+                    </h1>
                   </div>
                   <p
                     data-aos="fade-up"

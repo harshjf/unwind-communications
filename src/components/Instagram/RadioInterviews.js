@@ -38,7 +38,10 @@ const RadioInterviews = () => {
   return (
     <section id="interviews" className="radio-interviews-container">
       <h1 className="radio-interviews-title">
-        <span style={{ color: "#B22222" }}>Radio</span> Interviews
+        <b>
+          <span style={{ color: "#B22222" }}>RADIO</span>{" "}
+          <span style={{ color: "#041d33" }}>INTERVIEWS</span>
+        </b>
       </h1>
 
       <div className="interviews-grid">

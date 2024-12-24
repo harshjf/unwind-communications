@@ -45,7 +45,9 @@ function Process() {
           data-aos-duration="800"
           data-aos-once="true"
         >
-          <h2 style={{ color: "#041d33" }}>Execution Plan</h2>
+          <h2 style={{ color: "#973d5d" }}>
+            <b>PROCESS & STEPS</b>
+          </h2>
           <p>
             The execution plan calls for <b>35 to 40 posts each quarter</b>,
             alongside the creation of <b>20 to 25 videos</b> for platforms like

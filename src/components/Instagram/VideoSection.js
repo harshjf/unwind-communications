@@ -17,9 +17,9 @@ const VideoSection = () => {
             <div className="widget-container">
               <div className="vitors-title-section">
                 <div className="section-title">
-                  <h2 className="section-title__title">
-                    Destination VIDEOS for Streaming Platforms
-                  </h2>
+                  <h1 style={{ color: "#973d5d" }}>
+                    <b>DESTINATION VIDEOS FOR STREAMING PLATFORMS</b>
+                  </h1>
                 </div>
               </div>
             </div>
@@ -91,9 +91,9 @@ const VideoSection = () => {
             <div className="widget-container">
               <div className="vitors-title-section">
                 <div className="section-title">
-                  <h2 className="section-title__title">
-                    Destination VLOGS for Streaming Platforms
-                  </h2>
+                  <h1 style={{ color: "#973d5d" }}>
+                    <b>DESTINATION VLOGS FOR SOCIAL MEDIA</b>
+                  </h1>
                 </div>
               </div>
             </div>

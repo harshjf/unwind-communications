@@ -41,17 +41,24 @@ const WhyWe = () => {
           data-aos-duration="800"
           data-aos-once="true"
         >
-          <h2 style={{ color: "#041d33" }}>Why Us?</h2>
-          <p>
+          <h1 style={{ color: "#973d5d" }}>
+            <b>HOW UNWIND COMMUNICATIONS STANDS OUT?</b>
+          </h1>
+          <p style={{ textAlign: "left" }}>
             Unwind Communications operates in a highly niche market, focusing on
             destination and venue promotion through bespoke musical videos and
             story telling vlogs showcasing its cultural aesthetics.
           </p>
-          <p>
+          <p style={{ textAlign: "left" }}>
             While there are no direct competitors offering the same combination
             of services, the company addresses gaps left by adjacent players in
             related industries.
           </p>
+          <br />
+          <br />
+          <h3>
+            <b>Here&apos;s how Unwind Communications positions itself</b>
+          </h3>
         </div>
       </div>
       <div

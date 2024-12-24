@@ -127,9 +127,9 @@ const Testimonials = () => {
             viewport={{ once: true }}
             variants={fadeInUp}
           >
-            <h2 style={{ color: "#041d33" }}>
-              Case <span style={{ color: "#973d5d" }}>Study</span>
-            </h2>
+            <h1 style={{ color: "#973d5d" }}>
+              <b>CASE STUDY</b>
+            </h1>
             <p>
               Chomu Palace faced challenges in reaching its target audience
               effectively. Through a comprehensive media strategy including the

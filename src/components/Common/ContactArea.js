@@ -11,7 +11,7 @@ const ContactArea = () => {
           <div className="row align-items-center">
             <div className="col-lg-7 col-md-12">
               <div className="subscribe-content">
-                <h2>Let us collaborate</h2>
+                <h2>Let Us Collaborate</h2>
                 {/*  <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore.
@@ -58,7 +58,15 @@ const ContactArea = () => {
                     />
                   </div>
 
-                  <button type="submit">Collaborate now</button>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+
+                  <button type="submit">Collaborate Now</button>
                 </form>
               </div>
             </div>

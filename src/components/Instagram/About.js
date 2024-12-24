@@ -27,7 +27,7 @@ const About = () => {
                   textAlign: "center",
                 }}
               >
-                About Us
+                <b>ABOUT OUR COMPANY</b>
               </h2>
             )}
             <div
@@ -57,7 +57,11 @@ const About = () => {
               data-aos-once="true"
             >
               <div className="about-content">
-                {!isMobile && <h2 style={{ color: "#973d5d" }}>About Us</h2>}
+                {!isMobile && (
+                  <h1 style={{ color: "#973d5d" }}>
+                    <b>ABOUT OUR COMPANY</b>
+                  </h1>
+                )}
 
                 <p>
                   At <b>Unwind Communications</b>, we bring{" "}
@@ -70,6 +74,8 @@ const About = () => {
                 <p>
                   Our expertise extends beyond the initial global reach. We
                   amplify your story through:
+                  <br />
+                  <br />
                   <ul>
                     <li>
                       <b>Targeted media PR</b>
@@ -82,12 +88,13 @@ const About = () => {
                     </li>
                   </ul>
                 </p>
+                <br />
                 <p>
                   within the <b>MICE, Travel, Event </b> and{" "}
-                  <b>Wedding Industries.</b> We don’t just enhance brand
-                  visibility; we forge powerful narratives through Vlogs that
-                  open up new realms of opportunity{" "}
-                  <b>for B2B opportunities & conversions</b>.
+                  <b>Wedding Industries.</b> <br />
+                  We don&apos;t just enhance brand visibility; we forge powerful
+                  narratives through Vlogs that open up new realms of
+                  opportunity <b>for B2B opportunities & conversions</b>.
                 </p>
 
                 {/* <div className="btn-box"> */}

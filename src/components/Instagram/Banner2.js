@@ -66,7 +66,7 @@ const Banner2 = () => {
             data-aos="fade-right"
             data-aos-once="false"
           >
-            Unwind Communications
+            UNWIND <span style={{ color: "#fff" }}>COMMUNICATIONS</span>
           </h1>
           <p
             className="banner-description"
