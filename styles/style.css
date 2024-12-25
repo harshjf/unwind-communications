@@ -132,7 +132,7 @@ p:last-child {
 /* Section Title */
 .section-title {
   text-align: center;
-  margin-bottom: 50px;
+  /*  margin-bottom: 50px; */
   max-width: 815px;
   margin-left: auto;
   margin-right: auto;
@@ -5163,11 +5163,11 @@ Join Area CSS
 }
 
 .video-section {
-  background-image: url(/images/work/background.jpg);
+  /* background-image: url(/images/work/background.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 50px;
+  padding: 70px;
 }
 .e-con-inner {
   flex-wrap: var(--flex-wrap);
@@ -5180,7 +5180,7 @@ Join Area CSS
   align-self: auto;
 }
 .vitors-title-section {
-  margin: 0px 0px 40px 0px !important;
+  /* margin: 0px 0px 40px 0px !important; */
 }
 .section-title {
   position: relative;
@@ -5636,5 +5636,197 @@ Join Area CSS
     width: 225px;
     height: 200px;
     object-fit: contain;
+  }
+}
+
+/*video card */
+
+.video-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  transition: box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  text-decoration: none;
+  z-index: 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.video-card-title {
+  /*   padding-top: 25px; */
+  padding-left: 8px;
+  font-size: 1.5rem;
+}
+
+.video-card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  .video-card-title {
+    padding-top: 25px;
+  }
+}
+
+.video-card:hover .video-card-image {
+  width: 100%;
+  align-self: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.25s ease;
+}
+
+.video-card:hover .video-card-image::before {
+  background-color: rgba(85, 85, 85, 0.4);
+  transition: background 0.35s ease;
+}
+
+.video-card:hover .video-card-image img {
+  transform: scale(1.7);
+  transition: transform 0.35s ease;
+}
+
+.video-card:hover .video-card-image {
+  transition: margin-top 0.35s ease;
+}
+
+.video-card:hover .video-card-content {
+  max-height: 300px;
+  /*  padding: 10px; */
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.35s ease;
+}
+
+.video-card-image {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: 0.35s ease;
+  z-index: 1;
+}
+
+.video-card-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(85, 85, 85, 0);
+  transition: background 0.35s ease;
+  z-index: 1;
+}
+
+.video-card-image::after {
+  content: "";
+  display: block;
+  padding-bottom: 75%;
+}
+
+.video-card-image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.35s ease;
+  object-fit: contain;
+}
+
+/* .video-card-image {
+  margin: 0.625rem 0 0;
+  color: #555;
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+} */
+
+.video-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: 0.35s ease;
+  z-index: 3;
+}
+
+.video-card-content p {
+  margin: 0 0 1.125rem;
+  color: black;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.video-card-content .theme-dark p {
+  color: #fff;
+}
+
+/* .video-card-content span {
+  display: flex;
+  align-items: center;
+  column-gap: 0.625rem;
+  padding: 0.625rem 1.875rem;
+  border: 0.0625rem solid #70a9a1;
+  color: #70a9a1;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background, color 0.35s ease;
+} */
+.video-card-content span {
+  display: flex;
+  align-items: center;
+  column-gap: 0.625rem;
+  padding: 0.625rem 1.875rem;
+
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background, color 0.35s ease;
+  background-color: #bb2222; /* Button background color */
+  color: #ffffff; /* Button text color */
+}
+
+.video-card-content span:hover {
+  background: #041d33;
+  color: #fff;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 10%;
+  margin-bottom: 30px;
+}
+
+.cell {
+  flex: 1 1 30%;
+  min-width: 300px;
+  max-width: 33%;
+}
+
+@media (max-width: 768px) {
+  .video-section {
+    padding: 20px;
   }
 }
