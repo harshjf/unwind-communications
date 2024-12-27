@@ -4,7 +4,7 @@ const MarqueeComponent = () => {
   const images = [
     {
       src: "/images/marquee/midday.jpeg",
-      title: "MIDDAY NEWSPAPER ACHIEVER’S AWARD",
+      title: "MIDDAY MEDIA AWARD",
       link: "https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/432013442_368082722766494_356793418865978774_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=18de74&_nc_ohc=m9eoKOHV_I4Q7kNvgF1jSVz&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AYAgcCQnrP9BWBJOeoXxlnnYKQ3Zif4FS4eYw1EUZWtC_g&oe=669AFD8B",
     },
     {

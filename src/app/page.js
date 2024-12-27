@@ -21,7 +21,6 @@ import Section3 from "@/components/Instagram/Section3";
 import Section4 from "@/components/Instagram/Section4";
 import VideoSection from "@/components/Instagram/VideoSection";
 import RadioInterviews from "@/components/Instagram/RadioInterviews";
-import Marquee from "@/components/Marquee";
 import Marquee2 from "@/components/Marquee2";
 import Videos from "@/components/Instagram/Videos";
 export default function Home() {

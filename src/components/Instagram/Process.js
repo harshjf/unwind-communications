@@ -45,8 +45,10 @@ function Process() {
           data-aos-duration="800"
           data-aos-once="true"
         >
-          <h2 style={{ color: "#973d5d" }}>
-            <b>PROCESS & STEPS</b>
+          <h2>
+            <b>
+              <span style={{ color: "#973d5d" }}>PROCESS</span> & STEPS
+            </b>
           </h2>
           <p>
             The execution plan calls for <b>35 to 40 posts each quarter</b>,
@@ -84,7 +86,8 @@ function Process() {
             src: "/images/process_steps/step3.png",
             msrc: "/images/process_steps/mstep3.png",
             alt: "Step 3",
-            text: "Push content to targeted audience via Google Ads.",
+            text: "Push content to targeted audience via Google Ads & creating Vlogs for social media.",
+            // text: "Push content to targeted audience via Google Ads to accelerate SEO.",
             delay: 800,
           },
           {

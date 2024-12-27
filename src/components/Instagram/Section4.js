@@ -30,8 +30,8 @@ const Section4 = () => {
               <div className="video-content">
                 <h1>
                   <b>
-                    INDIA-RUSSIA{" "}
-                    <span style={{ color: "#973d5d" }}>BUSINESS FORUM</span>
+                    <span style={{ color: "#973d5d" }}>INDIA-RUSSIA</span>{" "}
+                    BUSINESS FORUM
                   </b>
                 </h1>
                 <p>
@@ -47,7 +47,8 @@ const Section4 = () => {
                       distinguished India-Russia Business Forum, featuring a
                       keynote address by{" "}
                       <span style={{ color: "#b80a06" }}>
-                        Hon&apos;ble External Affairs Minister Dr. S. Jaishankar
+                        Hon&apos;ble External Affairs Minister{" "}
+                        <b>Dr. S. Jaishankar</b>
                       </span>{" "}
                       on bilateral agreements and business connectivity between
                       2 countries.

@@ -22,8 +22,10 @@ function Problem() {
           </div>
           <div className="col-lg-6 col-md-12">
             <div className="video-content" style={{ marginLeft: "16px" }}>
-              <h2 style={{ color: "#973d5d" }}>
-                <b>THE PROBLEM WE SOLVE</b>
+              <h2>
+                <b>
+                  THE PROBLEM WE <span style={{ color: "#973d5d" }}>SOLVE</span>
+                </b>
               </h2>
               <p>
                 The tourism, wedding, MICE and event industry is evolving, yet{" "}

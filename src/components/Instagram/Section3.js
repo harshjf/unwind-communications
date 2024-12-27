@@ -16,17 +16,6 @@ const Section3 = () => {
 
   return (
     <div className="section3-container">
-      <h1
-        data-aos="fade-up"
-        data-aos-duration="800"
-        style={{
-          color: "#973d5d",
-          marginBottom: "40px",
-        }}
-      >
-        <b>ACCOLADES</b>
-      </h1>
-
       {/* Part 1 */}
       <div className="section3-part">
         {!isMobile && (
@@ -49,7 +38,7 @@ const Section3 = () => {
           data-aos="fade-left"
           data-aos-duration="800"
         >
-          <h3 className="section3-subtitle">
+          <h1 className="section3-subtitle">
             <b>
               <span style={{ color: "#041d33" }}>EMPOWERING</span>{" "}
               <span style={{ color: "#973d5d" }}>PM MODI&apos;S VISION</span>{" "}
@@ -60,11 +49,11 @@ const Section3 = () => {
                 LEADING GLOBAL DESTINATION
               </span>
             </b>
-          </h3>
+          </h1>
           <p>
-            Our Respected{" "}
+            Our Hon&apos;ble{" "}
             <span style={{ color: "#b80a06" }}>
-              Prime Minister, Shri Narendra Modi Ji
+              Prime Minister, <b>Shri Narendra Modi Ji</b>
             </span>
             , envisions <b>Bharat</b> as a <b>Leading Global Destination</b> for
             Wedding and MICE Tourism, showcasing India’s Vibrancy, Grandeur, and
@@ -92,27 +81,29 @@ const Section3 = () => {
       </div>
 
       {/* Part 2 */}
-      <div className="section3-part">
+      <div className="section3-part" style={{ marginTop: "40px" }}>
         <div
           className="section3-content"
           data-aos="fade-right"
           data-aos-duration="800"
         >
-          <h3 className="section3-subtitle">
+          <h1 className="section3-subtitle">
             <b>
               <span style={{ color: "#041d33" }}>SHEFALI&apos;S</span>{" "}
               <span style={{ color: "#973d5d" }}>RECOGNITION</span>{" "}
               <span style={{ color: "#041d33" }}>AND</span>{" "}
               <span style={{ color: "#973d5d" }}>ACHIEVEMENTS</span>
             </b>
-          </h3>
+          </h1>
           <p>
             Shefali Saxena is awarded as a <b>POWER WOMAN</b> by renowned
-            lyricist & screenwriter, <b>Javed Akhtar Sahab</b> with a dedicated
-            poetry in his handwriting for her Incredible works in{" "}
-            <b>Ghoomar - A Royal Folk</b> as a Featured Artist, Singer, Director
-            & Producer, supporting folk musicians!
-            <br />
+            lyricist & screenwriter,{" "}
+            <span style={{ color: "#b80a06" }}>
+              <b>Javed Akhtar Sahab</b>
+            </span>{" "}
+            with a dedicated poetry in his handwriting for her Incredible works
+            in <b>Ghoomar - A Royal Folk</b> as a Featured Artist, Singer,
+            Director & Producer, supporting folk musicians!
             <br />
             <b>This award is powered by IPRS, Dolby & Hungama.</b>
           </p>

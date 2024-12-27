@@ -27,19 +27,21 @@ const Solution = () => {
           data-aos-duration="800"
           data-aos-once="true"
         >
-          <h2 style={{ color: "#973d5d" }}>
-            <b>SOLUTION TO THE PROBLEM</b>
+          <h2>
+            <b>
+              <span style={{ color: "#973d5d" }}>SOLUTION</span> TO THE PROBLEM
+            </b>
           </h2>
           <p>
             Unwind Communications transforms underrepresented destinations into
             sought-after experiences by combining unique creativity, cultural
             authenticity, and strategic marketing, ensuring maximum visibility
-            and engagement.
+            and engagement, thus conversions.
           </p>
         </div>
       </div>
 
-      <div className="solution-cards">
+      <div className="solution-cards" style={{ marginTop: "30px" }}>
         <div className="hero">
           <Image
             src="/images/solution/1.png"

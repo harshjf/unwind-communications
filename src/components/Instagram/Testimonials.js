@@ -126,17 +126,20 @@ const Testimonials = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeInUp}
+            style={{ maxWidth: "900px" }}
           >
-            <h1 style={{ color: "#973d5d" }}>
-              <b>CASE STUDY</b>
+            <h1>
+              <b>
+                CASE <span style={{ color: "#973d5d" }}>STUDY</span>
+              </b>
             </h1>
             <p>
               Chomu Palace faced challenges in reaching its target audience
               effectively. Through a comprehensive media strategy including the
               Ghoomar video campaign, Shefali Saxena and her team increased
-              visibility across all platforms. This resulted in a significant
-              boost in sales, with targeted promotions and lead generation
-              campaigns driving customer engagement.
+              visibility across all the platforms. This resulted in a
+              significant boost in sales, with targeted promotions and lead
+              generation campaigns driving revenue.
             </p>
           </motion.div>
 
@@ -146,6 +149,7 @@ const Testimonials = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={stagger}
+            style={{ marginTop: "30px" }}
           >
             <motion.div
               className="col-lg-6 col-md-12"
@@ -208,9 +212,16 @@ const Testimonials = () => {
                 <div className="videos-content">
                   <h3
                     onClick={() => setOpen(true)}
-                    style={{ cursor: "pointer" }}
+                    style={{
+                      cursor: "pointer",
+                      textAlign: "center",
+                    }}
                   >
-                    Testimonial By C.P. Rathore, GM, Chomu Palace
+                    Testimonial By{" "}
+                    <span style={{ color: "#973d5d" }}>
+                      <b>C.P. Rathore</b>
+                    </span>
+                    , GM, Chomu Palace
                   </h3>
 
                   {/* <ul className="videos-meta">

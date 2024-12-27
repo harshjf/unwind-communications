@@ -20,7 +20,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="services" className="services-container">
+    <section className="services-container">
       <div className="services-inner">
         <div className="services-title">
           <div className="title-section">
@@ -30,10 +30,11 @@ const Services = () => {
                 fontSize: "36px",
                 fontWeight: "700",
                 textAlign: "center",
-                color: "#973d5d",
               }}
             >
-              <b>SERVICES OFFERED</b>
+              <b>
+                <span style={{ color: "#973d5d" }}>SERVICES</span> OFFERED
+              </b>
             </h1>
           </div>
         </div>

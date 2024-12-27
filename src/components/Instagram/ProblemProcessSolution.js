@@ -17,7 +17,7 @@ const ProblemProcessSolution = () => {
           boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
         }} */
         className="challenge"
-        id="challenge"
+        id="services"
       >
         <h1
           style={{
@@ -27,7 +27,10 @@ const ProblemProcessSolution = () => {
             fontWeight: "700",
           }}
         >
-          <b>HOW WE TACKLE THE CHALLENGE</b>
+          <b>
+            HOW WE <span style={{ color: "#973d5d" }}>TACKLE</span> THE
+            CHALLENGE
+          </b>
         </h1>
 
         <Problem />

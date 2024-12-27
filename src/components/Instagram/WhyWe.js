@@ -41,8 +41,11 @@ const WhyWe = () => {
           data-aos-duration="800"
           data-aos-once="true"
         >
-          <h1 style={{ color: "#973d5d" }}>
-            <b>HOW UNWIND COMMUNICATIONS STANDS OUT?</b>
+          <h1>
+            <b>
+              HOW UNWIND COMMUNICATIONS{" "}
+              <span style={{ color: "#973d5d" }}>STANDS OUT</span>?
+            </b>
           </h1>
           <p style={{ textAlign: "left" }}>
             Unwind Communications operates in a highly niche market, focusing on
@@ -54,11 +57,6 @@ const WhyWe = () => {
             of services, the company addresses gaps left by adjacent players in
             related industries.
           </p>
-          <br />
-          <br />
-          <h3>
-            <b>Here&apos;s how Unwind Communications positions itself:</b>
-          </h3>
         </div>
       </div>
       <div
@@ -68,6 +66,7 @@ const WhyWe = () => {
           flexWrap: "wrap",
           justifyContent: "center",
           gap: "20px",
+          marginTop: "30px",
         }}
       >
         {[

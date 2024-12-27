@@ -91,8 +91,12 @@ const VideoSection = () => {
             <div className="widget-container">
               <div className="vitors-title-section">
                 <div className="section-title">
-                  <h1 style={{ color: "#973d5d" }}>
-                    <b>DESTINATION VLOGS FOR SOCIAL MEDIA</b>
+                  <h1>
+                    <b>
+                      DESTINATION{" "}
+                      <span style={{ color: "#973d5d" }}>VLOGS</span> FOR SOCIAL
+                      MEDIA
+                    </b>
                   </h1>
                 </div>
               </div>

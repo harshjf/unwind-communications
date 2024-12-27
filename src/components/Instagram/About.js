@@ -23,11 +23,12 @@ const About = () => {
             {isMobile && (
               <h2
                 style={{
-                  color: "#973d5d",
                   textAlign: "center",
                 }}
               >
-                <b>ABOUT OUR COMPANY</b>
+                <b>
+                  ABOUT OUR <span style={{ color: "#973d5d" }}>COMPANY</span>
+                </b>
               </h2>
             )}
             <div
@@ -44,7 +45,7 @@ const About = () => {
                   alt="image"
                   width={680}
                   height={558}
-                  style={{ height: "350px", width: "600px" }}
+                  style={{ height: "600px", width: "350px" }}
                 />
               </div>
             </div>
@@ -58,8 +59,11 @@ const About = () => {
             >
               <div className="about-content">
                 {!isMobile && (
-                  <h1 style={{ color: "#973d5d" }}>
-                    <b>ABOUT OUR COMPANY</b>
+                  <h1>
+                    <b>
+                      ABOUT OUR{" "}
+                      <span style={{ color: "#973d5d" }}>COMPANY</span>
+                    </b>
                   </h1>
                 )}
 
