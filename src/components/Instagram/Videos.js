@@ -11,6 +11,7 @@ const Card = ({ image, title, text, button, videoUrl }) => {
       target="_blank"
       rel="noopener noreferrer"
       className="video-card"
+      style={{ minWidth: "363.2px", minHeight: "348.49px" }}
     >
       <div className="video-card-image">
         <img src={image} alt={title} />
