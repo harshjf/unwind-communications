@@ -44,7 +44,7 @@ const Solution = () => {
       <div className="solution-cards" style={{ marginTop: "30px" }}>
         <div className="hero">
           <Image
-            src="/images/solution/1.png"
+            src="/images/solution/1.jpg"
             className="hero-profile-img"
             alt="Profile 1"
             width={750}
@@ -63,7 +63,7 @@ const Solution = () => {
           )}
 
           <div className="hero-date">
-            {isMobile && (
+            {/* {isMobile && (
               <h5
                 style={{
                   fontSize: "14px",
@@ -73,7 +73,7 @@ const Solution = () => {
               >
                 Authentic Audio & Video Production
               </h5>
-            )}
+            )} */}
             <h5
               style={{
                 fontSize: "17px",
@@ -113,7 +113,7 @@ const Solution = () => {
             </>
           )}
           <div className="hero-date">
-            {isMobile && (
+            {/* {isMobile && (
               <h5
                 style={{
                   fontSize: "14px",
@@ -123,7 +123,7 @@ const Solution = () => {
               >
                 Strategic Media PR & Digital Distribution
               </h5>
-            )}
+            )} */}
             <h5
               style={{
                 fontSize: "17px",
@@ -162,7 +162,7 @@ const Solution = () => {
             </>
           )}
           <div className="hero-date">
-            {isMobile && (
+            {/*  {isMobile && (
               <h5
                 style={{
                   fontSize: "14px",
@@ -173,7 +173,7 @@ const Solution = () => {
                 {" "}
                 Engaging Storytelling & Digital Marketing
               </h5>
-            )}
+            )} */}
             <h5
               style={{
                 fontSize: "17px",
