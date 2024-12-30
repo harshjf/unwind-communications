@@ -3628,7 +3628,18 @@ Join Area CSS
   margin: 0;
   min-height: 75vh;
   padding: 20px;
+  /* background-image: url(/images/instagram/dot-bg.png); */
 }
+/* .overlaypart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; 
+} */
 
 .solution-header {
   text-align: center;
@@ -4852,12 +4863,17 @@ Join Area CSS
   }
 
   .banner1-shape2 {
-    height: 80px;
-    width: 80px;
+    img {
+      height: 90px;
+      width: 90px;
+    }
   }
 
   .banner1-shape2 {
-    display: none;
+    img {
+      height: 70px;
+      width: 70px;
+    }
   }
 }
 
@@ -5914,7 +5930,7 @@ Join Area CSS
   margin-left: 0;
 }
 /* banner-3 */
-.banner3-container {
+/* .banner3-container {
   margin-top: 7%;
   width: 100%;
   min-height: 90vh;
@@ -5925,6 +5941,20 @@ Join Area CSS
   position: relative;
   padding: 40px;
   background-color: #f5f5f5;
+} */
+
+.banner3-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("/images/home/globe2.gif");
+  margin-top: 5%;
 }
 
 .banner3-overlay {
@@ -5949,6 +5979,7 @@ Join Area CSS
   width: 60%;
   padding-right: 20px;
   z-index: 2;
+  padding-left: 10px;
 }
 
 .banner3-title {
@@ -5982,6 +6013,7 @@ Join Area CSS
   justify-content: center;
   align-items: center;
   z-index: 2;
+  padding-right: 10px;
 }
 
 .banner3-video {
@@ -5999,8 +6031,8 @@ Join Area CSS
   line-height: 1.6;
   color: #fff;
   z-index: 2;
-  margin-top: 20px;
-  padding: 20px 0;
+  margin-top: 45px;
+  padding: 20px 20px;
   position: relative;
   text-align: justify;
 }
@@ -6064,7 +6096,9 @@ Join Area CSS
 
   .banner3-title {
     font-size: 40px;
-    line-height: 60px;
+
+    line-height: 35px;
+    margin-bottom: 10px;
   }
 
   .banner3-title2 {
@@ -6091,7 +6125,8 @@ Join Area CSS
 
   .banner3-title {
     font-size: 30px;
-    line-height: 50px;
+    line-height: 35px;
+    margin-bottom: 10px;
   }
 
   .banner3-title2 {
@@ -6115,4 +6150,11 @@ Join Area CSS
     overflow-x: hidden;
     max-width: 768px;
   }
+}
+
+.process-container {
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-image: url(/images/services/services-bg.png);
 }

@@ -19,6 +19,7 @@ const Solution = () => {
       className="solution-container"
       style={{ marginTop: "40px" }}
     >
+      <div className="overlaypart"></div>{" "}
       <div className="container">
         <div
           className="section-title"
@@ -40,7 +41,6 @@ const Solution = () => {
           </p>
         </div>
       </div>
-
       <div className="solution-cards" style={{ marginTop: "30px" }}>
         <div className="hero">
           <Image

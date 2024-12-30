@@ -38,6 +38,7 @@ const Banner = () => {
                     src="/images/home/shefali_saree.jpg"
                     alt="Shefali 1"
                     className="shefali1-image"
+                    style={{ paddingLeft: "8spx" }}
                   />
                 </div>
               )}

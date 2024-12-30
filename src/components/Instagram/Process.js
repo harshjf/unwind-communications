@@ -30,12 +30,12 @@ function Process() {
   return (
     <div
       className="process-container"
-      style={{
+      /* style={{
         marginTop: "40px",
         paddingTop: "40px",
         paddingBottom: "30px",
-        backgroundColor: "#cddcea",
-      }}
+        backgroundImage: url("/images/services/services-bg.png"),
+      }} */
     >
       <div className="container">
         <div
