@@ -85,10 +85,28 @@ const Banner2 = () => {
             Shefali Saxena, whose work has set new benchmarks in the industry.
           </p> */}
           <p>
-            Led by the Award-Winning ARTISTPRENEUR Shefali Saxena, we bring
-            India’s most captivating destinations to life through digital
-            storytelling, redefining experiential marketing with bespoke musical
-            videos, vlogs, and strategic promotion.
+            Led by the Award-Winning{" "}
+            <span style={{ color: "#973d5d" }}>
+              <b>ARTISTPRENEUR</b>
+            </span>{" "}
+            Shefali Saxena, we bring India&apos;s most captivating destinations
+            to life through{" "}
+            <span style={{ color: "#973d5d" }}>
+              <b>digital storytelling</b>
+            </span>
+            , redefining experiential marketing with bespoke{" "}
+            <span style={{ color: "#973d5d" }}>
+              <b>musical videos</b>
+            </span>
+            ,{" "}
+            <span style={{ color: "#973d5d" }}>
+              <b>vlogs</b>
+            </span>
+            , and{" "}
+            <span style={{ color: "#973d5d" }}>
+              <b>strategic promotion</b>
+            </span>
+            .
           </p>
         </div>
         <div className="banner1-shape2">
