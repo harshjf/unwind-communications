@@ -20,7 +20,10 @@ const Services = () => {
   }, []);
 
   return (
-    <section className="services-container">
+    <section
+      style={{ paddingBottom: "80px", paddingTop: "150px" }}
+      className="services-container"
+    >
       <div className="services-inner">
         <div className="services-title">
           <div className="title-section">

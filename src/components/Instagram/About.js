@@ -100,14 +100,6 @@ const About = () => {
                   narratives through Vlogs that open up new realms of
                   opportunity <b>for B2B opportunities & conversions</b>.
                 </p>
-
-                {/* <div className="btn-box"> */}
-                {/* <ModalForm /> */}
-
-                {/* <a href="mailto:hello@alikamaya.com" className="email"> */}
-                {/* hello@unwindcommunication.com */}
-                {/* </a> */}
-                {/* </div> */}
               </div>
             </div>
           </div>

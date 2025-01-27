@@ -3,12 +3,16 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link"; // Importing Link from next/link
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const currentRoute = usePathname();
   const [collapsed, setCollapsed] = useState(true);
+  const [activeIndex, setActiveIndex] = useState("");
 
-  const toggleNavbar = () => {
+  const toggleNavbar = (index) => {
     setCollapsed(!collapsed);
+    setActiveIndex(index);
   };
 
   useEffect(() => {
@@ -126,9 +130,9 @@ const Navbar = () => {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Link
-                  href="/#home"
-                  onClick={toggleNavbar}
-                  className="nav-link active"
+                  href="/"
+                  onClick={() => toggleNavbar("Home")}
+                  className={`nav-link ${currentRoute === "/" && "active"} `}
                 >
                   Home
                 </Link>
@@ -136,18 +140,20 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <Link
-                  href="/#about"
-                  onClick={toggleNavbar}
-                  className="nav-link"
+                  href="/about"
+                  onClick={() => toggleNavbar("about")}
+                  className={`nav-link ${currentRoute === "/about/" && "active"} `}
                 >
                   About
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  href="/#recognition"
-                  onClick={toggleNavbar}
-                  className="nav-link"
+                  href="/recognition"
+                  onClick={() => toggleNavbar("recognition")}
+                  className={`nav-link ${
+                    currentRoute === "/recognition/" && "active"
+                  } `}
                 >
                   Recognition
                 </Link>
@@ -155,9 +161,11 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <Link
-                  href="/#services"
-                  onClick={toggleNavbar}
-                  className="nav-link"
+                  href="/services"
+                  onClick={() => toggleNavbar("services")}
+                  className={`nav-link ${
+                    currentRoute === "/services/" && "active"
+                  } `}
                 >
                   Services
                 </Link>
@@ -183,7 +191,7 @@ const Navbar = () => {
                 </Link>
               </li> */}
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link
                   href="/#interviews"
                   onClick={toggleNavbar}
@@ -191,7 +199,7 @@ const Navbar = () => {
                 >
                   Radio Interviews
                 </Link>
-              </li>
+              </li> */}
 
               {/* <li className="nav-item">
                 <Link
@@ -211,11 +219,14 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <Link
-                  href="/#contact"
-                  onClick={toggleNavbar}
-                  className="nav-link"
+                  href="/partner"
+                  // onClick={toggleNavbar}
+                  onClick={() => toggleNavbar("partner")}
+                  className={`nav-link ${
+                    currentRoute === "/partner/" && "active"
+                  } `}
                 >
-                  Contact
+                  Partner
                 </Link>
               </li>
             </ul>

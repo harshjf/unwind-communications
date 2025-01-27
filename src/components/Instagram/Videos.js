@@ -35,17 +35,13 @@ const Videos = () => {
   return (
     <>
       <section>
-        <div className="video-section">
+        <div style={{ paddingTop: "180px" }} className="video-section">
           <div className="e-con-inner">
             <div className="widget-container">
               <div className="vitors-title-section">
                 <div className="section-title">
                   <h1>
-                    <b>
-                      DESTINATION{" "}
-                      <span style={{ color: "#973d5d" }}>VIDEOS</span> FOR
-                      STREAMING PLATFORMS
-                    </b>
+                    <b>OUR  <span style={{ color: "#973d5d" }}>PARTNERS</span></b>
                   </h1>
                 </div>
               </div>
@@ -67,23 +63,6 @@ const Videos = () => {
         </div>
       </section>
       <section>
-        <div className="video-section">
-          <div className="e-con-inner">
-            <div className="widget-container">
-              <div className="vitors-title-section">
-                <div className="section-title">
-                  <h1>
-                    <b>
-                      DESTINATION{" "}
-                      <span style={{ color: "#973d5d" }}>VLOGS</span> FOR SOCIAL
-                      MEDIA
-                    </b>
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="grid-container">
           {destinationVlogs.map((card, index) => (
             <div className="cell medium-4" key={index} data-aos="flip-left">
