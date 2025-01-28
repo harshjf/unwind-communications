@@ -54,7 +54,7 @@ const ClientSwiper = () => {
       <h1 className="radio-client-title">
         <b>
           <span style={{ color: "#041d33" }}>OUR</span>{" "}
-          <span style={{ color: "#973d5d" }}>CLIENT</span>
+          <span style={{ color: "#973d5d" }}>CLIENTS</span>
         </b>
       </h1>
 

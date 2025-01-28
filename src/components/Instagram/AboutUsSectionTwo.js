@@ -23,7 +23,7 @@ const AboutUsSectionTwo = () => {
       name: "SHEFALI SAXENA",
       designation: "FOUNDER",
       description:
-        "Lubaina spearheads BRANDit to make it a trusted partner for her clients and help them navigate the diversity, scale and complexity of India. She brings with her in-depth knowledge and understanding of the intricacies of outbound travel. She provides deep insight, sound counsel and seamless execution to numerous tourism boards and hospitality brands.",
+        "Shefali Saxena, MSc (Gold Medalist) & UGC NET Qualified in Life Science, is an artist known for her contributions to music videos, media promotions, and digital marketing campaigns. She has been recognized as a Times of India Headliner and honored as Artist of the Week by BIG FM & MX Player. Her work has received praise from industry figures, including Javed Akhtar, who acknowledged her ability to highlight India’s cultural richness. Through her projects, she brings creative storytelling to various platforms, influencing audiences and brands alike.",
       link: "/about",
     },
     {
@@ -49,7 +49,10 @@ const AboutUsSectionTwo = () => {
             >
               <div
                 className="row align-items-center"
-                style={{ flexDirection: idx % 2 === 0 ? "row" : "row-reverse" }}
+                style={{
+                  flexDirection: idx % 2 === 0 ? "row" : "row-reverse",
+                  marginLeft: idx % 2 === 0 ? "0px" : "-60px",
+                }}
               >
                 {isMobile && (
                   <h2
@@ -65,7 +68,7 @@ const AboutUsSectionTwo = () => {
                   </h2>
                 )}
                 <div
-                  className="col-lg-5 col-md-12"
+                  className="col-lg-4 col-md-12"
                   data-aos="fade-up"
                   data-aos-delay="100"
                   data-aos-duration="800"
@@ -102,41 +105,12 @@ const AboutUsSectionTwo = () => {
                       </h1>
                     )}
 
-                    <p className="about-us-section-two-description">
+                    <p
+                      className="about-content"
+                      style={{ paddingLeft: "0px", paddingTop: "15px" }}
+                    >
                       {about.description}
                     </p>
-
-                    {/* <div
-                      style={{
-                        display: "flex",
-                        width: "100%",
-                        justifyContent: "start",
-                      }}
-                    >
-                      <Link
-                        className="about-section-two-company-btn"
-                        href="/about"
-                      >
-                        <span>View Profile</span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          version="1.1"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                          width="18"
-                          height="18"
-                          x="0"
-                          y="0"
-                          viewBox="0 0 32 32"
-                        >
-                          <g>
-                            <path
-                              d="M26.68 3.867H8.175a1 1 0 0 0 0 2h16.544L4.2 26.387A1 1 0 1 0 5.613 27.8l20.52-20.52v16.545a1 1 0 0 0 2 0V5.321a1.456 1.456 0 0 0-1.453-1.454z"
-                              fill="#000000"
-                            ></path>
-                          </g>
-                        </svg>
-                      </Link>
-                    </div> */}
                   </div>
                 </div>
               </div>

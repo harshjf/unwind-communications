@@ -31,7 +31,7 @@ const WhyWe = () => {
   return (
     <div
       className="process-container"
-      style={{ marginLeft: "30px", paddingTop: "120px" }}
+      style={{ marginLeft: "50px", paddingTop: "180px" }}
     >
       <div className="container">
         <div

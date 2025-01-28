@@ -21,7 +21,7 @@ const Services = () => {
 
   return (
     <section
-      style={{ paddingBottom: "80px", paddingTop: "150px" }}
+      style={{ paddingBottom: "80px", paddingTop: "180px" }}
       className="services-container"
     >
       <div className="services-inner">

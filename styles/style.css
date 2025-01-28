@@ -251,8 +251,8 @@ Navbar Area CSS
   z-index: 999;
   padding-left: 0;
   padding-right: 0;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /*  padding-top: 25px;
+  padding-bottom: 25px; */
 }
 .navbar.is-sticky {
   position: fixed;
@@ -3907,7 +3907,7 @@ Join Area CSS
   display: inline-block;
   position: relative;
   width: 400px;
-  height: 400px;
+  height: 460px;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
@@ -5752,13 +5752,13 @@ Join Area CSS
 }
 
 .challenge {
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  /*  border: 1px solid rgba(0, 0, 0, 0.2); */
   margin-left: 30px;
   margin-right: 30px;
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 @media only screen and (max-width: 767px) {
   .challenge {
@@ -6013,16 +6013,19 @@ Join Area CSS
   border-radius: 8px;
   overflow: hidden;
   background-color: #fff;
+  /*  height: 390px; */
 }
 
 .video-card-title {
-  /*   padding-top: 25px; */
+  padding-top: 10px;
   padding-left: 8px;
   font-size: 1.5rem;
+  height: 85px;
 }
 
 .video-card:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  /*  height: 650px; */
   .video-card-title {
     padding-top: 25px;
   }
@@ -6126,6 +6129,7 @@ Join Area CSS
   color: black;
   font-size: 1rem;
   text-align: left;
+  padding-top: 25px;
 }
 
 .video-card-content .theme-dark p {
@@ -6175,6 +6179,11 @@ Join Area CSS
   margin-bottom: 30px;
 }
 
+.partner-cell {
+  flex: 1 1 40%;
+  min-width: 300px;
+  max-width: 43%;
+}
 .cell {
   flex: 1 1 30%;
   min-width: 300px;
@@ -7119,4 +7128,94 @@ Join Area CSS
 
 .recognition-view-more span {
   margin-right: 8px;
+}
+
+/* celebs connects */
+
+/* .carousel1-container {
+  position: relative;
+  width: 85%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  height: 60vh;
+  padding-top: 20px;
+}
+
+.carousel1 {
+  display: flex;
+  position: relative;
+  width: 60%;
+}
+
+.carousel1-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel1-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+ */
+
+.carousel1-container {
+  position: relative;
+  width: 85%;
+  margin: 0 auto; /* Remove any extra margin */
+  overflow: hidden;
+  display: flex;
+  height: 60vh;
+  padding-top: 0; /* Remove unnecessary padding */
+  align-items: flex-start; /* Ensure it starts from the top */
+}
+
+.carousel1 {
+  display: flex;
+  position: relative;
+  width: 60%;
+  height: 100%;
+}
+
+.carousel1-item {
+  position: absolute;
+  top: 0; /* Ensure images align to the top */
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 450px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.carousel1-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.mobile-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile-image {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
 }

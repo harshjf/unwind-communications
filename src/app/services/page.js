@@ -6,6 +6,7 @@ import ContactArea from "@/components/Common/ContactArea";
 import OurPartner from "@/components/Instagram/OurPartner";
 import Services from "@/components/Instagram/Services";
 import ProblemProcessSolution from "@/components/Instagram/ProblemProcessSolution";
+import CelebsConnect from "@/components/Instagram/CelebsConnect";
 
 const Page = () => {
   return (
@@ -14,7 +15,7 @@ const Page = () => {
 
       <Services />
       <ProblemProcessSolution />
-
+      <CelebsConnect />
       {/* <ContactArea /> */}
 
       <Footer />

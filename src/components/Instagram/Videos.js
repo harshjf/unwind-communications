@@ -41,7 +41,9 @@ const Videos = () => {
               <div className="vitors-title-section">
                 <div className="section-title">
                   <h1>
-                    <b>OUR  <span style={{ color: "#973d5d" }}>PARTNERS</span></b>
+                    <b>
+                      OUR <span style={{ color: "#973d5d" }}>PARTNERS</span>
+                    </b>
                   </h1>
                 </div>
               </div>
@@ -49,17 +51,19 @@ const Videos = () => {
           </div>
         </div>
         <div className="grid-container">
-          {destinationVideos.map((card, index) => (
-            <div className="cell medium-4" key={index} data-aos="flip-right">
-              <Card
-                image={card.imageUrl}
-                title={card.title}
-                text={card.text}
-                button="Watch Now"
-                videoUrl={card.videoUrl}
-              />
-            </div>
-          ))}
+          {destinationVideos
+            .filter((card) => card.show)
+            .map((card, index) => (
+              <div className="cell medium-4" key={index} data-aos="flip-right">
+                <Card
+                  image={card.imageUrl}
+                  title={card.title}
+                  text={card.text}
+                  button="Watch Now"
+                  videoUrl={card.videoUrl}
+                />
+              </div>
+            ))}
         </div>
       </section>
       <section>
