@@ -84,37 +84,12 @@ const Footer = () => {
 
           {/* Copyright Section */}
           <div className="copyright-area">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-6 col-lg-6 text-center text-lg-left">
-                  <div className="copyright-text">
-                    <p>
-                      Copyright &copy; {currentYear}, All Rights Reserved Unwind
-                      Communications
-                    </p>
-                  </div>
-                </div>
-                <div className="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                  <div className="footer-menu">
-                    <ul>
-                      <li>
-                        <Link href="/">Home</Link>
-                      </li>
-                      <li>
-                        <Link href="/terms">Terms</Link>
-                      </li>
-                      <li>
-                        <Link href="/privacy">Privacy</Link>
-                      </li>
-                      <li>
-                        <Link href="/policy">Policy</Link>
-                      </li>
-                      <li>
-                        <Link href="/contact">Contact</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+            <div className="container" style={{ textAlign: "center" }}>
+              <div className="copyright-text">
+                <p>
+                  Copyright &copy; {currentYear}, All Rights Reserved Unwind
+                  Communications
+                </p>
               </div>
             </div>
           </div>

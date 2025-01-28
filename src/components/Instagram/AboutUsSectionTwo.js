@@ -20,7 +20,8 @@ const AboutUsSectionTwo = () => {
     {
       image: "/images/home/shefali_saree-nobg.png",
       alt: "Shefali Saxena image",
-      name: "Shefali Saxena",
+      name: "SHEFALI SAXENA",
+      designation: "FOUNDER",
       description:
         "Lubaina spearheads BRANDit to make it a trusted partner for her clients and help them navigate the diversity, scale and complexity of India. She brings with her in-depth knowledge and understanding of the intricacies of outbound travel. She provides deep insight, sound counsel and seamless execution to numerous tourism boards and hospitality brands.",
       link: "/about",
@@ -28,7 +29,8 @@ const AboutUsSectionTwo = () => {
     {
       image: "https://placehold.co/260x300",
       alt: "Dummy image",
-      name: "Dummy Name",
+      name: "LOREM IPSUM",
+      designation: "DESIGNATION",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit felis eu sapien laoreet, et vehicula justo pharetra.",
       link: "/about",
@@ -57,8 +59,8 @@ const AboutUsSectionTwo = () => {
                     }}
                   >
                     <b>
-                      ABOUT THE{" "}
-                      <span style={{ color: "#973d5d" }}>FOUNDER</span>
+                      ABOUT THE {about.designation}{" "}
+                      <span style={{ color: "#973d5d" }}>{about.name}</span>
                     </b>
                   </h2>
                 )}
@@ -93,20 +95,18 @@ const AboutUsSectionTwo = () => {
                     {!isMobile && (
                       <h1 className="about-us-section-two-title ">
                         <b>
-                          ABOUT THE FOUNDER
+                          ABOUT THE {about.designation}
                           <br />
-                          <span style={{ color: "#973d5d" }}>
-                            SHEFALI SAXENA
-                          </span>
+                          <span style={{ color: "#973d5d" }}>{about.name}</span>
                         </b>
                       </h1>
                     )}
 
                     <p className="about-us-section-two-description">
-                     {about.description}
+                      {about.description}
                     </p>
 
-                    <div
+                    {/* <div
                       style={{
                         display: "flex",
                         width: "100%",
@@ -136,7 +136,7 @@ const AboutUsSectionTwo = () => {
                           </g>
                         </svg>
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

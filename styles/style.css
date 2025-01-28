@@ -6474,15 +6474,41 @@ Join Area CSS
 }
 
 .recognition-btn {
-  color: white;
+  position: relative;
   display: inline-flex;
+  margin-top: 10px;
   align-items: center;
-  padding: 10px;
+  gap: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  padding: 6px;
+  border-bottom: 1px solid #fff;
   cursor: pointer;
+
+  &:before {
+    content: "";
+    background: #f0f0f0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+    padding-bottom: 1px;
+    box-sizing: unset;
+  }
+
+  &:hover:before {
+    width: 100%;
+  }
 }
 
 .recognition-btn:hover {
-  background-color: white;
+  text-decoration: none;
+  color: #973d5d;
 }
 
 .recognition-btn svg path {

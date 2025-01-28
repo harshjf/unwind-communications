@@ -65,7 +65,7 @@ const AboutTheFounder = () => {
                     data-aos-duration="800"
                     data-aos-once="true"
                   >
-                    <ul class="custom-list">
+                    <ul className="custom-list">
                       {AboutTheFounderData.listItems.map((text, idx) => {
                         return (
                           <li key={idx}>
