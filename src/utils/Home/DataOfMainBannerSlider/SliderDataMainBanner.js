@@ -1,4 +1,4 @@
-export const sliderData = [
+/* export const sliderData = [
   {
     description: "Embark on India's unforgettable journeys.",
     image: "images/instagram/Slider_homepage1.png",
@@ -33,5 +33,32 @@ export const sliderData = [
     description:
       "Step into the sacred legacy of Ayodhya, where legends are born.",
     image: "images/instagram/Slider_homepage6.jpg",
+  },
+]; */
+
+export const sliderData = [
+  {
+    description: "Bharat Darshan at Global Level with Unwind Communications.",
+    image: "images/slider/1.gif",
+  },
+  {
+    description:
+      "Celebrating Indian Cultural Heritage & its Glory at Iconic Venues, Enhancing Tourism.",
+    image: "images/slider/2.jpeg",
+  },
+  {
+    description:
+      "Step into Sacred Legacy of Ancient History & Mythology though Unwind Communications.",
+    image: "images/slider/3.jpeg",
+  },
+  {
+    description:
+      "Partner with Unwind Communications to Elevate your MICE & Wedding Tourism.",
+    image: "images/slider/4.jpeg",
+  },
+  {
+    description:
+      "Discover India’s Treasure like Never Before, with Unwind Communications.",
+    image: "images/slider/5.webp",
   },
 ];

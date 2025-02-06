@@ -31,7 +31,7 @@ const OurPartner = () => {
   }, []);
   return (
     <>
-      <section>
+      <section style={{ backgroundColor: "azure" }}>
         <div className="video-section">
           <div className="e-con-inner">
             <div className="widget-container">

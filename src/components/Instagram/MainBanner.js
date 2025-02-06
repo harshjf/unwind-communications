@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -8,59 +7,32 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade"; // Import fade effect CSS
 import Image from "next/image";
 import sliderArrow from "/public/images/sliderArrow.svg";
-import { act, useEffect, useRef, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useRef } from "react";
 import { sliderData } from "@/utils/Home/DataOfMainBannerSlider/SliderDataMainBanner";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
   slidesPerView: 1,
   autoplay: {
-    delay: 4000,
+    delay: 5500,
     disableOnInteraction: false,
   },
-  loop: false,
+  loop: true, // Smooth looping enabled
   effect: "fade",
   fadeEffect: {
     crossFade: true,
   },
+  speed: 1200, // Smoother transitions
 };
 
 const MainBanner = () => {
   const swiperRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [textAnimating, setTextAnimating] = useState(true);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-    });
-  }, []);
 
   return (
     <div className="homepage-slider-container">
       <Swiper
         {...swiperOptions}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        onSlideChange={(swiper) => {
-          setTextAnimating(false);
-          setTimeout(() => {
-            setActiveIndex(swiper.activeIndex);
-            setTextAnimating(true);
-          }, 300);
-        }}
-        onReachEnd={() => {
-          if (swiperRef.current?.realIndex === sliderData.length - 1) {
-            setTextAnimating(false);
-            setTimeout(() => {
-              setActiveIndex(0);
-              swiperRef.current?.slideTo(0);
-              setTextAnimating(true);
-            }, 300);
-          }
-        }}
       >
         {sliderData.map((slide, index) => (
           <SwiperSlide key={index}>
@@ -74,11 +46,7 @@ const MainBanner = () => {
                 className="homepage-slider-image"
               />
               <div className="homepage-slider-content">
-                <p
-                  className={`homepage-slider-description ${
-                    textAnimating && activeIndex === index ? "fade-in-left" : ""
-                  }`}
-                >
+                <p className="homepage-slider-description">
                   {slide.description}
                 </p>
               </div>

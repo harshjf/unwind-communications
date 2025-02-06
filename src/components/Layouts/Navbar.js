@@ -66,10 +66,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
-        id="navbar"
-        className="navbar navbar-expand-lg navbar-light bg-light"
-      >
+      <nav id="navbar" className="navbar navbar-expand-lg navbar-light">
         <div className="container">
           <Link
             href="/instagram"
@@ -90,24 +87,13 @@ const Navbar = () => {
                 lineHeight: "1.2",
                 fontSize: "16px",
                 fontWeight: "bold",
+                fontFamily: "Garamond",
               }}
             >
-              <span
-                style={{
-                  fontSize: "20px",
-                  fontWeight: "600",
-                  color: "#973d5d",
-                }}
-              >
+              <span className="brand-text" style={{ color: "#973d5d" }}>
                 UNWIND
               </span>
-              <span
-                style={{
-                  fontSize: "18px",
-                  fontWeight: "400",
-                  color: "#041D33",
-                }}
-              >
+              <span className="brand-text" style={{ color: "#041D33" }}>
                 COMMUNICATIONS
               </span>
             </div>
@@ -142,7 +128,9 @@ const Navbar = () => {
                 <Link
                   href="/about"
                   onClick={() => toggleNavbar("about")}
-                  className={`nav-link ${currentRoute === "/about/" && "active"} `}
+                  className={`nav-link ${
+                    currentRoute === "/about/" && "active"
+                  } `}
                 >
                   About
                 </Link>
@@ -226,7 +214,18 @@ const Navbar = () => {
                     currentRoute === "/partner/" && "active"
                   } `}
                 >
-                  Partner
+                  Partners
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  href="/contact-us"
+                  onClick={() => toggleNavbar("contact-us")}
+                  className={`nav-link ${
+                    currentRoute === "/contact-us/" && "active"
+                  } `}
+                >
+                  Contact Us
                 </Link>
               </li>
             </ul>

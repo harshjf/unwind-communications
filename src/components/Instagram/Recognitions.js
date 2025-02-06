@@ -22,49 +22,73 @@ const Recognitions = () => {
   }, []);
 
   return (
-    <div
-      style={{
-        /*  backgroundColor: "#041d33", */
-        paddingTop: "80px",
-        paddingBottom: "100px",
-      }}
-    >
-      <div className="container-fluid ">
-        {/*  <h1 className="radio-interviews-title text-center">
-          <b>
-            <span style={{ color: "white" }}>OUR</span>{" "}
-            <span style={{ color: "#973d5d" }}>RECOGNITION</span>
-          </b>
-        </h1> */}
-        <div className="recognition-grid" style={{ paddingTop: "150px" }}>
-          {RecognitionData.map((card, index) => (
-            <div key={index} className="recognition-card" data-aos="fade-up">
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  backgroundColor: "white",
-                  border: "none",
-                  borderRadius: "10px",
-                  paddingTop: "10px",
-                }}
-              >
-                <div className="recognition-card-image-container">
-                  <Image
-                    src={card.src}
-                    alt={card.alt}
-                    layout="fill"
-                    objectFit="contain"
-                    className="recognition-card-image"
-                  />
+    <>
+      <div
+        style={{
+          paddingTop: "80px",
+          paddingBottom: "20px",
+        }}
+      >
+        <div className="container-fluid">
+          <div
+            className="recognition-grid"
+            style={{
+              marginTop: "80px",
+              paddingBottom: "50px",
+              backgroundColor: "azure",
+            }}
+          >
+            {RecognitionData.map((card, index) => {
+              const content = (
+                <div>
+                  <div className="recognition-card-image-container">
+                    <Image
+                      src={card.src}
+                      alt={card.alt}
+                      layout="fill"
+                      objectFit="contain"
+                      className="recognition-card-image"
+                    />
+                  </div>
+                  <h3 className="recognition-card-title">{card.title}</h3>
                 </div>
-                <h3 className="recognition-card-title">{card.title}</h3>
-              </div>
-            </div>
-          ))}
+              );
+
+              return (
+                <div
+                  key={index}
+                  className="recognition-card"
+                  data-aos="fade-up"
+                >
+                  <div
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      backgroundColor: "white",
+                      border: "none",
+                      borderRadius: "10px",
+                      paddingTop: "10px",
+                    }}
+                  >
+                    {card.link ? (
+                      <Link
+                        href={card.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {content}
+                      </Link>
+                    ) : (
+                      content
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -53,7 +53,7 @@ const CelebsConnect = () => {
         >
           <h1>
             <b>
-              CELEBS <span style={{ color: "#973d5d" }}>CONNECTS</span>
+              CELEBS <span style={{ color: "#973d5d" }}>CONNECT</span>
             </b>
           </h1>
         </div>

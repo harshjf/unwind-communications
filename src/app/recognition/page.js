@@ -6,6 +6,7 @@ import ContactArea from "@/components/Common/ContactArea";
 import OurPartner from "@/components/Instagram/OurPartner";
 import Recognition from "@/components/Instagram/Recognition";
 import Recognitions from "@/components/Instagram/Recognitions";
+import RadioInterviews from "@/components/Instagram/RadioInterviews";
 
 const Page = () => {
   return (
@@ -15,6 +16,8 @@ const Page = () => {
       {/*    <OurPartner /> */}
       <Recognitions />
       {/* <ContactArea /> */}
+
+      <RadioInterviews />
 
       <Footer />
     </>

@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { destinationVideos, destinationVlogs } from "../../../lib/data.js";
+import RadioInterviews from "./RadioInterviews"; // Import RadioInterviews
 
 const Card = ({ image, title, text, button, videoUrl }) => {
   return (
@@ -32,6 +33,7 @@ const Videos = () => {
   useEffect(() => {
     AOS.init({ duration: 1000, easing: "ease-in-out" });
   }, []);
+
   return (
     <>
       <section>
@@ -50,22 +52,47 @@ const Videos = () => {
             </div>
           </div>
         </div>
+
+        {/* Grid Container */}
         <div className="grid-container">
           {destinationVideos
             .filter((card) => card.show)
             .map((card, index) => (
-              <div className="cell medium-4" key={index} data-aos="flip-right">
-                <Card
-                  image={card.imageUrl}
-                  title={card.title}
-                  text={card.text}
-                  button="Watch Now"
-                  videoUrl={card.videoUrl}
-                />
-              </div>
+              <React.Fragment key={index}>
+                <div className="cell medium-4" data-aos="flip-right">
+                  <Card
+                    image={card.imageUrl}
+                    title={card.title}
+                    text={card.text}
+                    button="Watch Now"
+                    videoUrl={card.videoUrl}
+                  />
+                </div>
+
+                {/* Remove below code in case don't want to render radio interview component */}
+                {(index + 1) % 3 === 0 &&
+                  index + 1 !== destinationVideos.length && (
+                    <>
+                      <div className="full-width">
+                        <RadioInterviews />
+                      </div>
+
+                      <div className="section-title">
+                        <h1>
+                          <b>
+                            OUR{" "}
+                            <span style={{ color: "#973d5d" }}>PARTNERS</span>
+                          </b>
+                        </h1>
+                      </div>
+                    </>
+                  )}
+                {/*end*/}
+              </React.Fragment>
             ))}
         </div>
       </section>
+
       <section>
         <div className="grid-container">
           {destinationVlogs.map((card, index) => (

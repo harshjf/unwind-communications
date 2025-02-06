@@ -37,19 +37,32 @@ const RadioInterviews = () => {
 
   return (
     <section id="interviews" className="radio-interviews-container">
-      <h1 className="radio-interviews-title">
-        <b>
-          <span style={{ color: "#B22222" }}>RADIO</span>{" "}
-          <span style={{ color: "#041d33" }}>INTERVIEWS</span>
-        </b>
-      </h1>
+      <div
+        className="title-section"
+        style={{
+          paddingBottom: "20px",
+        }}
+      >
+        <h1
+          className="title"
+          style={{
+            fontSize: "36px",
+            fontWeight: "700",
+            textAlign: "center",
+          }}
+        >
+          <b>
+            <span style={{ color: "#973d5d" }}>RADIO</span> INTERVIEWS
+          </b>
+        </h1>
+      </div>
 
       <div className="interviews-grid">
         {interviews.map((item) => (
           <div
             key={item.id}
             className="interview-card"
-            data-aos="flip-left" // AOS flip animation
+            data-aos="flip" // AOS flip animation
           >
             <a
               href={item.youtubeLink}

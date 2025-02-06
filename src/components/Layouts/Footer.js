@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="footer-section">
+      <footer className="footer-section" style={{ marginTop: "20px" }}>
         <div className="container">
           <div className="footer-content pt-5 pb-5">
             <div className="row">
@@ -28,9 +28,12 @@ const Footer = () => {
                   </div>
                   <div className="footer-text">
                     <p>
-                      Unwind Communications is an experiential marketing agency
-                      in Mumbai, India that specializes in event planning and
-                      management, digital marketing, and media PR.
+                      UNWIND COMMUNICATIONS stands as a premier Experiential
+                      Marketing Agency, helmed by the illustrious Artistpreneur,
+                      Shefali Saxena. Merging her expertise and inventiveness,
+                      she transforms venues into compelling narratives, crafting
+                      unparalleled experiences that amplify visibility and
+                      unlock new business opportunities.
                     </p>
                   </div>
                 </div>
@@ -58,9 +61,6 @@ const Footer = () => {
                     <li>
                       <Link href="/contact">Contact</Link>
                     </li>
-                    <li>
-                      <Link href="/radio-interviews">Radio Interviews</Link>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -73,8 +73,9 @@ const Footer = () => {
                   </div>
                   <div className="footer-text mb-25">
                     <p>
-                      B 501, Mota Mansion, Andheri West, Mumbai - 400058 (4th
-                      Cross Lane, Opp VIP Luggage Lane)
+                      Greenfields, B-402, <br /> Lokhandwala, Andheri (W),{" "}
+                      <br />
+                      Mumbai -53
                     </p>
                   </div>
                 </div>

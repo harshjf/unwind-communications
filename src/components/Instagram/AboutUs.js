@@ -5,7 +5,6 @@ import ModalForm from "../Common/Modal/ModalForm";
 import Image from "next/image";
 import Link from "next/link";
 
-
 const AboutUs = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -84,13 +83,16 @@ const AboutUs = () => {
                   <br />
                   <ul>
                     <li>
-                      <b>Targeted media PR</b>
+                      <b>Targeted Media PR</b>
                     </li>
                     <li>
                       <b>Strategic Digital Marketing</b>
                     </li>
                     <li>
                       <b>360° Promotion Strategy</b>
+                    </li>
+                    <li>
+                      <b>Showcase at Iconic Venues</b>
                     </li>
                   </ul>
                 </p>
@@ -110,7 +112,7 @@ const AboutUs = () => {
                     justifyContent: "end",
                   }}
                 >
-                  <Link className="about-company-btn" href="/about" >
+                  <Link className="about-company-btn" href="/about">
                     <span>View more</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

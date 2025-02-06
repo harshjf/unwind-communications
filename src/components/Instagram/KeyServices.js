@@ -1,26 +1,14 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SliderImage1 from "/public/images/instagram/Slider_homepage_extra1.png";
-import SliderImage2 from "/public/images/instagram/Slider_homepage_extra2.png";
-import Image from "next/image";
 import { KeyServicesData } from "@/utils/Home/DataOfKeyServices/KeyServicesData";
 
 const KeyServices = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [hovered, setHovered] = useState(false); // Track hover state globally
+  const [hovered, setHovered] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
-  const imageUrls = [
-    "/images/instagram/Slider_homepage_extra1.png",
-    "/images/instagram/Slider_homepage_extra2.png",
-    "/images/instagram/Slider_homepage_extra1.png",
-    "/images/instagram/Slider_homepage_extra2.png",
-    "/images/instagram/Slider_homepage_extra1.png",
-    "/images/instagram/Slider_homepage_extra2.png",
-  ];
-  const [currentImage, setCurrentImage] = useState(imageUrls[0]);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -33,64 +21,145 @@ const KeyServices = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const handleImageChange = useCallback(
-    (index) => {
-      setHovered(true);
-      setActiveIndex(index);
-      setCurrentImage(imageUrls[index]);
-    },
-    [imageUrls]
-  );
-
   return (
     <>
       <h1
-        style={{ paddingTop: "80px" }}
-        className="radio-interviews-title text-center"
+        style={{ paddingTop: "80px", textAlign: "center" }}
+        className="radio-interviews-title"
       >
         <b>
           <span style={{ color: "#041d33" }}>OUR</span>{" "}
           <span style={{ color: "#973d5d" }}>SERVICES</span>
         </b>
       </h1>
-      <div className="keyServices__container">
-        <div className="keyServices__image-wrapper">
-          <Image
-            src={currentImage}
-            width={1400}
-            height={600}
-            alt="Key Services"
-            className="keyServices__image"
-          />
-          <div
-            className={`keyServices__grid-overlay ${
-              hovered ? "keyServices__grid-overlay--hovered" : ""
-            }`}
-          >
-            {KeyServicesData.map((services, index) => (
-              <div
-                key={index}
-                className="keyServices__grid-item"
-                onMouseEnter={() => handleImageChange(index)} // Use the callback
-                onMouseLeave={() => {
-                  setHovered(false); // Reset global hover state
-                  setActiveIndex(null);
-                }}
-              >
-                <div className="keyServices__grid-item-overlay-inner"></div>
-                <div className="keyServices__grid_contain-items">
-                  <p className="keyServices__grid-title">{services.title}</p>
-                  <p className="keyServices__grid-description">
-                    {services.description}
-                  </p>
+
+      {!isMobile ? (
+        <div className="keyServices__container">
+          <div className="keyServices__solid-background">
+            <div
+              className={`keyServices__grid-overlay ${
+                hovered ? "keyServices__grid-overlay--hovered" : ""
+              }`}
+            >
+              {KeyServicesData.map((services, index) => (
+                <div
+                  key={index}
+                  className="keyServices__grid-item"
+                  onMouseEnter={() => {
+                    setHovered(true);
+                    setActiveIndex(index);
+                  }}
+                  onMouseLeave={() => {
+                    setHovered(false);
+                    setActiveIndex(null);
+                  }}
+                >
+                  {/* Image above the title */}
+
+                  <div className="keyServices__grid-item-overlay-inner"></div>
+                  <div
+                    className="keyServices__grid_contain-items"
+                    style={{ textAlign: "center" }}
+                  >
+                    <img
+                      src={services.imagesrc}
+                      alt={services.title}
+                      className="service-image"
+                    />
+                    <p className="keyServices__grid-title">{services.title}</p>
+                    <p
+                      className="keyServices__grid-description"
+                      style={{ lineHeight: "1.3" }}
+                    >
+                      {services.description}
+                    </p>
+                  </div>
+                  <div className="keyServices__grid-item-overlay"></div>
                 </div>
-                <div className="keyServices__grid-item-overlay"></div>
-              </div>
-            ))}
-            <div className="keyServices__grid-item-beneath-overlay"></div>
+              ))}
+              <div className="keyServices__grid-item-beneath-overlay"></div>
+            </div>
           </div>
         </div>
-      </div>
+      ) : (
+        <>
+          <div
+            style={{
+              padding: "20px",
+              textAlign: "center",
+            }}
+          >
+            {KeyServicesData.map((service, index) => (
+              <div
+                key={index}
+                style={{
+                  backgroundColor: "#973d5d",
+                  color: "#fff",
+                  padding: "20px",
+                  marginBottom: "20px",
+                  borderRadius: "8px",
+                  maxWidth: "600px",
+                  margin: "0 auto",
+                  textAlign: "center",
+                  marginBottom: "40px",
+                }}
+              >
+                <img
+                  src={service.imagesrc}
+                  alt={service.title}
+                  style={{
+                    width: "200px",
+                    height: "200px",
+                    maxWidth: "400px",
+                    borderRadius: "8px",
+                  }}
+                />
+                <h2
+                  style={{
+                    marginBottom: "10px",
+                    color: "white",
+                    fontFamily: "Garamond",
+                    fontWeight: "800",
+                  }}
+                >
+                  {service.title}
+                </h2>
+
+                <p
+                  style={{
+                    marginTop: "10px",
+                    fontSize: "16px",
+                    color: "white",
+                  }}
+                >
+                  {service.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+
+      <style jsx>{`
+        .keyServices__solid-background {
+          width: 100%;
+          height: 600px;
+          background-color: #973d5d;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+        }
+
+        /* Styling for the round image above the title */
+        .service-image {
+          width: 160px; /* Adjust the size as needed */
+          height: 160px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 15px; /* Space between image and title */
+        }
+      `}</style>
     </>
   );
 };
