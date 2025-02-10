@@ -35,7 +35,7 @@ const AboutUsSectionTwo = () => {
     {
       image: "/images/home/ramachandran.jpg",
       alt: "Ramachandran",
-      name: "Ramachandran Gopalakrishnan",
+      name: "RAMACHANDRAN GOPALAKRISHNAN",
       designation: "MENTOR & CO FOUNDER",
       description: `
         <p>With a rich career spanning 39 years, Ramachandran Gopalakrishnan has built a legacy of innovation, resilience, and strategic excellence. His journey is defined by <b>exponential ideas, unwavering passion, and authenticity—nurtured through decades of professional wisdom, shaping him into a formidable leader in his field</b>.</p>

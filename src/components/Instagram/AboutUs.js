@@ -98,7 +98,7 @@ const AboutUs = () => {
                 </p>
                 <br />
                 <p>
-                  within the <b>MICE, Travel, Event </b> and{" "}
+                  Within the <b>MICE, Travel, Event </b> and{" "}
                   <b>Wedding Industries.</b> <br />
                   We don&apos;t just enhance brand visibility; we forge powerful
                   narratives through Vlogs that open up new realms of
