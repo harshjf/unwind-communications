@@ -36,7 +36,7 @@ const AboutUsSectionTwo = () => {
       image: "/images/home/ramachandran.jpg",
       alt: "Ramachandran",
       name: "Ramachandran Gopalakrishnan",
-      designation: "DESIGNATION",
+      designation: "MENTOR & CO FOUNDER",
       description: `
         <p>With a rich career spanning 39 years, Ramachandran Gopalakrishnan has built a legacy of innovation, resilience, and strategic excellence. His journey is defined by <b>exponential ideas, unwavering passion, and authenticity—nurtured through decades of professional wisdom, shaping him into a formidable leader in his field</b>.</p>
         <p>A non-conformist and industry disruptor, Ramachandran Gopalakrishnan is a renowned <b>serial entrepreneur</b> whose visionary leadership has transformed multiple startups into thriving success stories. Recognized as a pioneer with the golden touch, he has illuminated the entrepreneurial landscape, earning a reputation as a trusted mentor and catalyst for growth.</p>
@@ -127,19 +127,6 @@ const AboutUsSectionTwo = () => {
                           <br />
                           <span style={{ color: "#973d5d" }}>{about.name}</span>
                           <br />
-                          <Link
-                            href={about.linkedinprofile}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <Image
-                              src="/images/home/linkedin.png"
-                              alt="LinkedIn"
-                              width={40}
-                              height={40}
-                              /* style={{ marginLeft: "10px" }} */
-                            />
-                          </Link>
                         </b>
                       </h1>
                     )}
@@ -148,6 +135,25 @@ const AboutUsSectionTwo = () => {
                       style={{ paddingLeft: "20px", paddingTop: "15px" }}
                       dangerouslySetInnerHTML={{ __html: about.description }}
                     ></div>
+                    <Link
+                      href={about.linkedinprofile}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        textDecoration: "none",
+                        gap: "10px", // Adjust spacing between text and icon
+                      }}
+                    >
+                      <Image
+                        src="/images/home/linkedin.png"
+                        alt="LinkedIn"
+                        width={40}
+                        height={40}
+                        style={{ marginLeft: "20px" }}
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -11,6 +11,7 @@ import { usePathname } from "next/navigation";
 const Recognition = () => {
   const [isMobile, setIsMobile] = useState(false);
   const pathname = usePathname();
+  const [hovered, setHovered] = useState(false);
 
   console.log(pathname);
 
@@ -77,7 +78,16 @@ const Recognition = () => {
         }}
       >
         <Link className="recognition-btn" href="/recognition">
-          <span>View more</span>
+          <span
+            style={{
+              color: hovered ? "#973D5D" : "white",
+              transition: "color 0.3s ease",
+            }}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+          >
+            View more
+          </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             version="1.1"

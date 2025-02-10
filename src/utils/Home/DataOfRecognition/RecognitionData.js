@@ -10,14 +10,14 @@ export const RecognitionData = [
     src: "/images/video/vision2.png",
     alt: "Vision 2",
     title:
-      "EMPOWERING PMMODI’S VISION FOR BHARAT AS A LEADING GLOBAL DESTINATION",
+      "EMPOWERING HONOURABLE PM SHRI NARENDRA MODI’S VISION FOR BHARAT AS A LEADING GLOBAL DESTINATION",
     show: true,
   },
   {
-    src: "/images/video/vision3-2.png",
+    src: "/images/video/vision3-3.png",
     alt: "Vision 3",
     title:
-      "POWER WOMAN AWARDED BY JAVED AKHTAR THROUGH A DEDICATED POETRY IN HIS HANDWRITING",
+      "POWER WOMAN AWARD BY JAVED AKHTAR THROUGH A DEDICATED POETRY IN HIS HANDWRITING",
     show: true,
   },
   {
@@ -30,8 +30,14 @@ export const RecognitionData = [
   {
     src: "/images/video/vision7.png",
     alt: "Vision 7",
+    title: "THE INDIA-RUSSIA BUSINESS FORUM EVENT HOSTED BY SHEFALI SAXENA",
+    show: false,
+  },
+  {
+    src: "/images/video/vision8.png",
+    alt: "Vision 8",
     title:
-      "A PRESTIGIOUS INDIA-RUSSIA BUSINESS FORUM EVENT HOSTED BY SHEFALI SAXENA",
+      "HONOURABLE MINISTER OF TOURISM & CULTURE, GAJENDRA SINGH SHEKHAWAT, DEPUTY CM RAJASTHAN, PRINCESS DIYA KUMARI & DEPUTY CM ORISSA PRAVATI PARIDA",
     show: false,
   },
 ];
