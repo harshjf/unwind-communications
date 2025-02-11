@@ -7005,6 +7005,12 @@ Join Area CSS
   height: 40px;
 }
 
+@media (max-width: 768px) {
+  .responsive-text {
+    font-size: 25px !important;
+  }
+}
+
 .recognition-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

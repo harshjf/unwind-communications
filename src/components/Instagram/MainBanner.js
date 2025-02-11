@@ -9,6 +9,7 @@ import Image from "next/image";
 import sliderArrow from "/public/images/sliderArrow.svg";
 import { useRef, useEffect, useState } from "react";
 import { sliderData } from "@/utils/Home/DataOfMainBannerSlider/SliderDataMainBanner";
+import { motion } from "framer-motion";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -95,32 +96,39 @@ const MainBanner = () => {
       </button>
 
       {currentIndex === 0 && showPopup && (
-        <div className="homepage-slider-popup">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5, x: "-50%", y: "80%" }}
+          animate={{ opacity: 1, scale: 1.75, x: "-50%", y: "80%" }}
+          transition={{
+            type: "spring",
+            stiffness: 30,
+            damping: 20,
+            delay: 1,
+          }}
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "white",
+            fontSize: "40px", //25px for mobile
+            fontWeight: "bold",
+            fontFamily: "Garamond, serif",
+            textAlign: "center",
+            maxWidth: "40%",
+            textShadow: "0px 0px 8px rgba(255, 255, 255, 0.8)",
+            padding: "15px 20px",
+            borderRadius: "10px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 1000,
+          }}
+          className="responsive-text"
+        >
           Bharat Darshan at Global Level with Unwind Communications.
-        </div>
+        </motion.div>
       )}
-
-      <style jsx>{`
-        .homepage-slider-popup {
-          position: absolute;
-          bottom: 15%;
-          left: 50%;
-          transform: translateX(-50%);
-          background: white;
-          color: black;
-          padding: 10px 25px;
-          font-size: 40px;
-          font-weight: 600;
-          font-family: Garamond, serif;
-          text-align: center;
-          border-radius: 8px;
-          max-width: 500px;
-          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-          opacity: ${showPopup ? "1" : "0"};
-          transition: opacity 0.5s ease-in-out;
-          z-index: 1000;
-        }
-      `}</style>
     </div>
   );
 };
