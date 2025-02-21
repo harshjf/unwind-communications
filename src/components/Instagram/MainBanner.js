@@ -9,7 +9,7 @@ import Image from "next/image";
 import sliderArrow from "/public/images/sliderArrow.svg";
 import { useRef, useEffect, useState } from "react";
 import { sliderData } from "@/utils/Home/DataOfMainBannerSlider/SliderDataMainBanner";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -44,58 +44,66 @@ const MainBanner = () => {
   }, [currentIndex]);
 
   return (
-    <div className="homepage-slider-container">
-      <Swiper
-        {...swiperOptions}
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
-        onSlideChange={(swiper) => setCurrentIndex(swiper.realIndex)}
-      >
-        {sliderData.map((slide, index) => (
-          <SwiperSlide key={index}>
-            <div className="homepage-slider">
-              <div className="homepage-slider-overlay"></div>
-              <Image
-                src={slide.image}
-                alt={slide.title}
-                fill
-                sizes="100vw"
-                className="homepage-slider-image"
-              />
-              <div className="homepage-slider-content">
-                <p className="homepage-slider-description">
-                  {slide.description}
-                </p>
+    <>
+      <div className="homepage-slider-container">
+        <Swiper
+          {...swiperOptions}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          onSlideChange={(swiper) => setCurrentIndex(swiper.realIndex)}
+        >
+          {sliderData.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <div className="homepage-slider">
+                <div className="homepage-slider-overlay"></div>
+                <div className="homepage-image-container">
+                  <Image
+                    src={slide.image}
+                    alt={slide.title}
+                    fill
+                    sizes="100vw"
+                    className="homepage-slider-image"
+                  />
+                </div>
+
+                <div className="homepage-slider-content shimmer">
+                  <p className="homepage-slider-description">
+                    {slide.description}
+                  </p>
+                </div>
               </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
-      <button
-        className="homepage-slider-button homepage-slider-button--left"
-        onClick={() => {
-          swiperRef.current?.slidePrev();
-          setShowPopup(false);
-        }}
-      >
-        <Image
-          src={sliderArrow}
-          alt="Previous"
-          className="homepage-slider-arrow"
-        />
-      </button>
+        <button
+          className="homepage-slider-button homepage-slider-button--left"
+          onClick={() => {
+            swiperRef.current?.slidePrev();
+            setShowPopup(false);
+          }}
+        >
+          <Image
+            src={sliderArrow}
+            alt="Previous"
+            className="homepage-slider-arrow"
+          />
+        </button>
 
-      <button
-        className="homepage-slider-button homepage-slider-button--right"
-        onClick={() => {
-          swiperRef.current?.slideNext();
-          setShowPopup(false);
-        }}
-      >
-        <Image src={sliderArrow} alt="Next" className="homepage-slider-arrow" />
-      </button>
+        <button
+          className="homepage-slider-button homepage-slider-button--right"
+          onClick={() => {
+            swiperRef.current?.slideNext();
+            setShowPopup(false);
+          }}
+        >
+          <Image
+            src={sliderArrow}
+            alt="Next"
+            className="homepage-slider-arrow"
+          />
+        </button>
 
-      {currentIndex === 0 && showPopup && (
+        {/* {currentIndex === 0 && showPopup && (
         <motion.div
           initial={{ opacity: 0, scale: 0.5, x: "-50%", y: "80%" }}
           animate={{ opacity: 1, scale: 1.75, x: "-50%", y: "80%" }}
@@ -107,11 +115,11 @@ const MainBanner = () => {
           }}
           style={{
             position: "absolute",
-            top: "50%",
+            top: "90%",
             left: "50%",
             transform: "translate(-50%, -50%)",
             color: "white",
-            fontSize: "40px", //25px for mobile
+            fontSize: "40px",
             fontWeight: "bold",
             fontFamily: "Garamond, serif",
             textAlign: "center",
@@ -128,8 +136,35 @@ const MainBanner = () => {
         >
           Bharat Darshan at Global Level with Unwind Communications.
         </motion.div>
-      )}
-    </div>
+      )} */}
+      </div>
+
+      <style jsx>{`
+        .shimmer {
+          background: linear-gradient(
+            -45deg,
+            #ffcc70,
+            #d60087,
+            #6100ff,
+            #ff0055
+          );
+          background-size: 400% 400%;
+          animation: shimmerAnimation 3s linear infinite;
+        }
+
+        @keyframes shimmerAnimation {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+      `}</style>
+    </>
   );
 };
 

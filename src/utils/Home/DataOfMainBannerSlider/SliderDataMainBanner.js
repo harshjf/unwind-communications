@@ -38,7 +38,7 @@
 
 export const sliderData = [
   {
-    description: "",
+    description: "  Bharat Darshan at Global Level with Unwind Communications.",
     image: "images/slider/1.gif",
   },
   {
@@ -54,7 +54,7 @@ export const sliderData = [
   {
     description:
       "Partner with Unwind Communications to Elevate your MICE & Wedding Tourism.",
-    image: "images/slider/4.png",
+    image: "images/slider/4.jpeg",
   },
   {
     description:
