@@ -362,6 +362,17 @@ const Navbar = () => {
                   Partners
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link
+                  href="/blogs"
+                  onClick={() => toggleNavbar("partner")}
+                  className={`nav-link ${
+                    currentRoute === "/blogs/" && "active"
+                  } `}
+                >
+                  Blogs
+                </Link>
+              </li>
 
               <li className="nav-item">
                 <Link
@@ -378,36 +389,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      <style jsx>{`
-        .shimmer {
-          background: linear-gradient(
-            -45deg,
-            #ffcc70,
-            #d60087,
-            #6100ff,
-            #ff0055
-          );
-          background-size: 400% 400%;
-          animation: shimmerAnimation 3s linear infinite;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          display: inline-block;
-          font-weight: bold;
-        }
-
-        @keyframes shimmerAnimation {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-        }
-      `}</style>
     </>
   );
 };

@@ -10,8 +10,6 @@ const Page = () => {
 
       <Videos />
 
-      {/* <ContactArea /> */}
-
       <Footer />
     </>
   );

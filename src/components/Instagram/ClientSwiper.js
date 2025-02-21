@@ -161,9 +161,9 @@ const ClientSwiper = () => {
         <Swiper
           modules={[Pagination, Autoplay]}
           slidesPerView={4}
-          spaceBetween={20}
+          spaceBetween={30}
           loop={true}
-          autoplay={{ delay: 2000, disableOnInteraction: false }}
+          autoplay={{ delay: 1000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           breakpoints={{
             320: { slidesPerView: 1 },
@@ -185,8 +185,8 @@ const ClientSwiper = () => {
                 src={client.image}
                 alt={client.name}
                 style={{
-                  width: "150px",
-                  height: "150px",
+                  width: "80%",
+                  height: "200px",
                   objectFit: "contain",
                   borderRadius: "8px",
                 }}

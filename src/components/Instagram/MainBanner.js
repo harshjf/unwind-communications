@@ -65,7 +65,7 @@ const MainBanner = () => {
                   />
                 </div>
 
-                <div className="homepage-slider-content shimmer">
+                <div className="homepage-slider-content shimmer1">
                   <p className="homepage-slider-description">
                     {slide.description}
                   </p>
@@ -138,32 +138,6 @@ const MainBanner = () => {
         </motion.div>
       )} */}
       </div>
-
-      <style jsx>{`
-        .shimmer {
-          background: linear-gradient(
-            -45deg,
-            #ffcc70,
-            #d60087,
-            #6100ff,
-            #ff0055
-          );
-          background-size: 400% 400%;
-          animation: shimmerAnimation 3s linear infinite;
-        }
-
-        @keyframes shimmerAnimation {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-        }
-      `}</style>
     </>
   );
 };

@@ -3,7 +3,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { destinationVideos, destinationVlogs } from "../../../lib/data.js";
-import RadioInterviews from "./RadioInterviews"; // Import RadioInterviews
 
 const Card = ({ image, title, text, button, videoUrl }) => {
   return (
@@ -17,7 +16,11 @@ const Card = ({ image, title, text, button, videoUrl }) => {
       <div className="video-card-image">
         <img src={image} alt={title} />
       </div>
+      <div className="video-card-title-container">
       <h2 className="video-card-title">{title}</h2>
+      </div>
+      {/* <span className="brand-text shimmer">{title}</span> */}
+
       <div className="video-card-content">
         <p>{text}</p>
         <span>
@@ -70,7 +73,7 @@ const Videos = () => {
                 </div>
 
                 {/* Remove below code in case don't want to render radio interview component */}
-                {(index + 1) % 3 === 0 &&
+                {/* {(index + 1) % 3 === 0 &&
                   index + 1 !== destinationVideos.length && (
                     <>
                       <div className="full-width">
@@ -86,7 +89,7 @@ const Videos = () => {
                         </h1>
                       </div>
                     </>
-                  )}
+                  )} */}
                 {/*end*/}
               </React.Fragment>
             ))}
@@ -108,6 +111,7 @@ const Videos = () => {
           ))}
         </div>
       </section>
+      
     </>
   );
 };

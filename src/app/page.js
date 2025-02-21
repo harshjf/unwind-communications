@@ -10,6 +10,7 @@ import AboutTheFounder from "@/components/Instagram/AboutTheFounder";
 import KeyServices from "@/components/Instagram/KeyServices";
 import OurPartner from "@/components/Instagram/OurPartner";
 import ClientSwiper from "@/components/Instagram/ClientSwiper";
+import BlogPosts from "@/components/Instagram/BlogPosts";
 export default function Home() {
   return (
     <>
@@ -30,6 +31,8 @@ export default function Home() {
       <ClientSwiper/>
 
       <Testimonials/>
+
+      <BlogPosts />
 
       <ContactArea />
 

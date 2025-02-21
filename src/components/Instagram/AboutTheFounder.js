@@ -12,9 +12,9 @@ const AboutTheFounder = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 800, // Default duration for animations
-      easing: "ease-in-out", // Smooth easing
-      once: true, // Animation triggers only once
+      duration: 800, 
+      easing: "ease-in-out",
+      once: true,
     });
 
     const checkMobile = () => {

@@ -26,7 +26,7 @@ const AboutUsSectionTwo = () => {
         <p>An Award Winning Indie Artist, Celebrity Host & a Content Creator, Shefali Saxena is UGC NET Qualified ~ recognised as Times of India Headliner and Artist of the Week by BIG FM, RED FM & spotlighted in Radio Mirchi.</p>
         <p>Shefali’s exquisite portrayal of <b>Indian Destinations & Venues on Streaming Platforms</b>, is honoured by the <b>Minister of Culture & Tourism, Honorable Gajendra Singh Shekhawat</b> and awarded as Power Woman by renowned, lyricist Javed Akhtar Sahab with a dedicated poetry in his handwriting.</p>
         <p>Shefali’s creative works seamlessly weave the cultural tapestry into music videos, complemented by <b>media promotions and digital marketing that drive substantial revenue</b>.</p>
-        <p>Boasting a repertoire of over 1200+ shows in the past decade, Shefali has hosted a <b>National Event with Honourable PM Shri. Narendra Modi at Rashtrapati Bhawan and also with Dr.S.Jaishankar for Ministry of External Affairs</b>.</p>
+        <p>Boasting a repertoire of over 1200+ shows in the past decade, Shefali has hosted a <b>National Event with Hon. PM Shri. Narendra Modi at Rashtrapati Bhawan and also with Dr.S.Jaishankar for Ministry of External Affairs</b>.</p>
         <p>Shefali has enchanted Corporates and Social gatherings with her exceptional talents as an Innovative Live Performer and Brand's presence with Celebrity Engagements too. Shefali has a spiritual inclination and stands as a beacon of inspiration, a visionary, and the generation’s voice.</p>`,
       link: "/about",
       linkedinprofile:
@@ -100,8 +100,8 @@ const AboutUsSectionTwo = () => {
                         width={253}
                         height={253}
                         style={{
-                          height: "500px",
-                          width: "500px",
+                          height: "400px",
+                          width: "370px",
                           paddingLeft: isMobile ? "16px" : "0px",
                         }}
                       />
@@ -132,7 +132,7 @@ const AboutUsSectionTwo = () => {
                     )}
                     <div
                       className="about-content"
-                      style={{ paddingLeft: "20px", paddingTop: "15px" }}
+                      style={{ paddingLeft: "20px", paddingTop: "15px"}}
                       dangerouslySetInnerHTML={{ __html: about.description }}
                     ></div>
                     <Link
@@ -143,7 +143,7 @@ const AboutUsSectionTwo = () => {
                         display: "flex",
                         alignItems: "center",
                         textDecoration: "none",
-                        gap: "10px", // Adjust spacing between text and icon
+                        gap: "10px", 
                       }}
                     >
                       <Image
@@ -151,7 +151,7 @@ const AboutUsSectionTwo = () => {
                         alt="LinkedIn"
                         width={40}
                         height={40}
-                        style={{ marginLeft: "20px" }}
+                        style={{ marginLeft: "20px", marginTop: "15px"  }}
                       />
                     </Link>
                   </div>

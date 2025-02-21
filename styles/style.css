@@ -35,8 +35,8 @@ body {
   padding: 0;
   margin: 0;
   font-size: 17px;
-  font-family: var(--font-open-sans);
-  /*  font-family: Garamond, serif; */
+  /* font-family: var(--font-open-sans); */
+   font-family: Garamond, serif;
   overflow-x: hidden;
   color: #000000;
 }
@@ -82,7 +82,7 @@ span {
 p {
   line-height: 1.7;
   color: #000000;
-  font-size: 17px;
+  font-size: 25px;
   margin-bottom: 15px;
 }
 p:last-child {
@@ -145,7 +145,7 @@ p:last-child {
   text-transform: uppercase;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -433,7 +433,7 @@ Main Banner Area CSS
   border: none;
   z-index: 1;
   color: #ffffff;
-  background-color: #ee0979;
+  background-color:rgb(151, 61, 93);
   padding: 0 25px;
   border-radius: 0 30px 0 0;
   font-size: 15px;
@@ -452,7 +452,7 @@ Main Banner Area CSS
   z-index: -1;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -460,7 +460,7 @@ Main Banner Area CSS
   );
 }
 .main-banner-content form button:hover {
-  background-color: #ee0979;
+  background-color:rgb(151, 61, 93);
   color: #ffffff;
 }
 .main-banner-content form button:hover::before {
@@ -537,7 +537,7 @@ Followers Area CSS
   z-index: -1;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -669,7 +669,7 @@ About Area CSS
   text-transform: uppercase;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -718,7 +718,7 @@ About Area CSS
   bottom: 0;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -864,7 +864,7 @@ Social Statistics Area CSS
   left: 0;
   display: none;
   top: 0;
-  background-color: #ee0979;
+  background-color:rgb(151, 61, 93);
   width: 100%;
   height: 100%;
   border-radius: 0 50px 0 0;
@@ -917,7 +917,7 @@ Social Statistics Area CSS
   color: #0077b5;
 }
 .single-social-statistics-box .link:hover {
-  color: #ee0979;
+  color:rgb(151, 61, 93);
 }
 .single-social-statistics-box .line {
   height: 1px;
@@ -960,7 +960,7 @@ Audience Area CSS
   margin-bottom: 5px;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -976,7 +976,7 @@ Audience Area CSS
   top: -1.5px;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -988,7 +988,7 @@ Audience Area CSS
 .followers-engagement-rate h3 .odometer .odometer-value {
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -1020,7 +1020,7 @@ Audience Area CSS
   display: inline-block;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -1193,7 +1193,7 @@ Video Area CSS
   text-transform: uppercase;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -1402,6 +1402,11 @@ Blog Area CSS
   z-index: 1;
 }
 
+.blog-image{
+  height: auto;
+  max-width: 85%;
+}
+
 .single-blog-post {
   margin-bottom: 30px;
   position: relative;
@@ -1423,7 +1428,7 @@ Blog Area CSS
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #ee0979;
+  background-color:rgb(151, 61, 93);
   width: 100%;
   height: 100%;
   border-radius: 0 100px 0 0;
@@ -1489,7 +1494,7 @@ Blog Area CSS
   display: none;
 }
 .single-blog-post .post-content .post-meta li a:hover {
-  color: #ee0979;
+  color:rgb(151, 61, 93);
 }
 .single-blog-post .post-content h3 {
   margin-bottom: 0;
@@ -1547,7 +1552,7 @@ Blog Details Area CSS
 }
 .blog-details-header .entry-meta ul li span {
   display: block;
-  color: #ee0979;
+  color:rgb(151, 61, 93);
   text-transform: uppercase;
   margin-bottom: 2px;
   font-size: 14px;
@@ -1590,7 +1595,7 @@ Blog Details Area CSS
   margin-bottom: 0;
 }
 .blog-details-desc .article-content p {
-  font-size: 16px;
+  font-size: 24px;
 }
 .blog-details-desc .article-content .features-list {
   padding-left: 0;
@@ -1603,7 +1608,7 @@ Blog Details Area CSS
   position: relative;
   padding-left: 17px;
   color: #000000;
-  font-size: 15.5px;
+  font-size: 20px;
   font-family: var(--font-open-sans);
 }
 .blog-details-desc .article-content .features-list li::before {
@@ -1612,7 +1617,7 @@ Blog Details Area CSS
   left: 0;
   width: 7px;
   height: 7px;
-  background-color: #ee0979;
+  background-color: rgb(151, 61, 93);
   border-radius: 50%;
   top: 8px;
 }
@@ -1686,16 +1691,16 @@ Blog Details Area CSS
   height: 32px;
   line-height: 32px;
   border-radius: 50%;
-  background-color: #ee0979;
+  background-color: rgb(151, 61, 93);
   color: #ffffff;
-  border: 1px solid #ee0979;
+  border: 1px solid rgb(151, 61, 93);
   text-align: center;
-  font-size: 13px;
+  font-size: 17px;
   margin-left: 5px;
 }
 .blog-details-desc .article-footer .article-share .social li a:hover,
 .blog-details-desc .article-footer .article-share .social li a:focus {
-  color: #ee0979;
+  color:rgb(151, 61, 93);
   background-color: transparent;
 }
 .blog-details-desc .article-footer .article-share .social li a.facebook {
@@ -1785,7 +1790,7 @@ blockquote::after,
   top: 0;
   bottom: 0;
   width: 4px;
-  background-color: #ee0979;
+  background-color: rgb(151, 61, 93);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1799,6 +1804,11 @@ blockquote::after,
   padding-bottom: 30px;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+}
+
+.blocks-gallery-item-image{
+  max-height: 390px;
+  max-width: 400px;
 }
 
 .prev-link-wrapper {
@@ -1819,7 +1829,7 @@ blockquote::after,
   visibility: visible;
 }
 .prev-link-wrapper a:hover .prev-link-info-wrapper {
-  color: #ee0979;
+  color:rgb(151, 61, 93);
 }
 .prev-link-wrapper .image-prev {
   display: inline-block;
@@ -1845,7 +1855,7 @@ blockquote::after,
   left: 0;
   border-radius: 5px;
   opacity: 0;
-  background-color: #ee0979;
+  background-color:rgb(151, 61, 93);
   visibility: hidden;
   transition: 0.5s;
 }
@@ -1873,7 +1883,7 @@ blockquote::after,
 .prev-link-wrapper .prev-title {
   display: inline-block;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 20px;
 }
 .prev-link-wrapper .meta-wrapper {
   display: block;
@@ -1881,8 +1891,10 @@ blockquote::after,
   text-transform: capitalize;
   margin-top: 5px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 17px;
 }
+
+
 
 .next-link-wrapper {
   flex: 0 0 50%;
@@ -1903,7 +1915,7 @@ blockquote::after,
   visibility: visible;
 }
 .next-link-wrapper a:hover .next-link-info-wrapper {
-  color: #ee0979;
+  color:rgb(151, 61, 93);
 }
 .next-link-wrapper .image-next {
   display: inline-block;
@@ -1929,7 +1941,7 @@ blockquote::after,
   left: 0;
   border-radius: 5px;
   opacity: 0;
-  background-color: #ee0979;
+  background-color:rgb(151, 61, 93);
   visibility: hidden;
   transition: 0.5s;
 }
@@ -1957,7 +1969,7 @@ blockquote::after,
 .next-link-wrapper .next-title {
   display: inline-block;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 20px;
 }
 .next-link-wrapper .meta-wrapper {
   display: block;
@@ -1965,7 +1977,7 @@ blockquote::after,
   text-transform: capitalize;
   margin-top: 5px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .comments-area {
@@ -2014,8 +2026,8 @@ blockquote::after,
 }
 .comments-area .comment-body .reply a:hover {
   color: #ffffff;
-  background-color: #ee0979;
-  border-color: #ee0979;
+  background-color:rgb(151, 61, 93);
+  border-color:rgb(151, 61, 93);
 }
 .comments-area p {
   font-size: 16px;
@@ -2052,7 +2064,7 @@ blockquote::after,
   color: #000000;
 }
 .comments-area .comment-metadata a:hover {
-  color: #ee0979;
+  color:rgb(151, 61, 93);
 }
 .comments-area .comment-respond {
   margin-top: 30px;
@@ -2224,7 +2236,7 @@ blockquote::after,
   width: 100%;
 }
 .comments-area .comment-respond .form-submit input {
-  background: #ee0979;
+  background:rgb(151, 61, 93);
   border: none;
   color: #ffffff;
   padding: 12px 30px;
@@ -2316,7 +2328,7 @@ Subscribe Area CSS
   bottom: 0;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -2357,7 +2369,7 @@ Subscribe Area CSS
   background-color: #973d5d;
 }
 .subscribe-form form button:hover {
-  background-color: #ee0979;
+  background-color:rgb(151, 61, 93);
   color: #ffffff;
 }
 .subscribe-form form button:hover::before {
@@ -2381,7 +2393,7 @@ Page Title Area CSS
   background-image: url(/images/youtube/page-title-bg2.jpg);
 }
 .page-banner-area .back-home a {
-  background-color: #ee0979;
+  background-color:rgb(151, 61, 93);
   color: #ffffff;
   display: inline-block;
   font-size: 14px;
@@ -2413,7 +2425,7 @@ Footer Area CSS
 .footer-area p a {
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -2450,7 +2462,7 @@ Footer Area CSS
   height: 100%;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -3770,11 +3782,11 @@ Join Area CSS
   margin-bottom: 10px;
   font-size: 35px;
   font-weight: 700;
-  font-family: var(--font-roboto);
+  /* font-family: var(--font-roboto); */
 }
 .join-content p {
   color: #f1f1f1;
-  font-family: var(--font-roboto);
+  /* font-family: var(--font-roboto); */
   font-size: 15px;
 }
 .join-content .btn-box {
@@ -3878,7 +3890,7 @@ Join Area CSS
 /* Solution styles */
 
 .solution-container {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
   margin: 0;
   min-height: 75vh;
   padding: 20px;
@@ -5456,8 +5468,9 @@ Join Area CSS
   display: block;
 }
 .section-title p {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 1.7;
+  font-family: Garamond;
   color: #000000;
 }
 .content-wrapper p {
@@ -5570,7 +5583,7 @@ Join Area CSS
 }
 [class^="icon-"],
 [class*=" icon-"] {
-  font-family: "icomoon" !important;
+  /* font-family: "icomoon" !important; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -5618,7 +5631,7 @@ Join Area CSS
   text-align: center;
   padding: 40px;
 
-  font-family: "Arial", sans-serif;
+  /* font-family: "Arial", sans-serif; */
 }
 
 .radio-interviews-title {
@@ -5865,7 +5878,7 @@ Join Area CSS
 .marquee .text {
   font-size: 28px;
   font-weight: bold;
-  font-family: "Arial", sans-serif;
+  /* font-family: "Arial", sans-serif; */
   background: linear-gradient(to right, #f9e7e7, #ffd6da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -5956,7 +5969,7 @@ Join Area CSS
 }
 
 .marquee__item p {
-  font-family: var(--font-open-sans);
+  /* font-family: var(--font-open-sans); */
   font-size: 32px;
   font-weight: 800;
   color: #041d33;
@@ -6007,7 +6020,7 @@ Join Area CSS
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 1.25rem;
+  padding: 1.25rem 1.25rem 4rem 1.25rem;
   background: #fff;
   border-radius: 0.75rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -6024,14 +6037,123 @@ Join Area CSS
 
 .video-card-title {
   padding-top: 10px;
-  padding-left: 8px;
   font-size: 1.5rem;
-  height: 85px;
+  text-align: center;
+  position: relative;
+  /* color: black; */
+  border: 2px solid transparent; 
+  display: inline-block;
+  /* -webkit-text-stroke: 2px transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-card),
+    var(--clr-1),
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-2),
+    var(--clr-1),
+    var(--clr-card)
+  );
+  animation: rotate 2.5s linear infinite; */
+
 }
+
+.shimmer {
+  background: linear-gradient(
+    -45deg,
+    #ffcc70,
+    #d60087,
+    #6100ff,
+    #ff0055
+  );
+  background-size: 400% 400%;
+  animation: shimmerAnimation 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: bold;
+}
+.shimmer1 {
+  background: linear-gradient(
+    -45deg,
+    #ffcc70,
+    #d60087,
+    #6100ff,
+    #ff0055
+  );
+  background-size: 400% 400%;
+  animation: shimmerAnimation 3s linear infinite;
+}
+
+@keyframes shimmerAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.video-card-title-container{
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 8px;
+  /* width: 400px; */
+  margin: 20px auto;
+}
+
+.video-card-title-container::after,
+.video-card-title-container::before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  inset: -0.4rem;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-card),
+    var(--clr-1),
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-2),
+    var(--clr-1),
+    var(--clr-card)
+  );
+  border-radius: inherit;
+  animation: rotate 2.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+
+
 
 .video-card:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  /*  height: 650px; */
   .video-card-title {
     padding-top: 25px;
   }
@@ -6236,7 +6358,7 @@ Join Area CSS
   height: 100%;
   background: linear-gradient(
     to left bottom,
-    #ee0979,
+   rgb(151, 61, 93),
     #fc1c62,
     #ff364a,
     #ff512f,
@@ -7388,4 +7510,10 @@ Join Area CSS
   .contact_alpha .contact_right {
     padding: 20px;
   }
+}
+
+
+.blog-details-area{
+  margin-top: 180px;
+  margin-bottom: 100px;
 }

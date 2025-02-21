@@ -10,7 +10,7 @@ export const RecognitionData = [
     src: "/images/video/vision2.png",
     alt: "Vision 2",
     title:
-      "EMPOWERING HONOURABLE PM SHRI NARENDRA MODI’S VISION FOR BHARAT AS A LEADING GLOBAL DESTINATION",
+      "EMPOWERING HON. PM SHRI NARENDRA MODI’S VISION FOR BHARAT AS A LEADING GLOBAL DESTINATION",
     show: true,
   },
   {
@@ -30,14 +30,14 @@ export const RecognitionData = [
   {
     src: "/images/video/vision7.png",
     alt: "Vision 7",
-    title: "THE INDIA-RUSSIA BUSINESS FORUM EVENT HOSTED BY SHEFALI SAXENA",
+    title: "INDIA-RUSSIA BUSINESS FORUM HOSTED BY SHEFALI SAXENA",
     show: false,
   },
   {
     src: "/images/video/vision8.png",
     alt: "Vision 8",
     title:
-      "HONOURABLE MINISTER OF TOURISM & CULTURE, GAJENDRA SINGH SHEKHAWAT, DEPUTY CM RAJASTHAN, PRINCESS DIYA KUMARI & DEPUTY CM ORISSA PRAVATI PARIDA",
+      "HON. MINISTER OF TOURISM & CULTURE, GAJENDRA SINGH SHEKHAWAT, DY. CM RAJASTHAN, PRINCESS DIYA KUMARI & DY. CM ORISSA PRAVATI PARIDA",
     show: false,
   },
 ];

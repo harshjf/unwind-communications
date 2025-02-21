@@ -6,6 +6,7 @@ import Link from "next/link";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { RecognitionData } from "@/utils/Home/DataOfRecognition/RecognitionData";
+import RadioInterviews from "./RadioInterviews";
 
 const Recognitions = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -85,6 +86,9 @@ const Recognitions = () => {
                 </div>
               );
             })}
+          </div>
+          <div className="full-width">
+            <RadioInterviews />
           </div>
         </div>
       </div>

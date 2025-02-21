@@ -17,10 +17,13 @@ const Card = ({ image, title, text, button, videoUrl }) => {
         minHeight: "348.49px",
       }}
     >
-      <div className="video-card-image">
+      <div className="video-card-image ">
         <img src={image} alt={title} />
       </div>
+      <div className="video-card-title-container">
       <h2 className="video-card-title">{title}</h2>
+      </div>
+      {/* <span className="brand-text shimmer">{title}</span> */}
     </a>
   );
 };

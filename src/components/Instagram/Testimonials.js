@@ -124,6 +124,7 @@ const Testimonials = () => {
             data-aos-once="true"
             initial="hidden"
             whileInView="visible"
+            fontFamily= "Garamond"
             viewport={{ once: true }}
             variants={fadeInUp}
             style={{ maxWidth: "900px" }}
