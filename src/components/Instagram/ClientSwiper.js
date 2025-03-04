@@ -194,7 +194,7 @@ const ClientSwiper = () => {
               <p
                 style={{
                   marginTop: "10px",
-                  fontSize: "24px",
+                  fontSize: "32px",
                   color: "#333",
                   fontWeight: "bold",
                   textAlign: "center",

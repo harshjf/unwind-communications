@@ -37,7 +37,7 @@ export const RecognitionData = [
     src: "/images/video/vision8.png",
     alt: "Vision 8",
     title:
-      "HON. MINISTER OF TOURISM & CULTURE, GAJENDRA SINGH SHEKHAWAT, DY. CM RAJASTHAN, PRINCESS DIYA KUMARI & DY. CM ORISSA PRAVATI PARIDA",
+      "HON. MINISTER OF TOURISM & CULTURE, GAJENDRA SINGH SHEKHAWAT, Dep. CM RAJASTHAN, PRINCESS DIYA KUMARI & Dep. CM ORISSA PRAVATI PARIDA",
     show: false,
   },
 ];
