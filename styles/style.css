@@ -7340,7 +7340,7 @@ Join Area CSS
 
 .carousel1-item {
   position: absolute;
-  top: 0; /* Ensure images align to the top */
+  top: 0; 
   left: 50%;
   transform: translate(-50%, 0);
   width: 450px;
