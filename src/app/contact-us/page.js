@@ -7,10 +7,7 @@ export default function page() {
   return (
     <>
       <Navbar />
-      <div
-        className="process-container"
-        style={{ marginLeft: "50px", paddingTop: "180px" }}
-      >
+      <div className="process-container" style={{ paddingTop: "180px" }}>
         <div className="industify_fn_contact">
           <div className="container">
             <div className="contact_in">
@@ -20,14 +17,6 @@ export default function page() {
 
             <ContactInfo />
             <div className="map_holder my-4">
-              {/* <iframe
-                width="600"
-                height="450"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe> */}
               <iframe
                 width="100%"
                 height="400"

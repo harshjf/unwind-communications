@@ -99,7 +99,6 @@ const KeyServices = () => {
                   marginBottom: "20px",
                   borderRadius: "8px",
                   maxWidth: "600px",
-                  margin: "0 auto",
                   textAlign: "center",
                   marginBottom: "40px",
                 }}
@@ -117,6 +116,7 @@ const KeyServices = () => {
                 <h2
                   style={{
                     marginBottom: "10px",
+                    marginTop: "10px",
                     color: "white",
                     fontFamily: "Garamond",
                     fontWeight: "800",

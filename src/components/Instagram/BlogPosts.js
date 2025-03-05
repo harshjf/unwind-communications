@@ -35,7 +35,7 @@ const BlogPosts = () => {
             >
               <div className="single-blog-post">
                 <div className="post-image">
-                  <Link href="/blogs" target="_blank">
+                  <Link href={blog.blogLink}>
                     <Image
                       src={blog.images[0]}
                       alt="blog image"

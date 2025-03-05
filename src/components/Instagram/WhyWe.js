@@ -29,10 +29,7 @@ const WhyWe = () => {
   }, []);
 
   return (
-    <div
-      className="process-container"
-      style={{ marginLeft: "50px", paddingTop: "180px" }}
-    >
+    <div className="process-container" style={{ paddingTop: "180px" }}>
       <div className="container">
         <div
           className="section-title"
