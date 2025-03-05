@@ -22,23 +22,23 @@ const Blog = ({ blog }) => {
                     <li>
                       <i className="bx bx-folder"></i>
                       <span>Category:</span>
-                      <Link href={blog.meta.category.link}>
-                        {blog.meta.category.name}
-                      </Link>
+                      {/* <Link href={blog.meta.category.link}> */}
+                      {blog.meta.category.name}
+                      {/* </Link> */}
                     </li>
                     <li>
                       <i className="bx bxs-user-detail"></i>
                       <span>Posted By:</span>
-                      <Link href={blog.meta.author.link}>
-                        {blog.meta.author.name}
-                      </Link>
+                      {/* <Link href={blog.meta.author.link}> */}
+                      {blog.meta.author.name}
+                      {/* </Link> */}
                     </li>
                     <li>
                       <i className="bx bx-calendar"></i>
                       <span>Posted On:</span>
-                      <Link href={blog.meta.date.link}>
-                        {blog.meta.date.value}
-                      </Link>
+                      {/* <Link href={blog.meta.date.link}> */}
+                      {blog.meta.date.value}
+                      {/* </Link> */}
                     </li>
                   </ul>
                 </div>

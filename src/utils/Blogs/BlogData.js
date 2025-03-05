@@ -17,7 +17,7 @@ const blogData = [
     meta: {
       category: { name: "Destination Marketing", link: "#" },
       author: { name: "Unwind Communications", link: "#" },
-      date: { value: "01/14/2025", link: "#" },
+      date: { value: "03-02-2025", link: "#" },
     },
     content: [
       {
@@ -99,7 +99,7 @@ const blogData = [
     meta: {
       category: { name: "Destination Promotion", link: "#" },
       author: { name: "Unwind Communications", link: "#" },
-      date: { value: "01/14/2025", link: "#" },
+      date: { value: "03-02-2025", link: "#" },
     },
     content: [
       {
