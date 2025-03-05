@@ -73,9 +73,10 @@ const Footer = () => {
                   </div>
                   <div className="footer-text mb-25">
                     <p>
-                      Greenfields, B-402, <br /> Lokhandwala, Andheri (W),{" "}
-                      <br />
-                      Mumbai -53
+                      404-Abhay steel house,
+                      <br /> Baroda Street, <br />
+                      Masjid East,
+                      <br /> Bombay - 400009
                     </p>
                   </div>
                 </div>

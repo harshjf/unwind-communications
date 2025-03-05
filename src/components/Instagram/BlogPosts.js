@@ -41,7 +41,7 @@ const BlogPosts = () => {
                       alt="blog image"
                       width={700}
                       height={830}
-                      className= "blog-image"
+                      className="blog-image"
                     />
                   </Link>
                 </div>
@@ -54,8 +54,8 @@ const BlogPosts = () => {
                     <li>{blog.readTime}</li>
                   </ul>
                   <h3>
-                    <Link href={blog.blogLink} target="_blank">
-                      {blog.content[0].slice(0, 100)}...
+                    <Link href={blog.blogLink}>
+                      {blog.content[0].text.slice(0, 100)}...
                     </Link>
                   </h3>
                 </div>

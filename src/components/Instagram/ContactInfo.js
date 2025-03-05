@@ -94,14 +94,14 @@ const ContactInfo = () => {
             </svg>
           }
           title="Visit Here"
-          content="Greenfields, B-402, Lokhandwala, Andheri (W), Mumbai -53"
+          content="404-Abhay steel house, Baroda Street, Masjid East, Bombay - 400009"
         />
         <ContactCard
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="24px"
-              viewBox="0 -960 960 960"
+              viewBox="+91-9867231281"
               width="24px"
               fill="currentColor"
             >
@@ -109,7 +109,7 @@ const ContactInfo = () => {
             </svg>
           }
           title="Call Here"
-          content="+91 99200 66848"
+          content="+91 98672 31281"
         />
       </div>
     </div>

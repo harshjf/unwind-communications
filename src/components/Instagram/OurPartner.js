@@ -21,7 +21,14 @@ const Card = ({ image, title, text, button, videoUrl }) => {
         <img src={image} alt={title} />
       </div>
       <div className="video-card-title-container">
-      <h2 className="video-card-title">{title}</h2>
+        {/* <h2 className="video-card-title">{title}</h2> */}
+        <h2 className="video-card-title" style={{ textTransform: "uppercase" }}>
+          {title.split(",")[0]}
+          {title.includes(",") && <span style={{ color: "#041D33" }}>, </span>}
+          {title.includes(",") && (
+            <span style={{ color: "#973D5D" }}>{title.split(",")[1]}</span>
+          )}
+        </h2>
       </div>
       {/* <span className="brand-text shimmer">{title}</span> */}
     </a>

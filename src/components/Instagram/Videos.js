@@ -11,13 +11,20 @@ const Card = ({ image, title, text, button, videoUrl }) => {
       target="_blank"
       rel="noopener noreferrer"
       className="video-card"
-      style={{ minWidth: "363.2px", minHeight: "348.49px" }}
+      style={{ minWidth: "363.2px", minHeight: "480.49px" }}
     >
       <div className="video-card-image">
         <img src={image} alt={title} />
       </div>
       <div className="video-card-title-container">
-      <h2 className="video-card-title">{title}</h2>
+        {/* <h2 className="video-card-title">{title}</h2> */}
+        <h2 className="video-card-title" style={{ textTransform: "uppercase" }}>
+          {title.split(",")[0]}
+          {title.includes(",") && <span style={{ color: "#041D33" }}>, </span>}
+          {title.includes(",") && (
+            <span style={{ color: "#973D5D" }}>{title.split(",")[1]}</span>
+          )}
+        </h2>
       </div>
       {/* <span className="brand-text shimmer">{title}</span> */}
 
@@ -111,7 +118,6 @@ const Videos = () => {
           ))}
         </div>
       </section>
-      
     </>
   );
 };

@@ -20,6 +20,14 @@ export default function page() {
 
             <ContactInfo />
             <div className="map_holder my-4">
+              {/* <iframe
+                width="600"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe> */}
               <iframe
                 width="100%"
                 height="400"
@@ -27,7 +35,7 @@ export default function page() {
                 scrolling="no"
                 marginHeight="0"
                 marginWidth="0"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.1140612126655!2d72.82117477444613!3d19.146483849757427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b614f3bbdb19%3A0x80d65b5ce70b17c3!2sGreenfields%20Society!5e0!3m2!1sen!2sin!4v1738869271539!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.5528732273074!2d72.83665207444119!3d18.951175355880835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce258ee24ed5%3A0xc8a8c9808f031eee!2sAbhay%20Steel%20House%2C%20Masjid%20Bandar%20East%2C%20Masjid%20Bandar%2C%20Mumbai%2C%20Maharashtra%20400009!5e0!3m2!1sen!2sin!4v1741148094137!5m2!1sen!2sin"
               ></iframe>
             </div>
           </div>

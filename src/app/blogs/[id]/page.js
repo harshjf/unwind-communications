@@ -6,16 +6,14 @@ import SingleBlog from "@/components/Instagram/SingleBlog";
 import blogData from "../../../utils/Blogs/BlogData";
 import { usePathname } from "next/navigation";
 
-
 export default function page() {
-
   const pathname = usePathname();
 
   const id = useMemo(() => {
-   const parts = pathname.split("/").filter(Boolean);
-   return Number(parts[parts.length - 1]);
- }, [pathname]);
- 
+    const parts = pathname.split("/").filter(Boolean);
+    return Number(parts[parts.length - 1]);
+  }, [pathname]);
+
   const blog = blogData.find((post) => post.id === id);
 
   console.log(id);
@@ -23,11 +21,10 @@ export default function page() {
     return <p>Loading...</p>;
   }
 
-
   return (
     <>
       <Navbar />
-       <SingleBlog blog={blog}/>
+      <SingleBlog blog={blog} />
       <Footer />
     </>
   );

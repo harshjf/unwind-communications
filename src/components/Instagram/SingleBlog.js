@@ -1,120 +1,110 @@
 "use client";
-import React, { useMemo } from "react";
+import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-const Blog = ({blog}) => {
-   
+const Blog = ({ blog }) => {
   return (
-    <section id="blog" className="blog-details-area">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-12 col-md-12">
-          <div>
-            <div className="title-section">
-              <h1
-                className="title"
-                style={{
-                  fontSize: "36px",
-                  fontWeight: "700",
-                  textAlign: "center",
-                }}
-              >
-                <b>
-                  <span style={{ color: "#973d5d" }}>{blog.title}</span>
-                </b>
-              </h1>
-            </div>
+    <>
+      <div className="page-banner-area bg-one">
+        <div className="back-home"></div>
+      </div>
 
-            <div className="blog-details-desc mt-5">
-              <div className="article-content">
-                {blog.content.map((paragraph, idx) => (
-                  <p key={idx}>{paragraph}</p>
-                ))}
+      <section id="blog" className="ptb-100">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-8 col-md-12 offset-lg-2">
+              <div className="blog-details-header">
+                <h3>{blog.subtitle}</h3>
 
-                <ul className="wp-block-gallery columns-3">
-                  {blog.images.map((img, idx) => (
-                    <li key={idx} className="blocks-gallery-item">
-                        <Image src={img} alt="image" width={500} height={830} className="blocks-gallery-item-image" />
+                <div className="entry-meta">
+                  <ul>
+                    <li>
+                      <i className="bx bx-folder"></i>
+                      <span>Category:</span>
+                      <Link href={blog.meta.category.link}>
+                        {blog.meta.category.name}
+                      </Link>
                     </li>
-                  ))}
-                </ul>
-
-                {blog.quote && (
-                  <blockquote>
-                    <p>{blog.quote.text}</p>
-                    <cite>{blog.quote.author}</cite>
-                  </blockquote>
-                )}
-
-                {blog.additionalContent.map((text, idx) => (
-                  <p key={idx}>{text}</p>
-                ))}
-
-                {blog.subSections.map((section, idx) => (
-                  <div key={idx}>
-                    <h3>{section.heading}</h3>
-                    {section.features ? (
-                      <ul className="features-list">
-                        {section.features.map((feature, fIdx) => (
-                          <li key={fIdx}>
-                            <strong>{feature}</strong>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      section.content.map((text, cIdx) => <p key={cIdx}>{text}</p>)
-                    )}
-                  </div>
-                ))}
+                    <li>
+                      <i className="bx bxs-user-detail"></i>
+                      <span>Posted By:</span>
+                      <Link href={blog.meta.author.link}>
+                        {blog.meta.author.name}
+                      </Link>
+                    </li>
+                    <li>
+                      <i className="bx bx-calendar"></i>
+                      <span>Posted On:</span>
+                      <Link href={blog.meta.date.link}>
+                        {blog.meta.date.value}
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
-              {/* Uncomment and update the navigation links if needed
-              <div className="kreton-post-navigation">
-                {blog.prevPost && (
-                  <div className="prev-link-wrapper">
-                    <div className="info-prev-link-wrapper">
-                      <Link href={blog.prevPost.link}>
-                        <span className="image-prev">
-                          <Image src={blog.prevPost.image} alt="prev-image" width={700} height={830} />
-                          <span className="post-nav-title">Prev</span>
-                        </span>
-                        <span className="prev-link-info-wrapper">
-                          <span className="prev-title">{blog.prevPost.title}</span>
-                          <span className="meta-wrapper">
-                            <span className="date-post">{blog.prevPost.date}</span>
-                          </span>
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                )}
+              <div className="blog-details-desc">
+                <div className="article-content">
+                  {blog.content.map((section, index) => {
+                    switch (section.type) {
+                      case "paragraph":
+                        return <p key={index}>{section.text}</p>;
 
-                {blog.nextPost && (
-                  <div className="next-link-wrapper">
-                    <div className="info-next-link-wrapper">
-                      <Link href={blog.nextPost.link}>
-                        <span className="next-link-info-wrapper">
-                          <span className="next-title">{blog.nextPost.title}</span>
-                          <span className="meta-wrapper">
-                            <span className="date-post">{blog.nextPost.date}</span>
-                          </span>
-                        </span>
-                        <span className="image-next">
-                          <Image src={blog.nextPost.image} alt="next-image" width={700} height={830} />
-                          <span className="post-nav-title">Next</span>
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                )}
+                      /* case "gallery":
+                        return (
+                          <ul
+                            key={index}
+                            className="wp-block-gallery columns-3"
+                          >
+                            {section.images.map((image, i) => (
+                              <li key={i} className="blocks-gallery-item">
+                                <figure>
+                                  <Image
+                                    src={image}
+                                    alt={`image-${i}`}
+                                    width={700}
+                                    height={830}
+                                  />
+                                </figure>
+                              </li>
+                            ))}
+                          </ul>
+                        ); */
+
+                      case "quote":
+                        return (
+                          <blockquote key={index}>
+                            <p>{section.text}</p>
+                            <cite>{section.author}</cite>
+                          </blockquote>
+                        );
+
+                      case "heading":
+                        return <h3 key={index}>{section.text}</h3>;
+
+                      case "list":
+                        return (
+                          <ul key={index} className="features-list">
+                            {section.items.map((item, i) => (
+                              <li key={i}>
+                                <strong>{item.strong}</strong> {item.text}
+                              </li>
+                            ))}
+                          </ul>
+                        );
+
+                      default:
+                        return null;
+                    }
+                  })}
+                </div>
               </div>
-              */}
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
+    </>
   );
 };
 
