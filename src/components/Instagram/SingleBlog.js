@@ -6,11 +6,11 @@ import Link from "next/link";
 const Blog = ({ blog }) => {
   return (
     <>
-      <div className="page-banner-area bg-one">
+      {/*  <div className="page-banner-area bg-one">
         <div className="back-home"></div>
-      </div>
+      </div> */}
 
-      <section id="blog" className="ptb-100">
+      <section id="blog" className="ptb-100" style={{ paddingTop: "180px" }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-8 col-md-12 offset-lg-2">

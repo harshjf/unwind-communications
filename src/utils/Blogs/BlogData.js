@@ -92,7 +92,7 @@ const blogData = [
       "At Unwind Communications, we integrate customized musical compositions with cinematic visuals to create immersive storytelling experiences that go beyond traditional travel marketing. Our approach enhances the way destinations, venues, and events are perceived, making them more desirable and emotionally engaging for potential visitors.",
     ],
     images: [
-      "/images/home/placeholder.jpeg",
+      "/images/home/india2.avif",
       "/images/home/placeholder.jpeg",
       "/images/home/placeholder.jpeg",
     ],

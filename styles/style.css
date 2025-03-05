@@ -1403,7 +1403,8 @@ Blog Area CSS
 }
 
 .blog-image {
-  height: auto;
+  min-height: 400px;
+  /* height: auto; */
   max-width: 85%;
 }
 
@@ -1523,7 +1524,7 @@ Blog Details Area CSS
 }
 .blog-details-header h3 {
   margin-bottom: 25px;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
 }
 .blog-details-header .entry-meta ul {
@@ -7323,7 +7324,7 @@ Join Area CSS
 
 .carousel1-item {
   position: absolute;
-  top: 0; 
+  top: 0;
   left: 50%;
   transform: translate(-50%, 0);
   width: 450px;

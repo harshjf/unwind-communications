@@ -18,7 +18,7 @@ const BlogPosts = () => {
         >
           <h1>
             <b>
-              FROM <span style={{ color: "#973d5d" }}>THE BLOG</span>
+              THE <span style={{ color: "#973d5d" }}> BLOGS</span>
             </b>
           </h1>
         </div>
