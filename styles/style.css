@@ -7051,21 +7051,14 @@ Join Area CSS
 @media (max-width: 769px) {
   .homepage-slider-content {
     max-width: 500px;
+    padding: 20px 20px;
   }
-}
-
-@media (max-width: 600px) {
-  .homepage-slider-content {
-    max-width: 350px;
-  }
-
   .homepage-slider-title {
     font-size: 1.5rem;
   }
   .homepage-slider-description {
     font-size: 28px !important;
   }
-
   .homepage-slider-button {
     padding: 0px;
     top: 50%;
@@ -7099,7 +7092,7 @@ Join Area CSS
   letter-spacing: 3px;
   color: white;
   margin-bottom: 15px;
-  font-size: 40px;
+  font-size: 48px;
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
   font-weight: 600;
   font-family: Garamond;
@@ -7330,7 +7323,7 @@ Join Area CSS
 
 .carousel1-item {
   position: absolute;
-  top: 0; /* Ensure images align to the top */
+  top: 0; 
   left: 50%;
   transform: translate(-50%, 0);
   width: 450px;
