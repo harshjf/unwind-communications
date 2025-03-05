@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const CelebsConnect = () => {
   const totalSlides = 83;
-
   const [currentIndex, setCurrentIndex] = useState(2);
   const [isMobile, setIsMobile] = useState(false);
+  const [imageSrcMap, setImageSrcMap] = useState({});
 
   useEffect(() => {
     const handleResize = () => {
@@ -19,27 +19,35 @@ const CelebsConnect = () => {
   }, []);
 
   useEffect(() => {
-    if (!isMobile) {
-      const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-      }, 4500);
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+    }, 4500);
 
-      return () => clearInterval(interval);
-    }
-  }, [isMobile]);
+    return () => clearInterval(interval);
+  }, []);
 
-  const getImageSrc = (index, isActive) => {
-    const gifPath = `/images/celebphotos/${index + 1}.gif`;
-    const jpgPath = `/images/celebphotos/${index + 1}.jpg`;
-    const jpegPath = `/images/celebphotos/${index + 1}.jpeg`;
+  useEffect(() => {
+    const loadActiveImage = async () => {
+      const gifSrc = `/images/celebphotos/${currentIndex}.gif`;
+      const jpgSrc = `/images/celebphotos/${currentIndex}.jpg`;
 
-    if (isActive) {
-      const gifExists = new Image();
-      gifExists.src = gifPath;
-      return gifExists.complete ? gifPath : jpgPath;
-    }
+      const gifExists = await checkImageExists(gifSrc);
+      setImageSrcMap((prev) => ({
+        ...prev,
+        [currentIndex]: gifExists ? gifSrc : jpgSrc,
+      }));
+    };
 
-    return jpgPath;
+    loadActiveImage();
+  }, [currentIndex]);
+
+  const checkImageExists = (src) => {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => resolve(true);
+      img.onerror = () => resolve(false);
+    });
   };
 
   return (
@@ -62,15 +70,32 @@ const CelebsConnect = () => {
       </div>
 
       {isMobile ? (
-        <div className="mobile-gallery">
-          {[...Array(totalSlides)].map((_, index) => (
-            <img
-              key={index + 1}
-              src={`/images/celebphotos/${index + 1}.gif`}
-              alt={`Slide ${index + 1}`}
-              className="mobile-image"
-            />
-          ))}
+        // ✅ MOBILE VIEW - Full Width Automatic Carousel
+        <div className="mobile-carousel-container">
+          <div
+            className="mobile-carousel"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            {[...Array(totalSlides)].map((_, index) => {
+              const isActive = index === currentIndex;
+              return (
+                <div
+                  key={index}
+                  className={`mobile-carousel-item ${isActive ? "active" : ""}`}
+                >
+                  <img
+                    src={
+                      isActive
+                        ? imageSrcMap[index] ||
+                          `/images/celebphotos/${index}.jpg`
+                        : `/images/celebphotos/${index}.jpg`
+                    }
+                    alt={`Slide ${index + 1}`}
+                  />
+                </div>
+              );
+            })}
+          </div>
         </div>
       ) : (
         <div className="carousel1-container">
@@ -81,10 +106,10 @@ const CelebsConnect = () => {
               const scale = isActive ? 1.2 : 0.8 - Math.abs(position) * 0.1;
               const opacity = isActive ? 1 : 1 - Math.abs(position) * 0.3;
               const zIndex = isActive ? 10 : 10 - Math.abs(position);
-              const imgSrc = getImageSrc(index, isActive);
+
               return (
                 <motion.div
-                  key={index + 1}
+                  key={index}
                   className={`carousel1-item ${isActive ? "highlighted" : ""}`}
                   style={{
                     transform: `translateX(${position * 50}%) scale(${scale})`,
@@ -102,7 +127,15 @@ const CelebsConnect = () => {
                   }}
                   transition={{ duration: 0.5 }}
                 >
-                  <img src={imgSrc} alt={`Slide ${index + 1}`} />
+                  <img
+                    src={
+                      isActive
+                        ? imageSrcMap[index] ||
+                          `/images/celebphotos/${index}.jpg`
+                        : `/images/celebphotos/${index}.jpg`
+                    }
+                    alt={`Slide ${index + 1}`}
+                  />
                 </motion.div>
               );
             })}
@@ -114,6 +147,43 @@ const CelebsConnect = () => {
         .carousel1-item.highlighted {
           filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.6));
           transition: filter 0.5s ease-in-out;
+        }
+
+        /* ✅ MOBILE CAROUSEL */
+        .mobile-carousel-container {
+          width: 100%;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+        }
+
+        .mobile-carousel {
+          display: flex;
+          width: 100%;
+          transition: transform 0.5s ease-in-out;
+        }
+
+        .mobile-carousel-item {
+          min-width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: transform 0.5s ease-in-out;
+        }
+
+        .mobile-carousel-item img {
+          width: 90%;
+          height: auto;
+          border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+          .mobile-carousel-container {
+            width: 100%;
+          }
         }
       `}</style>
     </>
