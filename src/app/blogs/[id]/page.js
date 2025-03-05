@@ -6,7 +6,7 @@ import SingleBlog from "@/components/Instagram/SingleBlog";
 import blogData from "../../../utils/Blogs/BlogData";
 import { usePathname } from "next/navigation";
 
-export default function page() {
+export default function Page() {
   const pathname = usePathname();
 
   const id = useMemo(() => {
