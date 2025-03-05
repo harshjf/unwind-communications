@@ -38,27 +38,23 @@
 
 export const sliderData = [
   {
-    description: "  Bharat Darshan at Global Level with Unwind Communications.",
+    description: `<span style="color:orange;">Bharat</span> <span style="color:green;">Darshan</span> at Global Level with Unwind Communications.`,
     image: "images/slider/1.gif",
   },
   {
-    description:
-      "Celebrating Indian Cultural Heritage & its Glory at Iconic Venues, Enhancing Tourism.",
+    description: `Celebrating Indian Cultural Heritage & its Glory at Iconic Venues, Enhancing Tourism.`,
     image: "images/slider/2.png",
   },
   {
-    description:
-      "Step into Sacred Legacy of Ancient History & Mythology though Unwind Communications.",
+    description: `Step into Sacred Legacy of Ancient History & Mythology though Unwind Communications.`,
     image: "images/slider/3.png",
   },
   {
-    description:
-      "Partner with Unwind Communications to Elevate your MICE & Wedding Tourism.",
+    description: `Partner with Unwind Communications to Elevate your MICE & Wedding Tourism.`,
     image: "images/slider/4.jpeg",
   },
   {
-    description:
-      "Discover India’s Treasure like Never Before, with Unwind Communications.",
+    description: `Discover India’s Treasure like Never Before, with Unwind Communications.`,
     image: "images/slider/5.png",
   },
 ];

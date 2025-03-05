@@ -64,11 +64,14 @@ const MainBanner = () => {
                     className="homepage-slider-image"
                   />
                 </div>
-
-                <div className="homepage-slider-content shimmer1">
-                  <p className="homepage-slider-description">
+                {/* <p className="homepage-slider-description">
                     {slide.description}
-                  </p>
+                  </p> */}
+                <div className="homepage-slider-content shimmer1">
+                  <p
+                    className="homepage-slider-description"
+                    dangerouslySetInnerHTML={{ __html: slide.description }}
+                  ></p>
                 </div>
               </div>
             </SwiperSlide>
