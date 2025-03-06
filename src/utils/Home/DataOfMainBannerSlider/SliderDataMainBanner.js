@@ -46,7 +46,7 @@ export const sliderData = [
     image: "images/slider/2.png",
   },
   {
-    description: `Step into Sacred Legacy of Ancient History & Mythology though Unwind Communications`,
+    description: `Step into Sacred Legacy of Ancient History & Mythology through Unwind Communications`,
     image: "images/slider/3.png",
   },
   {
