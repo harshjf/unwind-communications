@@ -88,27 +88,19 @@ const Recognition = () => {
           >
             View more
           </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            width="18"
-            height="18"
-            x="0"
-            y="0"
-            viewBox="0 0 32 32"
-          >
-            <g>
-              <path
-                d="M26.68 3.867H8.175a1 1 0 0 0 0 2h16.544L4.2 26.387A1 1 0 1 0 5.613 27.8l20.52-20.52v16.545a1 1 0 0 0 2 0V5.321a1.456 1.456 0 0 0-1.453-1.454z"
-                fill="white"
-              ></path>
-            </g>
-          </svg>
+          <img
+            src="images/arrow-white.png"
+            alt="Arrow"
+            width={24}
+            height={24}
+            style={{
+              marginLeft: "8px",
+              height: "25px",
+              width: "45px",
+            }}
+          />
         </Link>
       </div>
-
-      
     </div>
   );
 };

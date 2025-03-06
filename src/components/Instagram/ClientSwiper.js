@@ -31,7 +31,7 @@ const clients = [
   },
   {
     image: "/images/instagram/ClientImages/Client6.jpg",
-    name: "IFFIE, Goa",
+    name: "IFFI, Goa",
   },
   {
     image: "/images/instagram/ClientImages/Client7.png",
@@ -43,7 +43,7 @@ const clients = [
   },
   {
     image: "/images/instagram/ClientImages/Client9.png",
-    name: "Economic Times (TOI)",
+    name: "Economic Times (Times Of India)",
   },
   {
     image: "/images/instagram/ClientImages/Client10.jpg",

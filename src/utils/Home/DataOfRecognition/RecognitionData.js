@@ -10,7 +10,7 @@ export const RecognitionData = [
     src: "/images/video/vision2.png",
     alt: "Vision 2",
     title:
-      "EMPOWERING HON. PM SHRI NARENDRA MODI’S VISION FOR BHARAT AS A LEADING GLOBAL DESTINATION",
+      "SUPPORTING HON. PM SHRI NARENDRA MODI’S VISION FOR BHARAT AS A LEADING GLOBAL DESTINATION",
     show: true,
   },
   {

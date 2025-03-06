@@ -6980,27 +6980,10 @@ Join Area CSS
   height: 100vh;
 }
 
-.homepage-slider-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
 .homepage-slider-image {
   object-fit: fill;
   width: 100% !important;
   height: 100%;
-}
-
-.homepage-image-container {
-  position: relative;
-  width: 100% !important;
-  height: 79%;
-  overflow: hidden;
 }
 
 .homepage-slider-title {
@@ -8413,7 +8396,6 @@ Join Area CSS
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -8426,13 +8408,13 @@ Join Area CSS
 .homepage-image-container {
   position: relative;
   width: 100% !important;
-  height: 79%;
+  height: 73%;
   overflow: hidden;
 }
 
 .homepage-slider-content {
   position: absolute;
-  bottom: 0%;
+  bottom: 6%;
   height: 21%;
   left: 50%;
   transform: translate(-50%, 0%);
