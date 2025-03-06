@@ -6974,12 +6974,6 @@ Join Area CSS
   margin-top: 8%;
 }
 
-.homepage-slider {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-
 .homepage-slider-image {
   object-fit: fill;
   width: 100% !important;
@@ -8387,7 +8381,7 @@ Join Area CSS
 .homepage-slider {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 .homepage-slider-overlay {
@@ -8414,17 +8408,18 @@ Join Area CSS
 
 .homepage-slider-content {
   position: absolute;
-  bottom: 6%;
-  height: 21%;
+  /*  bottom: 6%; */
+  /* height: 21%; */
   left: 50%;
   transform: translate(-50%, 0%);
   text-align: center;
   color: #fff;
-  padding: 20px 200px;
+  /* padding: 20px 200px; */
   /* background-color: #000; */
   /* border-radius: 8px; */
   width: 100%;
   z-index: 4;
+  padding: 10px;
 }
 
 .homepage-slider-title {

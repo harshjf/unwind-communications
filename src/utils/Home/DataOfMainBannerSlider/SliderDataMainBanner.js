@@ -38,7 +38,7 @@
 
 export const sliderData = [
   {
-    description: `<span style="color:#C04657;">BHARAT</span> <span style="color:#433c3c;">DARSHAN</span> at Global Level with Unwind Communications`,
+    description: `<span style="color:#FFAC49;">BHARAT</span> <span style="color:#179e14;">DARSHAN</span> at Global Level with <br/> Unwind Communications`,
     image: "images/slider/1.gif",
   },
   {
@@ -46,7 +46,7 @@ export const sliderData = [
     image: "images/slider/2.png",
   },
   {
-    description: `Step into Sacred Legacy of Ancient History & Mythology though <br/> Unwind Communications`,
+    description: `Step into Sacred Legacy of Ancient History & Mythology though Unwind Communications`,
     image: "images/slider/3.png",
   },
   {
