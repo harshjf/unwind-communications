@@ -279,7 +279,8 @@ Navbar Area CSS
 }
 .navbar-light .navbar-nav {
   margin-left: auto;
-  font-family: var(--font-open-sans);
+  /*  font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
 }
 .navbar-light .navbar-nav .nav-item {
   padding-left: 15px;
@@ -290,7 +291,7 @@ Navbar Area CSS
   color: #000000;
   transition: 0.5s;
   position: relative;
-  font-size: 15.5px;
+  font-size: 18.5px;
   font-weight: 600;
 }
 .navbar-light .navbar-nav .nav-item .nav-link:hover {
@@ -682,7 +683,8 @@ About Area CSS
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
-  font-family: var(--font-open-sans);
+  /*   font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
   font-size: 17px;
   font-weight: 400;
 }
@@ -699,7 +701,8 @@ About Area CSS
   margin-left: 20px;
   position: relative;
   font-size: 16px;
-  font-family: var(--font-open-sans);
+  /*   font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
   font-weight: 400;
 }
 .about-content .btn-box .email::before {
@@ -1016,7 +1019,8 @@ Audience Area CSS
   display: block;
   text-transform: uppercase;
   margin-bottom: 8px;
-  font-family: var(--font-open-sans);
+  /*   font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
   font-size: 17px;
   font-weight: 400;
 }
@@ -1206,7 +1210,8 @@ Video Area CSS
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 8px;
-  font-family: var(--font-open-sans);
+  /*   font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
   font-size: 17px;
   font-weight: 400;
 }
@@ -1231,7 +1236,8 @@ Video Area CSS
   cursor: pointer;
   font-size: 17px;
   font-weight: 600;
-  font-family: var(--font-open-sans);
+  /*   font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
 }
 .video-content .video-btn i {
   display: inline-block;
@@ -1535,7 +1541,8 @@ Blog Details Area CSS
   padding-left: 0;
   margin-bottom: 0;
   list-style-type: none;
-  font-family: var(--font-open-sans);
+  /*   font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
 }
 .blog-details-header .entry-meta ul li {
   margin-right: 20px;
@@ -1614,7 +1621,8 @@ Blog Details Area CSS
   padding-left: 17px;
   color: #000000;
   font-size: 20px;
-  font-family: var(--font-open-sans);
+  /*   font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
 }
 .blog-details-desc .article-content .features-list li::before {
   content: "";
@@ -1637,7 +1645,8 @@ Blog Details Area CSS
   flex-wrap: wrap;
   border-top: 1px solid #eeeeee;
   padding-top: 30px;
-  font-family: var(--font-open-sans);
+  /*  font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
   margin-top: 30px;
 }
 .blog-details-desc .article-footer .article-tags {
@@ -1767,7 +1776,8 @@ blockquote p,
   margin-bottom: 0;
   font-style: italic;
   font-weight: 600;
-  font-family: var(--font-open-sans);
+  /*   font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
   font-size: 20px !important;
 }
 blockquote cite,
@@ -1801,7 +1811,8 @@ blockquote::after,
 }
 
 .kreton-post-navigation {
-  font-family: var(--font-open-sans);
+  /*   font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
@@ -2039,7 +2050,8 @@ blockquote::after,
   margin-bottom: 0.3em;
   position: relative;
   z-index: 2;
-  font-family: var(--font-open-sans);
+  /*   font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
   font-size: 16px;
 }
 .comments-area .comment-author .avatar {
@@ -2308,7 +2320,8 @@ Subscribe Area CSS
   position: relative;
   color: #ffffff;
   font-size: 16px;
-  font-family: var(--font-open-sans);
+  /*  font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
   font-weight: 400;
 }
 .subscribe-content .btn-box .email::before {
@@ -2358,7 +2371,8 @@ Subscribe Area CSS
   padding: 11px 25px;
   font-size: 15px;
   font-weight: 600;
-  font-family: var(--font-open-sans);
+  /*   font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
 }
 .subscribe-form form button::before {
   content: "";
@@ -2544,9 +2558,10 @@ Footer Area CSS
 }
 .footer-text p {
   margin-bottom: 14px;
-  font-size: 14px;
+  font-size: 17px;
   color: white;
   line-height: 28px;
+  text-align: justify;
 }
 .footer-social-icon span {
   color: #f4f3ef;
@@ -5988,6 +6003,7 @@ Join Area CSS
 
 .marquee__item p {
   /* font-family: var(--font-open-sans); */
+  font-family: Garamond, serif;
   font-size: 32px;
   font-weight: 800;
   color: #041d33;
@@ -6973,13 +6989,6 @@ Join Area CSS
   overflow: hidden;
   margin-top: 8%;
 }
-
-.homepage-slider-image {
-  object-fit: fill;
-  width: 100% !important;
-  height: 100%;
-}
-
 .homepage-slider-title {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -8394,9 +8403,12 @@ Join Area CSS
 }
 
 .homepage-slider-image {
-  object-fit: fill;
+  object-fit: contain;
   width: 100% !important;
   height: 100%;
+  background: linear-gradient(-45deg, #ffcc70, #d60087, #6100ff, #ff0055);
+  animation: shimmerAnimation 3slinear infinite;
+  aspect-ratio: 16 / 9;
 }
 
 .homepage-image-container {
@@ -8452,6 +8464,9 @@ Join Area CSS
 }
 
 @media (max-width: 769px) {
+  .homepage-slider-container {
+    margin-top: 26%;
+  }
   .homepage-slider-content {
     max-width: 500px;
     padding: 20px 20px;

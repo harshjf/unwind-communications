@@ -62,6 +62,7 @@ const MainBanner = () => {
                     fill
                     sizes="100vw"
                     className="homepage-slider-image"
+                    /*  style={{ backgroundColor: `${slide.backgroundcolor}` }} */
                   />
                 </div>
                 {/* <p className="homepage-slider-description">

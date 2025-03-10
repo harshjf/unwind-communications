@@ -109,7 +109,7 @@ const ContactInfo = () => {
             </svg>
           }
           title="Call Here"
-          content="+91 98672 31281"
+          content="+91 99200 66848"
         />
       </div>
     </div>

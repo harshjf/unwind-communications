@@ -33,7 +33,7 @@ const ContactArea = () => {
                   <ul>
                     <li>
                       <a
-                        href="https://www.instagram.com/shefalisaxenaofficial/#"
+                        href="https://www.instagram.com/unwind_communications/"
                         target="_blank"
                       >
                         <i className="bx bxl-instagram"></i>

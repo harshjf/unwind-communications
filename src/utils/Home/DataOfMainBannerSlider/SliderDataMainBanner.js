@@ -38,16 +38,19 @@
 
 export const sliderData = [
   {
-    description: `<span style="color:#FFAC49;">BHARAT</span> <span style="color:#179e14;">DARSHAN</span> at Global Level with <br/> Unwind Communications`,
+    description: `<span style="border-bottom: 4px solid #FF6600; color:#FFF;">BHARAT</span> <span style="border-bottom: 4px solid #008000; color:#FFF;">DARSHAN</span> at Global Level with <br/> Unwind Communications
+    <span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+    <span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span>`,
     image: "images/slider/1.gif",
   },
   {
     description: `Celebrating Indian Cultural Heritage & its Glory at Iconic Venues Enhancing Tourism`,
     image: "images/slider/2.png",
+    backgroundcolor: "#fee5cf",
   },
   {
     description: `Step into Sacred Legacy of Ancient History & Mythology through Unwind Communications`,
-    image: "images/slider/3.png",
+    image: "images/slider/3.jpg",
   },
   {
     description: `Partner with Unwind Communications to Elevate your MICE & Wedding Tourism`,

@@ -118,7 +118,7 @@ const AboutTheFounder = () => {
           </div>
           <p className="custom-about-company-btn">
             <Link className="about-company-btn" href="/about#about-founder">
-              <span>View more</span>
+              <span style={{ color: "#973D5D" }}>View more</span>
               <img
                 src="images/right-arrow.png"
                 alt="Arrow"
