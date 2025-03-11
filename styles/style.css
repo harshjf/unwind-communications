@@ -8917,8 +8917,11 @@ Join Area CSS
   .container-sm {
     max-width: 1150px;
   }
+  .homepage-slider {
+    height: 83vh;
+  }
   .homepage-image-container {
-    height: 86%;
+    height: 83%;
   }
   .homepage-slider-description {
     font-size: 25px;
