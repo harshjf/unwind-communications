@@ -263,7 +263,7 @@ const Navbar = () => {
               alt="logo"
               width={100}
               height={25}
-              style={{ objectFit: "contain", height: "90px" }}
+              style={{ objectFit: "contain", height: "80px" }}
             />
             <div
               style={{
