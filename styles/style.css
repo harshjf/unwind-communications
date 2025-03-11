@@ -3237,7 +3237,7 @@ Featured Videos Area CSS
   line-height: 1.4;
   font-size: 18px;
   font-weight: 700;
-  font-family: var(--font-roboto);
+  font-family: Garamond;
 }
 .single-featured-videos-box .videos-content h3 a {
   display: block;

@@ -45,7 +45,7 @@ export const sliderData = [
   },
   {
     description: `Celebrating Indian Cultural Heritage & its Glory <br/> at Iconic Venues Enhancing Tourism`,
-    image: "images/slider/2.png",
+    image: "images/slider/2.jpg",
     backgroundcolor: "#fee5cf",
   },
   {
