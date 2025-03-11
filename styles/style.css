@@ -8924,6 +8924,6 @@ Join Area CSS
     font-size: 25px;
   }
   .homepage-slider-content {
-    bottom: -3%;
+    /*  bottom: -3%; */
   }
 }
