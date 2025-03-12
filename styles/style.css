@@ -8465,7 +8465,7 @@ Join Area CSS
 
 @media (max-width: 769px) {
   .homepage-image-container {
-    height: 45%;
+    height: 60%;
   }
   .homepage-slider-container {
     margin-top: 26%;
@@ -8484,7 +8484,7 @@ Join Area CSS
   }
   .homepage-slider-button {
     padding: 0px;
-    top: 36%;
+    top: 48%;
   }
 
   .homepage-slider-arrow {
