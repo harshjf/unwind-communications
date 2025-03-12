@@ -9,22 +9,6 @@ import Image from "next/image";
 import sliderArrow from "/public/images/sliderArrow.svg";
 import { useRef, useEffect, useState } from "react";
 import { sliderData } from "@/utils/Home/DataOfMainBannerSlider/SliderDataMainBanner";
-// import { motion } from "framer-motion";
-
-const swiperOptions = {
-  modules: [Autoplay, Pagination, Navigation],
-  slidesPerView: 1,
-  autoplay: {
-    delay: 10000,
-    disableOnInteraction: false,
-  },
-  loop: true,
-  effect: "fade",
-  fadeEffect: {
-    crossFade: true,
-  },
-  speed: 1200,
-};
 
 const MainBanner = () => {
   const swiperRef = useRef(null);
@@ -32,14 +16,10 @@ const MainBanner = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (currentIndex === 0) {
-      const showTimer = setTimeout(() => setShowPopup(true), 1000);
-
-      return () => {
-        clearTimeout(showTimer);
-      };
-    } else {
-      setShowPopup(false);
+    if (swiperRef.current) {
+      let newDelay = currentIndex === 0 ? 8500 : 4500;
+      swiperRef.current.params.autoplay.delay = newDelay;
+      swiperRef.current.autoplay.start();
     }
   }, [currentIndex]);
 
@@ -47,7 +27,16 @@ const MainBanner = () => {
     <>
       <div className="homepage-slider-container">
         <Swiper
-          {...swiperOptions}
+          modules={[Autoplay, Pagination, Navigation]}
+          slidesPerView={1}
+          autoplay={{
+            delay: 8500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          effect="fade"
+          fadeEffect={{ crossFade: true }}
+          speed={1200}
           onSwiper={(swiper) => (swiperRef.current = swiper)}
           onSlideChange={(swiper) => setCurrentIndex(swiper.realIndex)}
         >
@@ -62,12 +51,8 @@ const MainBanner = () => {
                     fill
                     sizes="100vw"
                     className="homepage-slider-image"
-                    /*  style={{ backgroundColor: `${slide.backgroundcolor}` }} */
                   />
                 </div>
-                {/* <p className="homepage-slider-description">
-                    {slide.description}
-                  </p> */}
                 <div className="homepage-slider-content shimmer1">
                   <p
                     className="homepage-slider-description"
@@ -106,41 +91,6 @@ const MainBanner = () => {
             className="homepage-slider-arrow"
           />
         </button>
-
-        {/* {currentIndex === 0 && showPopup && (
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5, x: "-50%", y: "80%" }}
-          animate={{ opacity: 1, scale: 1.75, x: "-50%", y: "80%" }}
-          transition={{
-            type: "spring",
-            stiffness: 30,
-            damping: 20,
-            delay: 1,
-          }}
-          style={{
-            position: "absolute",
-            top: "90%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            color: "white",
-            fontSize: "40px",
-            fontWeight: "bold",
-            fontFamily: "Garamond, serif",
-            textAlign: "center",
-            maxWidth: "40%",
-            textShadow: "0px 0px 8px rgba(255, 255, 255, 0.8)",
-            padding: "15px 20px",
-            borderRadius: "10px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            zIndex: 1000,
-          }}
-          className="responsive-text"
-        >
-          Bharat Darshan at Global Level with Unwind Communications.
-        </motion.div>
-      )} */}
       </div>
     </>
   );
