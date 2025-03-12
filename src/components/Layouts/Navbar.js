@@ -253,42 +253,48 @@ const Navbar = () => {
     <>
       <nav id="navbar" className="navbar navbar-expand-lg navbar-light">
         <div className="container">
-          <Link
-            href="/instagram"
-            className="navbar-brand"
-            style={{ display: "flex", alignItems: "center", gap: "10px" }}
-          >
-            <Image
-              src="/images/logounwind.png"
-              alt="logo"
-              width={100}
-              height={25}
-              style={{ objectFit: "contain", height: "80px" }}
-            />
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                lineHeight: "1.2",
-                fontSize: "16px",
-                fontWeight: "bold",
-                fontFamily: "Garamond",
-              }}
+          <div>
+            <Link
+              href="/instagram"
+              className="navbar-brand"
+              style={{ display: "flex", gap: "10px" }}
             >
-              <span
-                className="brand-text shimmer"
-                style={{ color: "#973d5d", fontWeight: "900" }}
+              <Image
+                src="/images/logounwind.png"
+                alt="logo"
+                width={100}
+                height={25}
+                style={{ objectFit: "contain", height: "80px" }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  lineHeight: "1.2",
+                  fontSize: "16px",
+                  fontWeight: "bold",
+                  fontFamily: "Garamond",
+                }}
               >
-                UNWIND
-              </span>
-              <span
-                className="brand-text shimmer"
-                style={{ color: "#041D33", fontWeight: "900" }}
-              >
-                COMMUNICATIONS
-              </span>
-            </div>
-          </Link>
+                <span
+                  className="brand-text shimmer"
+                  style={{ color: "#973d5d", fontWeight: "900" }}
+                >
+                  UNWIND
+                </span>
+                <span
+                  className="brand-text shimmer"
+                  style={{ color: "#041D33", fontWeight: "900" }}
+                >
+                  COMMUNICATIONS
+                </span>
+                <div style={{ marginTop: "8px", fontSize: "20px" }}>
+                  <span style={{ color: "#973d5d" }}>You Build</span>
+                  <span style={{ color: "#041D33" }}> We Showcase</span>
+                </div>
+              </div>
+            </Link>
+          </div>
 
           <button
             onClick={toggleNavbar}

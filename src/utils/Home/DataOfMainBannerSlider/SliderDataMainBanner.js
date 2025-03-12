@@ -45,19 +45,19 @@ export const sliderData = [
   },
   {
     description: `Celebrating Indian Cultural Heritage & its Glory <br/> at Iconic Venues Enhancing Tourism`,
-    image: "images/slider/test.png",
+    image: "images/slider/2.jpg",
     backgroundcolor: "#fee5cf",
   },
   {
     description: `Step into Sacred Legacy of Ancient History & Mythology through<br/> Unwind Communications`,
-    image: "images/slider/3.jpg",
+    image: "images/slider/5.jpg",
   },
   {
     description: `Partner with Unwind Communications to <br/> Elevate your MICE & Wedding Tourism`,
-    image: "images/slider/4.jpeg",
+    image: "images/slider/3.jpg",
   },
   {
     description: `Discover India’s Treasure like Never Before with <br/> Unwind Communications`,
-    image: "images/slider/5.png",
+    image: "images/slider/4.jpg",
   },
 ];
