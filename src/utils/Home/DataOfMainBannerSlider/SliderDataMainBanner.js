@@ -3,7 +3,7 @@ export const sliderData = [
     description: `<span style="border-bottom: 4px solid #FF6600; color:#FFF;">BHARAT</span> <span style="border-bottom: 4px solid #008000; color:#FFF;">DARSHAN</span> at Global Level with<br/> Unwind Communications
     <span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span> 
     <span style="">&nbsp;&nbsp;&nbsp;&nbsp;</span>`,
-    image: "images/slider/1.gif",
+    image: "https://unwind-comm.s3.ap-south-1.amazonaws.com/1.gif",
   },
   {
     description: `Celebrating Indian Cultural Heritage & its Glory <br/> at Iconic Venues Enhancing Tourism`,
