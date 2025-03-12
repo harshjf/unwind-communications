@@ -21,15 +21,15 @@ const CelebsConnect = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-    }, 4500);
+    }, 2500);
 
     return () => clearInterval(interval);
   }, []);
 
   useEffect(() => {
     const loadActiveImage = async () => {
-      const gifSrc = `/images/celebphotos/${currentIndex}.gif`;
-      const jpgSrc = `/images/celebphotos/${currentIndex}.jpg`;
+      const gifSrc = `https://unwind-comm.s3.ap-south-1.amazonaws.com/celebphotos/${currentIndex}.gif`;
+      const jpgSrc = `https://unwind-comm.s3.ap-south-1.amazonaws.com/celebphotos/${currentIndex}.jpg`;
 
       const gifExists = await checkImageExists(gifSrc);
       setImageSrcMap((prev) => ({
@@ -87,8 +87,8 @@ const CelebsConnect = () => {
                     src={
                       isActive
                         ? imageSrcMap[index] ||
-                          `/images/celebphotos/${index}.jpg`
-                        : `/images/celebphotos/${index}.jpg`
+                          `https://unwind-comm.s3.ap-south-1.amazonaws.com/celebphotos/${index}.jpg`
+                        : `https://unwind-comm.s3.ap-south-1.amazonaws.com/celebphotos/${index}.jpg`
                     }
                     alt={`Slide ${index + 1}`}
                   />
@@ -131,8 +131,8 @@ const CelebsConnect = () => {
                     src={
                       isActive
                         ? imageSrcMap[index] ||
-                          `/images/celebphotos/${index}.jpg`
-                        : `/images/celebphotos/${index}.jpg`
+                          `https://unwind-comm.s3.ap-south-1.amazonaws.com/celebphotos/${index}.jpg`
+                        : `https://unwind-comm.s3.ap-south-1.amazonaws.com/celebphotos/${index}.jpg`
                     }
                     alt={`Slide ${index + 1}`}
                   />
