@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const CelebsConnect = () => {
-  const totalSlides = 83;
+  const totalSlides = 20;
   const [currentIndex, setCurrentIndex] = useState(2);
   const [isMobile, setIsMobile] = useState(false);
   const [imageSrcMap, setImageSrcMap] = useState({});
