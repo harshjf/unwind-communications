@@ -82,7 +82,7 @@ const Solution = () => {
                 fontWeight: "800",
               }}
             >
-              Authentic Audio & Video Production
+              Bespoke Multimedia Production
             </h5>
             <p>
               High-quality musical videos and vlogs that capture the

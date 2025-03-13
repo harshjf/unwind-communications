@@ -1,21 +1,21 @@
 export const KeyServicesData = [
   {
     imagesrc: "/images/solution/ser1.jpg",
-    title: "Audio and Video Production",
+    title: "Bespoke Multimedia Production",
     description:
       "High-quality musical videos and vlogs that capture the venue's culture, ambiance, and story with bespoke music and visuals.",
-  },
-  {
-    imagesrc: "/images/solution/ser2.jpg",
-    title: "Media PR & Promotions",
-    description:
-      "Build your brand presence with effective public relations and promotional campaigns. Our services help you gain media coverage and increase visibility.",
   },
   {
     imagesrc: "/images/solution/ser3.jpg",
     title: "Story Telling Vlogs",
     description:
       "Craft compelling vlog posts that tell your brand's story. Our storytelling approach makes content more engaging and drives audience interaction.",
+  },
+  {
+    imagesrc: "/images/solution/ser2.jpg",
+    title: "Media PR & Promotions",
+    description:
+      "Build your brand presence with effective public relations and promotional campaigns. Our services help you gain media coverage and increase visibility.",
   },
   {
     imagesrc: "/images/solution/ser4.jpg",

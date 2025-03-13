@@ -29,7 +29,7 @@ const KeyServices = () => {
       >
         <b>
           <span style={{ color: "#041d33" }}>OUR</span>{" "}
-          <span style={{ color: "#973d5d" }}>SERVICES</span>
+          <span style={{ color: "#973d5d" }}>OFFERINGS</span>
         </b>
       </h1>
 

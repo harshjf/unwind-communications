@@ -347,13 +347,13 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <Link
-                  href="/services"
+                  href="/offerings"
                   onClick={() => toggleNavbar("services")}
                   className={`nav-link ${
                     currentRoute === "/services/" && "active"
                   } `}
                 >
-                  Services
+                  Offerings
                 </Link>
               </li>
 

@@ -36,7 +36,7 @@ const Services = () => {
               }}
             >
               <b>
-                <span style={{ color: "#973d5d" }}>SERVICES</span> OFFERED
+                <span style={{ color: "#973d5d" }}>OFFERINGS</span>
               </b>
             </h1>
           </div>
