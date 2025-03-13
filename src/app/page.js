@@ -16,35 +16,34 @@ import Loader from "@/components/Common/Loader";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
+  const [bannerLoaded, setBannerLoaded] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <>
-          <Navbar />
-          <MainBanner />
-          <AboutUs />
-          <Recognition />
-          <AboutTheFounder />
-          <KeyServices />
-          <OurPartner />
-          <ClientSwiper />
-          <Testimonials />
-          <BlogPosts />
-          <ContactArea />
-          <Footer />
-        </>
-      )}
+      {/* Render content immediately */}
+      <Navbar />
+      <MainBanner />
+      <AboutUs />
+      <Recognition />
+      <AboutTheFounder />
+      <KeyServices />
+      <OurPartner />
+      <ClientSwiper />
+      <Testimonials />
+      <BlogPosts />
+      <ContactArea />
+      <Footer />
+
+      {/* Keep loader as an overlay */}
+      {loading && <Loader />}
     </>
   );
 }
