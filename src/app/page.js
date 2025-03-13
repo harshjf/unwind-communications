@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/Layouts/Navbar";
 import ContactArea from "./../components/Common/ContactArea";
 import Footer from "../components/Layouts/Footer";
@@ -11,32 +12,39 @@ import KeyServices from "@/components/Instagram/KeyServices";
 import OurPartner from "@/components/Instagram/OurPartner";
 import ClientSwiper from "@/components/Instagram/ClientSwiper";
 import BlogPosts from "@/components/Instagram/BlogPosts";
+import Loader from "@/components/Common/Loader";
+
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
-      <Navbar />
-
-      <MainBanner />
-
-      <AboutUs />
-
-      <Recognition />
-
-      <AboutTheFounder />
-
-      <KeyServices/>
-
-      <OurPartner/>
-
-      <ClientSwiper/>
-
-      <Testimonials/>
-
-      <BlogPosts />
-
-      <ContactArea />
-
-      <Footer />
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <Navbar />
+          <MainBanner />
+          <AboutUs />
+          <Recognition />
+          <AboutTheFounder />
+          <KeyServices />
+          <OurPartner />
+          <ClientSwiper />
+          <Testimonials />
+          <BlogPosts />
+          <ContactArea />
+          <Footer />
+        </>
+      )}
     </>
   );
 }

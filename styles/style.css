@@ -8939,3 +8939,82 @@ Join Area CSS
     /*  bottom: -3%; */
   }
 }
+
+.loaderWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+}
+
+.loader,
+.loader2,
+.loader3 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader::before,
+.loader::after,
+.loader2::before,
+.loader2::after,
+.loader3::after {
+  content: "";
+  position: absolute;
+  border: 3px solid #973d5d;
+  border-radius: 50%;
+}
+
+.loader::before {
+  width: 55px;
+  height: 20px;
+  animation: animate-inner 1.7s linear infinite;
+}
+
+.loader::after {
+  width: 60px;
+  height: 20px;
+  animation: animate-outer 2s linear infinite;
+}
+
+.loader2::before {
+  animation: animate-inner 1.4s linear infinite;
+}
+
+.loader2::after {
+  width: 80px;
+  height: 20px;
+  animation: animate-outer 3s linear infinite;
+}
+
+.loader3::after {
+  width: 80px;
+  height: 20px;
+  animation: animate-inner 3s linear infinite;
+}
+
+@keyframes animate-inner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-outer {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
