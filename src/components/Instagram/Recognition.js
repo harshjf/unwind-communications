@@ -10,6 +10,7 @@ import { usePathname } from "next/navigation";
 
 const Recognition = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [recognitionData, setRecognitionData] = useState([]);
   const pathname = usePathname();
   const [hovered, setHovered] = useState(false);
 
@@ -21,9 +22,27 @@ const Recognition = () => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
     };
+
+    const checkShowTwoCardsPerRow = () => {
+      if (window.innerWidth <= 1250) {
+        setRecognitionData(RecognitionData.filter((card) => card.show));
+      } else if (window.innerWidth > 1250) {
+        setRecognitionData(
+          RecognitionData.filter((card) => card.show).slice(0, 3)
+        );
+      }
+    };
+
     checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
+    checkShowTwoCardsPerRow();
+
+    window.addEventListener("resize", checkMobile, checkShowTwoCardsPerRow);
+    return () =>
+      window.removeEventListener(
+        "resize",
+        checkMobile,
+        checkShowTwoCardsPerRow
+      );
   }, []);
 
   return (
@@ -42,30 +61,31 @@ const Recognition = () => {
           </b>
         </h1>
         <div className="recognition-grid">
-          {RecognitionData.filter((card) => card.show).map((card, index) => (
-            <div key={index} className="recognition-card" data-aos="fade-up">
-              <div
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  backgroundColor: "white",
-                  border: "none",
-                  borderRadius: "10px",
-                }}
-              >
-                <div className="recognition-card-image-container">
-                  <Image
-                    src={card.src}
-                    alt={card.alt}
-                    layout="fill"
-                    objectFit="contain"
-                    className="recognition-card-image"
-                  />
+          {recognitionData.length > 0 &&
+            recognitionData.map((card, index) => (
+              <div key={index} className="recognition-card" data-aos="fade-up">
+                <div
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    backgroundColor: "white",
+                    border: "none",
+                    borderRadius: "10px",
+                  }}
+                >
+                  <div className="recognition-card-image-container">
+                    <Image
+                      src={card.src}
+                      alt={card.alt}
+                      layout="fill"
+                      objectFit="contain"
+                      className="recognition-card-image"
+                    />
+                  </div>
+                  <h3 className="recognition-card-title">{card.title}</h3>
                 </div>
-                <h3 className="recognition-card-title">{card.title}</h3>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       </div>
       <div

@@ -24,7 +24,7 @@ export const RecognitionData = [
     src: "/images/video/vision4.png",
     alt: "Vision 3",
     title: "TIMES OF INDIA HEADLINER",
-    show: false,
+    show: true,
     link: "https://timesofindia.indiatimes.com/entertainment/hindi/music/music-reviews/shefali-saxena-shoots-in-jaipurs-heritage-property-for-a-song/articleshow/89181882.cms",
   },
   {
