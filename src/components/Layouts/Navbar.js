@@ -255,7 +255,7 @@ const Navbar = () => {
         <div className="container">
           <div>
             <Link
-              href="/instagram"
+              href="/"
               className="navbar-brand"
               style={{ display: "flex", gap: "10px" }}
             >

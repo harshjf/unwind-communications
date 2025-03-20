@@ -19,30 +19,32 @@ export default function Home() {
   const [bannerLoaded, setBannerLoaded] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 500);
-
-    return () => clearTimeout(timer);
-  }, []);
+    // Once banner is loaded, hide loader
+    if (bannerLoaded) {
+      setTimeout(() => {
+        setLoading(false);
+      }, 500);
+    }
+  }, [bannerLoaded]);
 
   return (
     <>
-      {/* Render content immediately */}
       <Navbar />
-      <MainBanner />
-      <AboutUs />
-      <Recognition />
-      <AboutTheFounder />
-      <KeyServices />
-      <OurPartner />
-      <ClientSwiper />
-      <Testimonials />
-      <BlogPosts />
-      <ContactArea />
-      <Footer />
-
-      {/* Keep loader as an overlay */}
+      <MainBanner setBannerLoaded={setBannerLoaded} />
+      {!loading && (
+        <>
+          <AboutUs />
+          <Recognition />
+          <AboutTheFounder />
+          <KeyServices />
+          <OurPartner />
+          <ClientSwiper />
+          <Testimonials />
+          <BlogPosts />
+          <ContactArea />
+          <Footer />
+        </>
+      )}
       {loading && <Loader />}
     </>
   );
