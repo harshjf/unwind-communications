@@ -41,6 +41,11 @@ const open_sans = Open_Sans({
 export const metadata = {
   title: "Unwind Communications",
   description: "",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
