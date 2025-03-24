@@ -6684,7 +6684,7 @@ Join Area CSS
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 80px 0px;
+  margin: 80px 0px 0px 20px;
 }
 
 .keyServices__image-wrapper {
@@ -8061,7 +8061,7 @@ Join Area CSS
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 80px 0px;
+  margin: 80px 0px 0px 20px;
 }
 
 .keyServices__image-wrapper {

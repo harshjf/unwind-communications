@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 import { KeyServicesData } from "@/utils/Home/DataOfKeyServices/KeyServicesData";
 
 const KeyServices = () => {
@@ -34,7 +35,10 @@ const KeyServices = () => {
       </h1>
 
       {!isMobile ? (
-        <div className="keyServices__container">
+        <div
+          className="keyServices__container"
+          style={{ display: "flex", flexDirection: "column" }}
+        >
           <div className="keyServices__solid-background">
             <div
               className={`keyServices__grid-overlay ${
@@ -79,6 +83,29 @@ const KeyServices = () => {
               ))}
               <div className="keyServices__grid-item-beneath-overlay"></div>
             </div>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              justifyContent: "end",
+              marginBottom: "20px",
+            }}
+          >
+            <Link className="about-company-btn" href="/offerings">
+              <span style={{ color: "#973D5D" }}> View more</span>
+              <img
+                src="images/right-arrow.png"
+                alt="Arrow"
+                width={24}
+                height={24}
+                style={{
+                  marginLeft: "8px",
+                  height: "20px",
+                  width: "40px",
+                }}
+              />
+            </Link>
           </div>
         </div>
       ) : (
@@ -136,6 +163,29 @@ const KeyServices = () => {
                 </p>
               </div>
             ))}
+          </div>
+          <div
+            style={{
+              display: "flex",
+              width: "100%",
+              justifyContent: "end",
+              marginBottom: "20px",
+            }}
+          >
+            <Link className="about-company-btn" href="/offerings">
+              <span style={{ color: "#973D5D" }}> View more</span>
+              <img
+                src="images/right-arrow.png"
+                alt="Arrow"
+                width={24}
+                height={24}
+                style={{
+                  marginLeft: "8px",
+                  height: "20px",
+                  width: "40px",
+                }}
+              />
+            </Link>
           </div>
         </>
       )}
