@@ -1,18 +1,16 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import Link from "next/link"; // Importing Link from next/link
+import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const currentRoute = usePathname();
   const [collapsed, setCollapsed] = useState(true);
-  const [activeIndex, setActiveIndex] = useState("");
 
-  const toggleNavbar = (index) => {
+  const toggleNavbar = () => {
     setCollapsed(!collapsed);
-    setActiveIndex(index);
   };
 
   useEffect(() => {
@@ -26,10 +24,7 @@ const Navbar = () => {
     };
 
     document.addEventListener("scroll", handleScroll);
-
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
+    return () => document.removeEventListener("scroll", handleScroll);
   }, []);
 
   const classOne = collapsed
@@ -38,6 +33,24 @@ const Navbar = () => {
   const classTwo = collapsed
     ? "navbar-toggler navbar-toggler-right collapsed"
     : "navbar-toggler navbar-toggler-right";
+
+  const navLinks = [
+    { label: "Home", path: "/", active_link_path: "/" },
+    { label: "About", path: "/about", active_link_path: "/about/" },
+    {
+      label: "Recognition",
+      path: "/recognition",
+      active_link_path: "/recognition/",
+    },
+    { label: "Offerings", path: "/offerings", active_link_path: "/offerings/" },
+    { label: "Partners", path: "/partner", active_link_path: "/partner/" },
+    { label: "Blogs", path: "/blogs", active_link_path: "/blogs/" },
+    {
+      label: "Contact Us",
+      path: "/contact-us",
+      active_link_path: "/contact-us/",
+    },
+  ];
 
   return (
     <>
@@ -93,7 +106,7 @@ const Navbar = () => {
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
-            aria-expanded="false"
+            aria-expanded={!collapsed}
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
@@ -101,86 +114,19 @@ const Navbar = () => {
 
           <div className={classOne} id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link
-                  href="/"
-                  onClick={() => toggleNavbar("Home")}
-                  className={`nav-link ${currentRoute === "/" && "active"} `}
-                >
-                  Home
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link
-                  href="/about"
-                  onClick={() => toggleNavbar("about")}
-                  className={`nav-link ${
-                    currentRoute === "/about/" && "active"
-                  } `}
-                >
-                  About
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link
-                  href="/recognition"
-                  onClick={() => toggleNavbar("recognition")}
-                  className={`nav-link ${
-                    currentRoute === "/recognition/" && "active"
-                  } `}
-                >
-                  Recognition
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link
-                  href="/offerings"
-                  onClick={() => toggleNavbar("offerings")}
-                  className={`nav-link ${
-                    currentRoute === "/offerings/" && "active"
-                  } `}
-                >
-                  Offerings
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link
-                  href="/partner"
-                  onClick={() => toggleNavbar("partner")}
-                  className={`nav-link ${
-                    currentRoute === "/partner/" && "active"
-                  } `}
-                >
-                  Partners
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  href="/blogs"
-                  onClick={() => toggleNavbar("partner")}
-                  className={`nav-link ${
-                    currentRoute === "/blogs/" && "active"
-                  } `}
-                >
-                  Blogs
-                </Link>
-              </li>
-
-              <li className="nav-item">
-                <Link
-                  href="/contact-us"
-                  onClick={() => toggleNavbar("contact-us")}
-                  className={`nav-link ${
-                    currentRoute === "/contact-us/" && "active"
-                  } `}
-                >
-                  Contact Us
-                </Link>
-              </li>
+              {navLinks.map((link, index) => (
+                <li key={index} className="nav-item">
+                  <Link
+                    href={link.path}
+                    onClick={toggleNavbar}
+                    className={`nav-link ${
+                      currentRoute === link.active_link_path ? "active" : ""
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
