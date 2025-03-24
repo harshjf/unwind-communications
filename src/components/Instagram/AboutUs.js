@@ -71,8 +71,8 @@ const AboutUs = () => {
                 <p>
                   At <b>Unwind Communications</b>, we bring{" "}
                   <b>
-                    most stunning destinations and venues to life on streaming
-                    platforms
+                    most stunning destinations and venues to life on Streaming
+                    Platforms
                   </b>
                   , creating a visual experience that resonates worldwide.
                 </p>
@@ -83,13 +83,19 @@ const AboutUs = () => {
                   <br />
                   <ul>
                     <li>
+                      <b>Bespoke Content Creation</b>
+                    </li>
+                    <li>
+                      <b>Storytelling Vlogs</b>
+                    </li>
+                    <li>
                       <b>Targeted Media PR</b>
                     </li>
                     <li>
                       <b>Strategic Digital Marketing</b>
                     </li>
                     <li>
-                      <b>360° Promotion Strategy</b>
+                      <b>360° Promotions</b>
                     </li>
                     <li>
                       <b>Showcase at Iconic Venues</b>
